@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="el" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Το Linux είναι το βασικό λειτουργικό σύστημα που χρησιμοποιείται σε servers, cybersecurity εργαλεία και penetration testing περιβάλλοντα. Σε αυτό το κεφάλα">
+<meta name="theme-color" content="#07110f">
+<title>Βασικές Αρχές Linux — HackTheBasics.gr</title>
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../../manifest.webmanifest">
+<link rel="stylesheet" href="../../../style.css">
+</head>
+<body class="lesson-page" data-language="el" data-page-id="linux-overview" data-total-lessons="36" data-root="../../.." data-alt-language-url="../../en/linux/index.html">
+<a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header">
+<button class="icon-button menu-button" type="button" data-menu-toggle aria-label="Άνοιγμα μενού μαθημάτων" aria-expanded="false">☰</button>
+<a class="brand" href="../../../home.html"><img src="../../../favicon.svg" alt="" width="32" height="32"><span>HackTheBasics<em>.gr</em></span></a>
+<div class="header-progress" aria-label="Πρόοδος μαθήματος"><span data-progress-text>0%</span><span class="progress-bar"><span data-progress-fill></span></span></div>
+<nav class="header-actions" aria-label="Utilities">
+<button class="text-button" type="button" data-reader-toggle aria-expanded="false">Aa</button>
+<button class="language-button" type="button" data-language-switch>English</button>
+<button class="icon-button" type="button" data-theme-toggle aria-label="Αλλαγή χρωματικού θέματος">☾</button>
+</nav>
+</header>
+<div class="reader-panel" data-reader-panel hidden>
+<strong>Ρυθμίσεις ανάγνωσης</strong>
+<div><button type="button" data-font-minus aria-label="Decrease text">A−</button><button type="button" data-font-reset>A</button><button type="button" data-font-plus aria-label="Increase text">A+</button><button type="button" data-width-toggle>↔</button></div>
+</div>
+<div class="site-layout">
+<aside class="sidebar" aria-label="Μάθημα">
+<div class="sidebar-head"><a class="brand compact" href="../../../home.html"><img src="../../../favicon.svg" alt="" width="28" height="28"><span>HackTheBasics<em>.gr</em></span></a><button class="icon-button sidebar-close" data-menu-close aria-label="Κλείσιμο μενού">×</button></div>
+<div class="sidebar-progress"><div><span>Πρόοδος μαθήματος</span><strong data-progress-count>0/36</strong></div><span class="progress-bar"><span data-progress-fill></span></span></div>
+<nav class="course-navigation"><div class="sidebar-search"><label class="sr-only" for="lesson-search">Φιλτράρισμα μαθημάτων…</label><input id="lesson-search" type="search" placeholder="Φιλτράρισμα μαθημάτων…" autocomplete="off"></div><p class="nav-kicker">Μάθημα</p><section class="nav-module"><button class="nav-module-toggle" type="button" aria-expanded="false"><span><b>00</b> Εισαγωγή</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson" data-lesson-id="intro-overview" data-search="επισκόπηση" href="../introduction/index.html"><span class="lesson-dot"></span><span>Επισκόπηση</span></a><a class="nav-lesson" data-lesson-id="what-is-cybersecurity" data-search="τι είναι η κυβερνοασφάλεια;" href="../introduction/what-is-cybersecurity.html"><span class="lesson-dot"></span><span>Τι είναι η Κυβερνοασφάλεια;</span></a><a class="nav-lesson" data-lesson-id="cybersecurity-domains" data-search="τομείς κυβερνοασφάλειας" href="../introduction/cybersecurity-domains.html"><span class="lesson-dot"></span><span>Τομείς Κυβερνοασφάλειας</span></a></div></section><section class="nav-module"><button class="nav-module-toggle" type="button" aria-expanded="false"><span><b>01</b> Ξεκίνα στη Συσκευή σου</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson" data-lesson-id="device-overview" data-search="επίλεξε τη συσκευή μάθησης" href="../device-setup/index.html"><span class="lesson-dot"></span><span>Επίλεξε τη Συσκευή Μάθησης</span></a><a class="nav-lesson" data-lesson-id="windows-setup" data-search="ρύθμιση windows" href="../device-setup/windows.html"><span class="lesson-dot"></span><span>Ρύθμιση Windows</span></a><a class="nav-lesson" data-lesson-id="linux-setup" data-search="ρύθμιση linux" href="../device-setup/linux.html"><span class="lesson-dot"></span><span>Ρύθμιση Linux</span></a><a class="nav-lesson" data-lesson-id="termux-setup" data-search="ρύθμιση android και termux" href="../device-setup/termux.html"><span class="lesson-dot"></span><span>Ρύθμιση Android και Termux</span></a><a class="nav-lesson" data-lesson-id="command-lab" data-search="ασφαλές browser command lab" href="../device-setup/command-lab.html"><span class="lesson-dot"></span><span>Ασφαλές Browser Command Lab</span></a></div></section><section class="nav-module"><button class="nav-module-toggle" type="button" aria-expanded="false"><span><b>02</b> Δίκτυα</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson" data-lesson-id="networking-overview" data-search="βασικές αρχές δικτύων" href="../networking/index.html"><span class="lesson-dot"></span><span>Βασικές Αρχές Δικτύων</span></a><a class="nav-lesson" data-lesson-id="osi-model" data-search="μοντέλο osi" href="../networking/osi-model.html"><span class="lesson-dot"></span><span>Μοντέλο OSI</span></a><a class="nav-lesson" data-lesson-id="ip-addresses" data-search="διευθύνσεις ip" href="../networking/ip-addresses.html"><span class="lesson-dot"></span><span>Διευθύνσεις IP</span></a><a class="nav-lesson" data-lesson-id="dns" data-search="dns" href="../networking/dns.html"><span class="lesson-dot"></span><span>DNS</span></a><a class="nav-lesson" data-lesson-id="http-https-networking" data-search="http και https" href="../networking/http-https.html"><span class="lesson-dot"></span><span>HTTP και HTTPS</span></a><a class="nav-lesson" data-lesson-id="ports" data-search="θύρες και υπηρεσίες" href="../networking/ports.html"><span class="lesson-dot"></span><span>Θύρες και Υπηρεσίες</span></a></div></section><section class="nav-module is-current"><button class="nav-module-toggle" type="button" aria-expanded="true"><span><b>03</b> Linux</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson is-active" data-lesson-id="linux-overview" data-search="βασικές αρχές linux" href="index.html"><span class="lesson-dot"></span><span>Βασικές Αρχές Linux</span></a><a class="nav-lesson" data-lesson-id="linux-challenges" data-search="linux challenges" href="challenges.html"><span class="lesson-dot"></span><span>Linux Challenges</span></a></div></section><section class="nav-module"><button class="nav-module-toggle" type="button" aria-expanded="false"><span><b>04</b> Εικονικό Εργαστήριο</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson" data-lesson-id="lab-overview" data-search="επισκόπηση εργαστηρίου" href="../virtual-lab/index.html"><span class="lesson-dot"></span><span>Επισκόπηση Εργαστηρίου</span></a><a class="nav-lesson" data-lesson-id="what-is-vm" data-search="τι είναι μια εικονική μηχανή;" href="../virtual-lab/what-is-a-virtual-machine.html"><span class="lesson-dot"></span><span>Τι είναι μια Εικονική Μηχανή;</span></a><a class="nav-lesson" data-lesson-id="install-virtualbox" data-search="εγκατάσταση virtualbox" href="../virtual-lab/installing-virtualbox.html"><span class="lesson-dot"></span><span>Εγκατάσταση VirtualBox</span></a><a class="nav-lesson" data-lesson-id="install-ubuntu" data-search="εγκατάσταση ubuntu" href="../virtual-lab/installing-ubuntu.html"><span class="lesson-dot"></span><span>Εγκατάσταση Ubuntu</span></a><a class="nav-lesson" data-lesson-id="install-kali" data-search="εγκατάσταση kali linux" href="../virtual-lab/installing-kali-linux.html"><span class="lesson-dot"></span><span>Εγκατάσταση Kali Linux</span></a><a class="nav-lesson" data-lesson-id="snapshots" data-search="snapshots" href="../virtual-lab/snapshots.html"><span class="lesson-dot"></span><span>Snapshots</span></a></div></section><section class="nav-module"><button class="nav-module-toggle" type="button" aria-expanded="false"><span><b>05</b> Βασικά Python</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson" data-lesson-id="python-overview" data-search="επισκόπηση python" href="../python-basics/index.html"><span class="lesson-dot"></span><span>Επισκόπηση Python</span></a><a class="nav-lesson" data-lesson-id="python-introduction" data-search="εισαγωγή στην python" href="../python-basics/python-introduction.html"><span class="lesson-dot"></span><span>Εισαγωγή στην Python</span></a><a class="nav-lesson" data-lesson-id="variables-data-types" data-search="μεταβλητές και τύποι δεδομένων" href="../python-basics/variables-and-data-types.html"><span class="lesson-dot"></span><span>Μεταβλητές και Τύποι Δεδομένων</span></a><a class="nav-lesson" data-lesson-id="conditions-loops" data-search="συνθήκες και επαναλήψεις" href="../python-basics/conditions-and-loops.html"><span class="lesson-dot"></span><span>Συνθήκες και Επαναλήψεις</span></a><a class="nav-lesson" data-lesson-id="functions" data-search="συναρτήσεις" href="../python-basics/functions.html"><span class="lesson-dot"></span><span>Συναρτήσεις</span></a><a class="nav-lesson" data-lesson-id="working-with-files" data-search="εργασία με αρχεία" href="../python-basics/working-with-files.html"><span class="lesson-dot"></span><span>Εργασία με Αρχεία</span></a><a class="nav-lesson" data-lesson-id="python-challenges" data-search="python challenges" href="../python-basics/challenges.html"><span class="lesson-dot"></span><span>Python Challenges</span></a></div></section><section class="nav-module"><button class="nav-module-toggle" type="button" aria-expanded="false"><span><b>06</b> Ασφάλεια Web</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson" data-lesson-id="web-overview" data-search="επισκόπηση ασφάλειας web" href="../web-security/index.html"><span class="lesson-dot"></span><span>Επισκόπηση Ασφάλειας Web</span></a><a class="nav-lesson" data-lesson-id="web-basics" data-search="πώς λειτουργεί το web" href="../web-security/web-basics.html"><span class="lesson-dot"></span><span>Πώς Λειτουργεί το Web</span></a><a class="nav-lesson" data-lesson-id="http-web" data-search="βασικές αρχές http" href="../web-security/http.html"><span class="lesson-dot"></span><span>Βασικές Αρχές HTTP</span></a><a class="nav-lesson" data-lesson-id="authentication" data-search="ταυτοποίηση και sessions" href="../web-security/authentication.html"><span class="lesson-dot"></span><span>Ταυτοποίηση και Sessions</span></a></div></section><section class="nav-module"><button class="nav-module-toggle" type="button" aria-expanded="false"><span><b>07</b> Αναφορά</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson" data-lesson-id="command-reference" data-search="οδηγός εντολών πολλαπλών πλατφορμών" href="../reference/index.html"><span class="lesson-dot"></span><span>Οδηγός Εντολών Πολλαπλών Πλατφορμών</span></a><a class="nav-lesson" data-lesson-id="glossary" data-search="γλωσσάρι κυβερνοασφάλειας" href="../reference/glossary.html"><span class="lesson-dot"></span><span>Γλωσσάρι Κυβερνοασφάλειας</span></a></div></section><section class="nav-module"><button class="nav-module-toggle" type="button" aria-expanded="false"><span><b>08</b> Ασφάλεια & Δεοντολογία</span><span aria-hidden="true">⌄</span></button><div class="nav-module-lessons"><a class="nav-lesson" data-lesson-id="safety" data-search="ασφαλής και νόμιμη εξάσκηση" href="../safety/index.html"><span class="lesson-dot"></span><span>Ασφαλής και Νόμιμη Εξάσκηση</span></a></div></section></nav>
+<div class="sidebar-tools">
+<button type="button" data-export-progress>Εξαγωγή προόδου</button>
+<label class="file-button">Εισαγωγή προόδου<input type="file" accept="application/json" data-import-progress hidden></label>
+<button type="button" data-reset-progress>Μηδενισμός προόδου</button>
+</div>
+</aside>
+<button class="sidebar-backdrop" type="button" data-menu-close aria-label="Κλείσιμο μενού"></button>
+<main id="main-content" class="lesson-main">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../../home.html">Αρχική</a><span>/</span><a href="index.html">Linux</a><span>/</span><span>Βασικές Αρχές Linux</span></nav>
+<article class="lesson-article">
+<header class="lesson-header">
+<span class="module-label">03 · Linux</span>
+<h1>Βασικές Αρχές Linux</h1>
+<div class="lesson-meta"><span>◷ 2 λεπτά ανάγνωσης</span><span class="device-badge">⌘ Κινητό, tablet και PC</span><button class="complete-button" type="button" data-complete-label="Σήμανση ως ολοκληρωμένο" data-completed-label="Ολοκληρώθηκε">Σήμανση ως ολοκληρωμένο</button></div>
+</header>
+<div class="device-note"><strong>Υποστήριξη συσκευών</strong><span>Τα browser lessons λειτουργούν σε κινητό και PC. Οι πρακτικές εντολές περιλαμβάνουν Windows, Linux και Termux.</span><a href="../device-setup/index.html">Επίλεξε ρύθμιση →</a></div>
+<div class="lesson-content"><p>Το Linux είναι το βασικό λειτουργικό σύστημα που χρησιμοποιείται σε servers, cybersecurity εργαλεία και penetration testing περιβάλλοντα.</p>
+<p>Σε αυτό το κεφάλαιο θα μάθεις όχι μόνο εντολές, αλλά και πώς “σκέφτεται” το Linux.</p>
+<hr/>
+<h1>Πώς σκέφτεται το Linux</h1>
+<p>Στο Linux τα πάντα είναι αρχεία:</p>
+<ul>
+<li>Φάκελοι = αρχεία</li>
+<li>Συσκευές = αρχεία</li>
+<li>Processes = αρχεία</li>
+<li>Configuration = αρχεία</li>
+</ul>
+<p>Αυτό είναι πολύ σημαντικό για το Cybersecurity.</p>
+<hr/>
+<h1>File System Structure</h1>
+<p>Βασικοί φάκελοι στο Linux:</p>
+<pre><code class="language-text">/
+├── home   → χρήστες
+├── etc    → ρυθμίσεις συστήματος
+├── var    → logs &amp; services
+├── bin    → βασικές εντολές
+├── tmp    → προσωρινά αρχεία
+</code></pre>
+<hr/>
+<h1>Navigation</h1>
+<h2>pwd (Print Working Directory)</h2>
+<h3>Τι κάνει</h3>
+<p>Δείχνει σε ποιον φάκελο βρίσκεσαι αυτή τη στιγμή.</p>
+<h3>Παράδειγμα</h3>
+<pre><code class="language-bash">pwd
+</code></pre>
+<h3>Έξοδος</h3>
+<pre><code class="language-text">/home/student
+</code></pre>
+<hr/>
+<h2>ls (List)</h2>
+<h3>Τι κάνει</h3>
+<p>Εμφανίζει αρχεία και φακέλους.</p>
+<h3>Παράδειγμα</h3>
+<pre><code class="language-bash">ls
+</code></pre>
+<h3>Με λεπτομέρειες</h3>
+<pre><code class="language-bash">ls -la
+</code></pre>
+<ul>
+<li><code>-l</code> → λεπτομέρειες</li>
+<li><code>-a</code> → κρυφά αρχεία</li>
+</ul>
+<hr/>
+<h2>cd (Change Directory)</h2>
+<h3>Τι κάνει</h3>
+<p>Μετακινείσαι σε άλλο φάκελο.</p>
+<h3>Παράδειγμα</h3>
+<pre><code class="language-bash">cd /home
+</code></pre>
+<h3>Πλοήγηση</h3>
+<pre><code class="language-bash">cd ..   # πίσω
+cd ~    # home
+</code></pre>
+<hr/>
+<h1>File Operations</h1>
+<h2>touch</h2>
+<p>Δημιουργεί νέο αρχείο:</p>
+<pre><code class="language-bash">touch notes.txt
+</code></pre>
+<hr/>
+<h2>mkdir</h2>
+<p>Δημιουργεί φάκελο:</p>
+<pre><code class="language-bash">mkdir lab
+</code></pre>
+<hr/>
+<h2>cat</h2>
+<p>Εμφανίζει περιεχόμενο αρχείου:</p>
+<pre><code class="language-bash">cat notes.txt
+</code></pre>
+<hr/>
+<h2>cp (Copy)</h2>
+<p>Αντιγραφή αρχείων:</p>
+<pre><code class="language-bash">cp file1.txt file2.txt
+</code></pre>
+<hr/>
+<h2>mv (Move / Rename)</h2>
+<p>Μετακίνηση ή μετονομασία:</p>
+<pre><code class="language-bash">mv file.txt /home/user/
+mv old.txt new.txt
+</code></pre>
+<hr/>
+<h2>rm (Remove)</h2>
+<p>Διαγραφή αρχείων:</p>
+<p>⚠️ Δεν υπάρχει recycle bin</p>
+<pre><code class="language-bash">rm file.txt
+rm -r folder/
+</code></pre>
+<hr/>
+<h1>Searching</h1>
+<h2>find</h2>
+<p>Βρίσκει αρχεία:</p>
+<pre><code class="language-bash">find /home -name "flag.txt"
+</code></pre>
+<hr/>
+<h2>grep</h2>
+<p>Ψάχνει μέσα σε αρχεία:</p>
+<pre><code class="language-bash">grep "flag" file.txt
+</code></pre>
+<hr/>
+<h1>Permissions</h1>
+<h2>chmod</h2>
+<p>Αλλάζει δικαιώματα αρχείων:</p>
+<pre><code class="language-bash">chmod +x script.sh
+./script.sh
+</code></pre>
+<hr/>
+<h1>Linux Challenges (CTF Mode)</h1>
+<p>Ο φάκελος <code>linux_challenges</code> δεν είναι απλά ασκήσεις.</p>
+<p>Είναι ένα μικρό <strong>CTF (Capture The Flag) environment</strong> που έχει σχεδιαστεί για να σε βοηθήσει να μάθεις Linux μέσα από πραγματικά σενάρια.</p>
+<hr/>
+<h1>Τι είναι αυτό το CTF;</h1>
+<p>Κάθε επίπεδο (<code>lvl1</code>, <code>lvl2</code>, κτλ.) περιέχει ένα μικρό challenge.</p>
+<p>Ο στόχος σου είναι να βρεις το <strong>flag</strong> χρησιμοποιώντας Linux εντολές.</p>
+<hr/>
+<h1>Δομή</h1>
+<p>Κάθε level είναι ένα μικρό puzzle:</p>
+<pre><code>linux_challenges/
+├── lvl1
+├── lvl2
+├── lvl3
+├── lvl4
+├── lvl5
+</code></pre>
+<hr/>
+<h2>Installation</h2>
+<p><code>Στον main φάκελο του repository κάνε:</code></p>
+<pre><code class="language-bash">chmod +x setup.sh
+./setup.sh
+</code></pre>
+<p><code>Για να κάνεις απεγκατάσταση κάνε:</code></p>
+<pre><code class="language-bash">chmod +x uninstall.sh
+./uninstall.sh
+</code></pre>
+<hr/>
+<h2>Docker Installation</h2>
+<pre><code class="language-bash">    sudo docker build -f 02-Linux/Dockerfile -t hackthebasics .
+    sudo docker run -it --name linux-lab hackthebasics
+</code></pre>
+<p><code>Για να βγείς από το docker</code></p>
+<pre><code class="language-bash">   exit
+</code></pre>
+<p><code>Για να ξαναμπείς στο docker</code></p>
+<pre><code class="language-bash">   sudo docker start -ai linux-lab
+</code></pre>
+<hr/>
+<blockquote>
+<p>Learn the basics. Build your lab. Start your cybersecurity journey.</p>
+</blockquote>
+</div>
+<footer class="lesson-navigation"><a class="lesson-nav-card prev" href="../networking/ports.html"><small>← Προηγούμενο</small><strong>Θύρες και Υπηρεσίες</strong></a><a class="lesson-nav-card next" href="challenges.html"><small>Επόμενο →</small><strong>Linux Challenges</strong></a></footer>
+</article>
+<footer class="lesson-footer"><span>HackTheBasics.gr</span><a href="../safety/index.html">Ασφάλεια & Δεοντολογία</a></footer>
+</main>
+</div>
+<button class="back-to-top" type="button" data-back-to-top aria-label="Πάνω">↑</button>
+<div class="toast" data-toast role="status" aria-live="polite"></div>
+<script src="../../../script.js" defer></script>
+</body></html>
