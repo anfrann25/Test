@@ -69,3 +69,7 @@ The website uses relative URLs, includes `.nojekyll`, and ships with `.github/wo
 After pushing to `main`, a repository administrator must select **Settings → Pages → Source → GitHub Actions** once. Later pushes to `main` deploy automatically.
 
 The published artifact must keep `index.html`, `style.css`, `script.js`, `pages/`, and the other website files at the repository root.
+
+## Interface update
+
+The site uses a gold-and-red visual system, a persistent bilingual main menu, and fluid responsive layouts that automatically resize for phones, tablets, laptops and desktop monitors. The course sidebar remains visible as a fully bordered menu on larger screens and becomes an accessible drawer on smaller screens.

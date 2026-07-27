@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="A free bilingual cybersecurity course designed for Windows, Linux and Android with Termux.">
-<meta name="theme-color" content="#07110f">
+<meta name="theme-color" content="#120a07">
 <title>HackTheBasics.gr — Cybersecurity from Any Device</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
@@ -13,8 +13,11 @@
 <body class="home-page" data-total-lessons="36" data-root=".">
 <a class="skip-link" href="#main-content" data-en="Skip to content" data-el="Μετάβαση στο περιεχόμενο">Skip to content</a>
 <header class="home-header">
+<div class="home-header-start">
+<button class="menu-trigger main-menu-trigger" type="button" data-main-menu-toggle aria-controls="main-menu" aria-expanded="false" data-label-en="Open main menu" data-label-el="Άνοιγμα κύριου μενού" aria-label="Open main menu"><span aria-hidden="true">☰</span><b data-en="Menu" data-el="Μενού">Menu</b></button>
 <a class="brand" href="home.html"><img src="favicon.svg" alt="" width="34" height="34"><span>HackTheBasics<em>.gr</em></span></a>
-<nav class="home-nav" aria-label="Main navigation">
+</div>
+<nav class="home-nav" data-label-en="Main navigation" data-label-el="Κύρια πλοήγηση" aria-label="Main navigation">
 <a href="#devices" data-en="Devices" data-el="Συσκευές">Devices</a>
 <a href="#roadmap" data-en="Roadmap" data-el="Διαδρομή">Roadmap</a>
 <a href="#features" data-en="Features" data-el="Λειτουργίες">Features</a>
@@ -26,6 +29,29 @@
 <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle color theme">☾</button>
 </div>
 </header>
+<aside id="main-menu" class="main-menu-drawer" data-main-menu data-label-en="Main menu" data-label-el="Κύριο μενού" aria-label="Main menu" aria-hidden="true">
+<div class="main-menu-head">
+<a class="brand" href="home.html"><img src="favicon.svg" alt="" width="32" height="32"><span>HackTheBasics<em>.gr</em></span></a>
+<button class="icon-button" type="button" data-main-menu-close data-label-en="Close main menu" data-label-el="Κλείσιμο κύριου μενού" aria-label="Close main menu">×</button>
+</div>
+<p class="main-menu-kicker" data-en="MAIN MENU" data-el="ΚΥΡΙΟ ΜΕΝΟΥ">MAIN MENU</p>
+<nav class="main-menu-links" data-label-en="Main menu links" data-label-el="Σύνδεσμοι κύριου μενού" aria-label="Main menu links">
+<a class="is-active" href="home.html"><span>⌂</span><b data-en="Home" data-el="Αρχική">Home</b><i>01</i></a>
+<a href="#devices" data-main-menu-scroll><span>▣</span><b data-en="Choose your device" data-el="Επίλεξε συσκευή">Choose your device</b><i>02</i></a>
+<a href="#roadmap" data-main-menu-scroll><span>◎</span><b data-en="Course roadmap" data-el="Διαδρομή μαθημάτων">Course roadmap</b><i>03</i></a>
+<a href="pages/en/device-setup/command-lab.html" data-link-en="pages/en/device-setup/command-lab.html" data-link-el="pages/el/device-setup/command-lab.html"><span>›_</span><b data-en="Browser command lab" data-el="Browser command lab">Browser command lab</b><i>04</i></a>
+<a href="pages/en/reference/index.html" data-link-en="pages/en/reference/index.html" data-link-el="pages/el/reference/index.html"><span>≡</span><b data-en="Command reference" data-el="Οδηγός εντολών">Command reference</b><i>05</i></a>
+<a href="pages/en/safety/index.html" data-link-en="pages/en/safety/index.html" data-link-el="pages/el/safety/index.html"><span>⚑</span><b data-en="Safety &amp; ethics" data-el="Ασφάλεια &amp; δεοντολογία">Safety &amp; ethics</b><i>06</i></a>
+</nav>
+<div class="main-menu-footer">
+<p data-en="Study from Windows, Linux or Android with Termux." data-el="Μελέτησε από Windows, Linux ή Android με Termux.">Study from Windows, Linux or Android with Termux.</p>
+<div class="main-menu-controls">
+<button class="language-button" type="button" data-language-toggle>Ελληνικά</button>
+<button class="icon-button" type="button" data-theme-toggle aria-label="Toggle color theme">☾</button>
+</div>
+</div>
+</aside>
+<button class="main-menu-backdrop" type="button" data-main-menu-close data-label-en="Close main menu" data-label-el="Κλείσιμο κύριου μενού" aria-label="Close main menu"></button>
 <main id="main-content">
 <section class="hero-section">
 <div class="hero-grid"></div>

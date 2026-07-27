@@ -47,7 +47,7 @@ function applyTheme(theme) {
     button.setAttribute('aria-pressed',String(next==='light'));
   });
   const themeMeta=q('meta[name="theme-color"]');
-  if (themeMeta) themeMeta.content=next==='dark'?'#07110f':'#f4f8f6';
+  if (themeMeta) themeMeta.content=next==='dark'?'#120a07':'#fff8ed';
 }
 function initTheme() {
   const preferred=window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
@@ -97,6 +97,51 @@ function initMenu() {
   open?.addEventListener('click',()=>setOpen(!body.classList.contains('menu-open')));
   qa('[data-menu-close]').forEach(node=>node.addEventListener('click',()=>setOpen(false)));
   document.addEventListener('keydown',event=>{ if(event.key==='Escape') setOpen(false); });
+}
+
+function initMainMenu() {
+  const drawer=q('[data-main-menu]');
+  const trigger=q('[data-main-menu-toggle]');
+  if (!drawer||!trigger) return;
+  let lastFocus=null;
+  const setOpen=state=>{
+    body.classList.toggle('main-menu-open',state);
+    trigger.setAttribute('aria-expanded',String(state));
+    drawer.setAttribute('aria-hidden',String(!state));
+    if (state) {
+      lastFocus=document.activeElement;
+      q('[data-main-menu-close]',drawer)?.focus();
+    } else if (lastFocus instanceof HTMLElement) lastFocus.focus({preventScroll:true});
+  };
+  trigger.addEventListener('click',()=>setOpen(!body.classList.contains('main-menu-open')));
+  qa('[data-main-menu-close]').forEach(node=>node.addEventListener('click',()=>setOpen(false)));
+  qa('a',drawer).forEach(link=>link.addEventListener('click',()=>setOpen(false)));
+  document.addEventListener('keydown',event=>{
+    if(event.key==='Escape'&&body.classList.contains('main-menu-open')) setOpen(false);
+    if(event.key==='Tab'&&body.classList.contains('main-menu-open')) {
+      const focusable=qa('a,button:not([disabled])',drawer).filter(node=>!node.hidden);
+      if(!focusable.length) return;
+      const first=focusable[0], last=focusable[focusable.length-1];
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+    }
+  });
+}
+
+function initSidebarQuickLinks() {
+  const sidebar=q('.sidebar');
+  if(!sidebar||q('.sidebar-quick-links',sidebar)) return;
+  const lang=body.dataset.language==='el'?'el':'en';
+  const base=body.dataset.root||'.';
+  const labels=lang==='el'
+    ? [['⌂','Αρχική','home.html'],['▣','Ρύθμιση','pages/el/device-setup/index.html'],['›_','Browser lab','pages/el/device-setup/command-lab.html'],['≡','Αναφορά','pages/el/reference/index.html']]
+    : [['⌂','Home','home.html'],['▣','Setup','pages/en/device-setup/index.html'],['›_','Browser lab','pages/en/device-setup/command-lab.html'],['≡','Reference','pages/en/reference/index.html']];
+  const nav=document.createElement('nav');
+  nav.className='sidebar-quick-links';
+  nav.setAttribute('aria-label',lang==='el'?'Κύριοι σύνδεσμοι':'Main links');
+  nav.innerHTML=labels.map(([icon,label,path])=>`<a href="${base}/${path}"><span>${icon}</span>${label}</a>`).join('');
+  const head=q('.sidebar-head',sidebar);
+  head?.insertAdjacentElement('afterend',nav);
 }
 function initNavigation() {
   qa('.nav-module').forEach(module=>{
@@ -154,10 +199,11 @@ function setHomeLanguage(language) {
     if (value!==undefined) node.textContent=value;
   });
   qa('[data-language-toggle]').forEach(button=>button.textContent=lang==='en'?'Ελληνικά':'English');
-  qa('[data-module-link],[data-device-link]').forEach(link=>link.href=lang==='en'?link.dataset.linkEn:link.dataset.linkEl);
+  qa('[data-link-en][data-link-el]').forEach(link=>link.href=lang==='en'?link.dataset.linkEn:link.dataset.linkEl);
   qa('[data-start-course]').forEach(link=>link.href=`pages/${lang}/device-setup/index.html`);
   const safety=q('[data-home-safety]');
   if (safety) safety.href=`pages/${lang}/safety/index.html`;
+  qa('[data-label-en][data-label-el]').forEach(node=>node.setAttribute('aria-label',lang==='en'?node.dataset.labelEn:node.dataset.labelEl));
   applyTheme(root.dataset.theme);
 }
 function initLanguage() {
@@ -308,6 +354,8 @@ function initPWA() {
 initTheme();
 initLanguage();
 initMenu();
+initMainMenu();
+initSidebarQuickLinks();
 initNavigation();
 initCompletion();
 initCodeCopy();

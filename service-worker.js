@@ -1,4 +1,4 @@
-const CACHE='hackthebasics-v5-pages';
+const CACHE='hackthebasics-v6-gold-red-menu';
 const ASSETS=[
   "./",
   "./index.html",
