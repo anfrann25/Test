@@ -55,3 +55,17 @@ The preserved compiled Linux challenge binaries target x86-64 Linux. They may ru
 ## Safety
 
 Use security tools only on systems you own or have explicit written permission to test. Run unfamiliar binaries in a disposable virtual machine or container.
+
+## GitHub Pages deployment
+
+This repository is ready to deploy as a GitHub Pages **project site**, including under a repository subpath such as:
+
+```text
+https://anfrann25.github.io/Test/
+```
+
+The website uses relative URLs, includes `.nojekyll`, and ships with `.github/workflows/pages.yml` for deployment through GitHub Actions.
+
+After pushing to `main`, a repository administrator must select **Settings → Pages → Source → GitHub Actions** once. Later pushes to `main` deploy automatically.
+
+The published artifact must keep `index.html`, `style.css`, `script.js`, `pages/`, and the other website files at the repository root.

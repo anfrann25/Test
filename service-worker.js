@@ -1,9 +1,10 @@
-const CACHE='hackthebasics-v4';
+const CACHE='hackthebasics-v5-pages';
 const ASSETS=[
   "./",
   "./index.html",
   "./home.html",
   "./offline.html",
+  "./404.html",
   "./style.css",
   "./script.js",
   "./favicon.svg",

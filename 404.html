@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#07110f">
+<title>Page not found — HackTheBasics.gr</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<style>
+.not-found{min-height:100vh;display:grid;place-items:center;padding:2rem}.not-found-card{width:min(42rem,100%);padding:clamp(1.5rem,5vw,3rem);text-align:center;border:1px solid var(--border);border-radius:1.5rem;background:var(--surface);box-shadow:var(--shadow)}.not-found-card strong{display:block;font-size:clamp(4rem,16vw,8rem);line-height:1;color:var(--accent)}.not-found-card h1{margin:.5rem 0 1rem}.not-found-card p{color:var(--muted);margin:0 auto 1.5rem;max-width:34rem}.not-found-actions{display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
+</style>
+<script>
+(function(){
+  const parts=location.pathname.split('/').filter(Boolean);
+  const projectBase=location.hostname.endsWith('.github.io')&&parts.length ? `/${parts[0]}/` : '/';
+  window.HACKTHEBASICS_BASE=projectBase;
+})();
+</script>
+</head>
+<body>
+<main class="not-found">
+<section class="not-found-card" aria-labelledby="not-found-title">
+<strong aria-hidden="true">404</strong>
+<h1 id="not-found-title">Page not found</h1>
+<p>The address may be incorrect or the lesson may have moved. Return to the course homepage to continue learning.</p>
+<div class="not-found-actions">
+<a class="primary-button" id="home-link" href="./">Course homepage</a>
+<button class="secondary-button" type="button" onclick="history.back()">Go back</button>
+</div>
+</section>
+</main>
+<script>
+document.getElementById('home-link').href=window.HACKTHEBASICS_BASE;
+const savedTheme=localStorage.getItem('htb-theme');
+if(savedTheme) document.documentElement.dataset.theme=savedTheme;
+</script>
+</body>
+</html>
