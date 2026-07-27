@@ -2,17 +2,16 @@
 'use strict';
 
 const KEYS = {
-  theme: 'htb-theme-v4',
-  language: 'htb-language-v4',
-  completed: 'htb-completed-v4',
-  font: 'htb-font-v4',
-  width: 'htb-width-v4'
+  theme: 'htb-theme-v5',
+  language: 'htb-language-v5',
+  font: 'htb-font-v5',
+  width: 'htb-width-v5'
 };
 const root = document.documentElement;
 const body = document.body;
-const isGreek = () => (body.dataset.language || root.lang) === 'el';
 const q = (selector, scope=document) => scope.querySelector(selector);
 const qa = (selector, scope=document) => [...scope.querySelectorAll(selector)];
+const isGreek = () => (body.dataset.language || root.lang) === 'el';
 
 function storageGet(key, fallback=null) {
   try { return localStorage.getItem(key) ?? fallback; } catch (_) { return fallback; }
@@ -29,14 +28,6 @@ function showToast(en, el=en) {
   showToast.timer=setTimeout(()=>toast.classList.remove('is-visible'),2200);
 }
 
-function readCompleted() {
-  try {
-    const value=JSON.parse(storageGet(KEYS.completed,'[]'));
-    return new Set(Array.isArray(value)?value:[]);
-  } catch (_) { return new Set(); }
-}
-function saveCompleted(items) { storageSet(KEYS.completed,JSON.stringify([...items])); }
-
 function applyTheme(theme) {
   const next=theme==='light'?'light':'dark';
   root.dataset.theme=next;
@@ -47,55 +38,26 @@ function applyTheme(theme) {
     button.setAttribute('aria-pressed',String(next==='light'));
   });
   const themeMeta=q('meta[name="theme-color"]');
-  if (themeMeta) themeMeta.content=next==='dark'?'#120a07':'#fff8ed';
+  if (themeMeta) themeMeta.content=next==='dark'?'#06152e':'#f4f8ff';
 }
 function initTheme() {
-  const preferred=window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+  const preferred=window.matchMedia?.('(prefers-color-scheme: light)').matches?'light':'dark';
   applyTheme(storageGet(KEYS.theme,preferred));
   qa('[data-theme-toggle]').forEach(button=>button.addEventListener('click',()=>applyTheme(root.dataset.theme==='dark'?'light':'dark')));
 }
 
-function updateProgress() {
-  const completed=readCompleted();
-  const total=Number(body.dataset.totalLessons||36);
-  const listed=new Set(qa('[data-lesson-id]').map(node=>node.dataset.lessonId).filter(Boolean));
-  const count=[...completed].filter(id=>listed.size===0||listed.has(id)).length;
-  const safe=Math.min(count,total);
-  const percent=Math.round((safe/total)*100);
-  qa('[data-progress-fill]').forEach(node=>node.style.width=`${percent}%`);
-  qa('[data-progress-text]').forEach(node=>node.textContent=`${percent}%`);
-  qa('[data-progress-count]').forEach(node=>node.textContent=`${safe}/${total}`);
-  qa('[data-lesson-id]').forEach(link=>link.classList.toggle('is-complete',completed.has(link.dataset.lessonId)));
-}
-function initCompletion() {
-  const pageId=body.dataset.pageId;
-  const button=q('.complete-button');
-  const refresh=()=>{
-    if (!button||!pageId) return;
-    const done=readCompleted().has(pageId);
-    button.classList.toggle('is-complete',done);
-    button.textContent=done?`✓ ${button.dataset.completedLabel}`:button.dataset.completeLabel;
-    button.setAttribute('aria-pressed',String(done));
-  };
-  button?.addEventListener('click',()=>{
-    const completed=readCompleted();
-    completed.has(pageId)?completed.delete(pageId):completed.add(pageId);
-    saveCompleted(completed);
-    refresh(); updateProgress();
-    showToast(completed.has(pageId)?'Lesson completed':'Lesson reopened',completed.has(pageId)?'Το μάθημα ολοκληρώθηκε':'Το μάθημα άνοιξε ξανά');
-  });
-  refresh(); updateProgress();
-}
-
-function initMenu() {
+function initCourseMenu() {
   const open=q('[data-menu-toggle]');
+  if (!open) return;
   const setOpen=state=>{
     body.classList.toggle('menu-open',state);
-    open?.setAttribute('aria-expanded',String(state));
-    if (state) q('.sidebar input')?.focus();
+    open.setAttribute('aria-expanded',String(state));
+    q('.sidebar')?.setAttribute('aria-hidden',String(!state));
+    if (state) q('.sidebar .nav-module-toggle, .sidebar a, .sidebar button')?.focus();
   };
-  open?.addEventListener('click',()=>setOpen(!body.classList.contains('menu-open')));
+  open.addEventListener('click',()=>setOpen(!body.classList.contains('menu-open')));
   qa('[data-menu-close]').forEach(node=>node.addEventListener('click',()=>setOpen(false)));
+  qa('.sidebar a').forEach(link=>link.addEventListener('click',()=>setOpen(false)));
   document.addEventListener('keydown',event=>{ if(event.key==='Escape') setOpen(false); });
 }
 
@@ -134,15 +96,15 @@ function initSidebarQuickLinks() {
   const lang=body.dataset.language==='el'?'el':'en';
   const base=body.dataset.root||'.';
   const labels=lang==='el'
-    ? [['⌂','Αρχική','home.html'],['▣','Ρύθμιση','pages/el/device-setup/index.html'],['›_','Browser lab','pages/el/device-setup/command-lab.html'],['≡','Αναφορά','pages/el/reference/index.html']]
-    : [['⌂','Home','home.html'],['▣','Setup','pages/en/device-setup/index.html'],['›_','Browser lab','pages/en/device-setup/command-lab.html'],['≡','Reference','pages/en/reference/index.html']];
+    ? [['⌂','Αρχική','home.html'],['▣','Ρύθμιση','pages/el/device-setup/index.html'],['›_','Τοπική πρακτική','pages/el/device-setup/command-lab.html'],['≡','Αναφορά','pages/el/reference/index.html']]
+    : [['⌂','Home','home.html'],['▣','Setup','pages/en/device-setup/index.html'],['›_','Local practice','pages/en/device-setup/command-lab.html'],['≡','Reference','pages/en/reference/index.html']];
   const nav=document.createElement('nav');
   nav.className='sidebar-quick-links';
   nav.setAttribute('aria-label',lang==='el'?'Κύριοι σύνδεσμοι':'Main links');
   nav.innerHTML=labels.map(([icon,label,path])=>`<a href="${base}/${path}"><span>${icon}</span>${label}</a>`).join('');
-  const head=q('.sidebar-head',sidebar);
-  head?.insertAdjacentElement('afterend',nav);
+  q('.sidebar-head',sidebar)?.insertAdjacentElement('afterend',nav);
 }
+
 function initNavigation() {
   qa('.nav-module').forEach(module=>{
     const button=q('.nav-module-toggle',module);
@@ -155,21 +117,6 @@ function initNavigation() {
     const collapsed=module.classList.toggle('is-collapsed');
     button.setAttribute('aria-expanded',String(!collapsed));
   }));
-  const input=q('#lesson-search');
-  input?.addEventListener('input',()=>{
-    const query=input.value.trim().toLocaleLowerCase();
-    qa('.nav-lesson').forEach(link=>{
-      link.hidden=query.length>0&&!(link.dataset.search||link.textContent.toLowerCase()).includes(query);
-    });
-    qa('.nav-module').forEach(module=>{
-      const any=qa('.nav-lesson',module).some(link=>!link.hidden);
-      module.hidden=query.length>0&&!any;
-      if (query&&any) {
-        module.classList.remove('is-collapsed');
-        q('.nav-module-toggle',module)?.setAttribute('aria-expanded','true');
-      }
-    });
-  });
 }
 
 function initCodeCopy() {
@@ -178,7 +125,8 @@ function initCodeCopy() {
     const code=q('code',pre);
     if (!code) return;
     const button=document.createElement('button');
-    button.type='button'; button.className='copy-code';
+    button.type='button';
+    button.className='copy-code';
     button.textContent=isGreek()?'Αντιγραφή':'Copy';
     button.addEventListener('click',async()=>{
       try {
@@ -193,7 +141,8 @@ function initCodeCopy() {
 
 function setHomeLanguage(language) {
   const lang=language==='el'?'el':'en';
-  root.lang=lang; storageSet(KEYS.language,lang);
+  root.lang=lang;
+  storageSet(KEYS.language,lang);
   qa('[data-en][data-el]').forEach(node=>{
     const value=node.dataset[lang];
     if (value!==undefined) node.textContent=value;
@@ -204,6 +153,8 @@ function setHomeLanguage(language) {
   const safety=q('[data-home-safety]');
   if (safety) safety.href=`pages/${lang}/safety/index.html`;
   qa('[data-label-en][data-label-el]').forEach(node=>node.setAttribute('aria-label',lang==='en'?node.dataset.labelEn:node.dataset.labelEl));
+  qa('[data-search-input]').forEach(input=>input.placeholder=lang==='en'?input.dataset.placeholderEn:input.dataset.placeholderEl);
+  qa('[data-search-results]').forEach(results=>{results.hidden=true;results.innerHTML='';});
   applyTheme(root.dataset.theme);
 }
 function initLanguage() {
@@ -238,6 +189,9 @@ function initReader() {
   q('[data-font-plus]')?.addEventListener('click',()=>{storageSet(KEYS.font,String(Math.min(3,Number(storageGet(KEYS.font,'0'))+1)));applyReader();});
   q('[data-font-reset]')?.addEventListener('click',()=>{storageSet(KEYS.font,'0');applyReader();});
   q('[data-width-toggle]')?.addEventListener('click',()=>{storageSet(KEYS.width,body.classList.contains('narrow-reading')?'normal':'narrow');applyReader();});
+  document.addEventListener('click',event=>{
+    if(panel&&!panel.hidden&&!panel.contains(event.target)&&event.target!==toggle){panel.hidden=true;toggle?.setAttribute('aria-expanded','false');}
+  });
 }
 
 function initPlatformTabs() {
@@ -251,85 +205,72 @@ function initPlatformTabs() {
   });
 }
 
-function initProgressTools() {
-  q('[data-export-progress]')?.addEventListener('click',()=>{
-    const payload={version:1,course:'HackTheBasics.gr',exportedAt:new Date().toISOString(),completed:[...readCompleted()],theme:root.dataset.theme,language:body.dataset.language||root.lang};
-    const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a'); a.href=url; a.download='hackthebasics-progress.json'; a.click();
-    URL.revokeObjectURL(url);
-    showToast('Progress exported','Η πρόοδος εξήχθη');
-  });
-  q('[data-import-progress]')?.addEventListener('change',async event=>{
-    const file=event.target.files?.[0]; if(!file) return;
-    try {
-      const data=JSON.parse(await file.text());
-      if(!Array.isArray(data.completed)) throw new Error('invalid');
-      saveCompleted(new Set(data.completed.filter(x=>typeof x==='string')));
-      if(data.theme) applyTheme(data.theme);
-      updateProgress();
-      showToast('Progress imported','Η πρόοδος εισήχθη');
-    } catch(_) { showToast('Invalid progress file','Μη έγκυρο αρχείο προόδου'); }
-    event.target.value='';
-  });
-  q('[data-reset-progress]')?.addEventListener('click',()=>{
-    const message=isGreek()?'Να μηδενιστεί όλη η πρόοδος;':'Reset all course progress?';
-    if(window.confirm(message)){saveCompleted(new Set());updateProgress();showToast('Progress reset','Η πρόοδος μηδενίστηκε');}
-  });
+function normalized(value) {
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase();
 }
-
-function initCommandLab() {
-  const lab=q('[data-command-lab]'); if(!lab) return;
-  const output=q('[data-lab-output]',lab), form=q('[data-lab-form]',lab), input=q('[data-lab-input]',lab);
-  const fs={
-    '/home/student':{type:'dir',children:['notes','welcome.txt','.flag']},
-    '/home/student/welcome.txt':{type:'file',content:'Welcome. Explore the notes directory and inspect hidden files.'},
-    '/home/student/.flag':{type:'file',content:'HTB{browser_shell_basics}'},
-    '/home/student/notes':{type:'dir',children:['networking.txt','safety.txt']},
-    '/home/student/notes/networking.txt':{type:'file',content:'DNS maps names to addresses. Ports identify network services.'},
-    '/home/student/notes/safety.txt':{type:'file',content:'Only test systems you own or have explicit permission to assess.'}
-  };
-  let cwd='/home/student';
-  const clean=path=>{
-    if(!path||path==='~') return '/home/student';
-    const base=path.startsWith('/')?[]:cwd.split('/').filter(Boolean);
-    path.split('/').forEach(part=>{if(!part||part==='.')return;if(part==='..')base.pop();else base.push(part);});
-    return '/'+base.join('/');
-  };
-  const print=(text,klass='')=>{
-    const p=document.createElement('p'); if(klass)p.className=klass;
-    p.textContent=text; output.appendChild(p); output.scrollTop=output.scrollHeight;
-  };
-  form.addEventListener('submit',event=>{
-    event.preventDefault();
-    const raw=input.value.trim(); if(!raw)return;
-    print(`student@hackthebasics:${cwd.replace('/home/student','~')}$ ${raw}`,'lab-command');
-    input.value='';
-    const parts=raw.split(/\s+/), cmd=parts[0], args=parts.slice(1);
-    if(cmd==='clear'){output.innerHTML='';return;}
-    if(cmd==='help') print('help, pwd, ls [-la], cd <dir>, cat <file>, whoami, python --version, clear');
-    else if(cmd==='pwd') print(cwd);
-    else if(cmd==='whoami') print('student');
-    else if(cmd==='python'&&args[0]==='--version') print('Python 3.12.0 (simulated)');
-    else if(cmd==='ls'){
-      const node=fs[cwd];
-      if(!node||node.type!=='dir') print('Not a directory','lab-error');
-      else {
-        let names=[...node.children];
-        const all=args.includes('-la')||args.includes('-a');
-        if(!all) names=names.filter(name=>!name.startsWith('.'));
-        print(names.join('  ')||'(empty)');
+function linkFromRoot(path) {
+  const base=(body.dataset.root||'.').replace(/\/$/,'');
+  return `${base}/${path}`.replace(/^\.\/\.\//,'./');
+}
+function initSiteSearch() {
+  const index=Array.isArray(window.HTB_COURSE_INDEX)?window.HTB_COURSE_INDEX:[];
+  qa('[data-site-search]').forEach(component=>{
+    const input=q('[data-search-input]',component);
+    const results=q('[data-search-results]',component);
+    if(!input||!results) return;
+    let active=-1;
+    const close=()=>{
+      results.hidden=true;
+      results.innerHTML='';
+      input.setAttribute('aria-expanded','false');
+      active=-1;
+    };
+    const chooseLanguage=()=>body.dataset.language||root.lang||'en';
+    const render=()=>{
+      const query=normalized(input.value.trim());
+      if(query.length<2){close();return;}
+      const language=chooseLanguage()==='el'?'el':'en';
+      const matches=index.filter(item=>item.lang===language&&normalized(`${item.title} ${item.module} ${item.summary}`).includes(query)).slice(0,8);
+      results.innerHTML='';
+      active=-1;
+      if(!matches.length){
+        const empty=document.createElement('p');
+        empty.className='search-empty';
+        empty.textContent=language==='el'?'Δεν βρέθηκαν μαθήματα.':'No lessons found.';
+        results.appendChild(empty);
+      } else {
+        matches.forEach((item,position)=>{
+          const link=document.createElement('a');
+          link.href=linkFromRoot(item.path);
+          link.role='option';
+          link.dataset.searchOption=String(position);
+          const title=document.createElement('strong'); title.textContent=item.title;
+          const module=document.createElement('span'); module.textContent=item.module;
+          link.append(title,module);
+          results.appendChild(link);
+        });
       }
-    } else if(cmd==='cd'){
-      const target=clean(args[0]||'~'), node=fs[target];
-      if(node?.type==='dir') cwd=target; else print(`cd: ${args[0]||''}: no such directory`,'lab-error');
-    } else if(cmd==='cat'){
-      const target=clean(args[0]), node=fs[target];
-      if(node?.type==='file') print(node.content);
-      else print(`cat: ${args[0]||''}: no such file`,'lab-error');
-    } else print(`${cmd}: command not found. Type help.`,'lab-error');
+      results.hidden=false;
+      input.setAttribute('aria-expanded','true');
+    };
+    const setActive=next=>{
+      const options=qa('[data-search-option]',results);
+      if(!options.length) return;
+      active=(next+options.length)%options.length;
+      options.forEach((option,index)=>option.classList.toggle('is-active',index===active));
+      options[active].scrollIntoView({block:'nearest'});
+    };
+    input.addEventListener('input',render);
+    input.addEventListener('focus',()=>{if(input.value.trim().length>=2)render();});
+    input.addEventListener('keydown',event=>{
+      const options=qa('[data-search-option]',results);
+      if(event.key==='ArrowDown'){event.preventDefault();setActive(active+1);}
+      else if(event.key==='ArrowUp'){event.preventDefault();setActive(active-1);}
+      else if(event.key==='Enter'&&active>=0&&options[active]){event.preventDefault();options[active].click();}
+      else if(event.key==='Escape') close();
+    });
+    document.addEventListener('click',event=>{if(!component.contains(event.target))close();});
   });
-  input.focus();
 }
 
 function initBackToTop() {
@@ -342,28 +283,23 @@ function initBackToTop() {
 function initExternalLinks() {
   qa('.lesson-content a[href^="http"]').forEach(link=>{link.target='_blank';link.rel='noopener noreferrer';});
 }
-function initPWA() {
-  if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register(`${body.dataset.root||'.'}/service-worker.js`).catch(()=>{});
-  let deferred;
-  window.addEventListener('beforeinstallprompt',event=>{
-    event.preventDefault(); deferred=event;
-    const button=q('[data-install-app]');
-    if(button){button.hidden=false;button.addEventListener('click',async()=>{button.hidden=true;await deferred.prompt();deferred=null;},{once:true});}
-  });
+function initServiceWorker() {
+  if('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    navigator.serviceWorker.register(`${body.dataset.root||'.'}/service-worker.js`).catch(()=>{});
+  }
 }
+
 initTheme();
 initLanguage();
-initMenu();
+initCourseMenu();
 initMainMenu();
 initSidebarQuickLinks();
 initNavigation();
-initCompletion();
 initCodeCopy();
 initReader();
 initPlatformTabs();
-initProgressTools();
-initCommandLab();
+initSiteSearch();
 initBackToTop();
 initExternalLinks();
-initPWA();
+initServiceWorker();
 })();

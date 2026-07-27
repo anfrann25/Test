@@ -1,4 +1,4 @@
-const CACHE='hackthebasics-v6-gold-red-menu';
+const CACHE='hackthebasics-v7-blue-local-academy';
 const ASSETS=[
   "./",
   "./index.html",
@@ -7,6 +7,7 @@ const ASSETS=[
   "./404.html",
   "./style.css",
   "./script.js",
+  "./course-index.js",
   "./favicon.svg",
   "./manifest.webmanifest",
   "./assets/icons/icon-192.png",

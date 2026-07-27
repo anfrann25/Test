@@ -1,0 +1,473 @@
+{
+  "version": 1,
+  "lessons": [
+    {
+      "id": "intro-overview",
+      "en": {
+        "title": "Overview",
+        "path": "pages/en/introduction/index.html",
+        "module": "00 · Introduction"
+      },
+      "el": {
+        "title": "Επισκόπηση",
+        "path": "pages/el/introduction/index.html",
+        "module": "00 · Εισαγωγή"
+      }
+    },
+    {
+      "id": "what-is-cybersecurity",
+      "en": {
+        "title": "What is Cybersecurity?",
+        "path": "pages/en/introduction/what-is-cybersecurity.html",
+        "module": "00 · Introduction"
+      },
+      "el": {
+        "title": "Τι είναι η Κυβερνοασφάλεια;",
+        "path": "pages/el/introduction/what-is-cybersecurity.html",
+        "module": "00 · Εισαγωγή"
+      }
+    },
+    {
+      "id": "cybersecurity-domains",
+      "en": {
+        "title": "Cybersecurity Domains",
+        "path": "pages/en/introduction/cybersecurity-domains.html",
+        "module": "00 · Introduction"
+      },
+      "el": {
+        "title": "Τομείς Κυβερνοασφάλειας",
+        "path": "pages/el/introduction/cybersecurity-domains.html",
+        "module": "00 · Εισαγωγή"
+      }
+    },
+    {
+      "id": "device-overview",
+      "en": {
+        "title": "Choose Your Learning Device",
+        "path": "pages/en/device-setup/index.html",
+        "module": "01 · Start on Your Device"
+      },
+      "el": {
+        "title": "Επίλεξε τη Συσκευή Μάθησης",
+        "path": "pages/el/device-setup/index.html",
+        "module": "01 · Ξεκίνα στη Συσκευή σου"
+      }
+    },
+    {
+      "id": "windows-setup",
+      "en": {
+        "title": "Windows Setup",
+        "path": "pages/en/device-setup/windows.html",
+        "module": "01 · Start on Your Device"
+      },
+      "el": {
+        "title": "Ρύθμιση Windows",
+        "path": "pages/el/device-setup/windows.html",
+        "module": "01 · Ξεκίνα στη Συσκευή σου"
+      }
+    },
+    {
+      "id": "linux-setup",
+      "en": {
+        "title": "Linux Setup",
+        "path": "pages/en/device-setup/linux.html",
+        "module": "01 · Start on Your Device"
+      },
+      "el": {
+        "title": "Ρύθμιση Linux",
+        "path": "pages/el/device-setup/linux.html",
+        "module": "01 · Ξεκίνα στη Συσκευή σου"
+      }
+    },
+    {
+      "id": "termux-setup",
+      "en": {
+        "title": "Android and Termux Setup",
+        "path": "pages/en/device-setup/termux.html",
+        "module": "01 · Start on Your Device"
+      },
+      "el": {
+        "title": "Ρύθμιση Android και Termux",
+        "path": "pages/el/device-setup/termux.html",
+        "module": "01 · Ξεκίνα στη Συσκευή σου"
+      }
+    },
+    {
+      "id": "command-lab",
+      "en": {
+        "title": "Local Practice Guide",
+        "path": "pages/en/device-setup/command-lab.html",
+        "module": "01 · Start on Your Device"
+      },
+      "el": {
+        "title": "Οδηγός Τοπικής Εξάσκησης",
+        "path": "pages/el/device-setup/command-lab.html",
+        "module": "01 · Ξεκίνα στη Συσκευή σου"
+      }
+    },
+    {
+      "id": "networking-overview",
+      "en": {
+        "title": "Networking Fundamentals",
+        "path": "pages/en/networking/index.html",
+        "module": "02 · Networking"
+      },
+      "el": {
+        "title": "Βασικές Αρχές Δικτύων",
+        "path": "pages/el/networking/index.html",
+        "module": "02 · Δίκτυα"
+      }
+    },
+    {
+      "id": "osi-model",
+      "en": {
+        "title": "OSI Model",
+        "path": "pages/en/networking/osi-model.html",
+        "module": "02 · Networking"
+      },
+      "el": {
+        "title": "Μοντέλο OSI",
+        "path": "pages/el/networking/osi-model.html",
+        "module": "02 · Δίκτυα"
+      }
+    },
+    {
+      "id": "ip-addresses",
+      "en": {
+        "title": "IP Addresses",
+        "path": "pages/en/networking/ip-addresses.html",
+        "module": "02 · Networking"
+      },
+      "el": {
+        "title": "Διευθύνσεις IP",
+        "path": "pages/el/networking/ip-addresses.html",
+        "module": "02 · Δίκτυα"
+      }
+    },
+    {
+      "id": "dns",
+      "en": {
+        "title": "DNS",
+        "path": "pages/en/networking/dns.html",
+        "module": "02 · Networking"
+      },
+      "el": {
+        "title": "DNS",
+        "path": "pages/el/networking/dns.html",
+        "module": "02 · Δίκτυα"
+      }
+    },
+    {
+      "id": "http-https-networking",
+      "en": {
+        "title": "HTTP and HTTPS",
+        "path": "pages/en/networking/http-https.html",
+        "module": "02 · Networking"
+      },
+      "el": {
+        "title": "HTTP και HTTPS",
+        "path": "pages/el/networking/http-https.html",
+        "module": "02 · Δίκτυα"
+      }
+    },
+    {
+      "id": "ports",
+      "en": {
+        "title": "Ports and Services",
+        "path": "pages/en/networking/ports.html",
+        "module": "02 · Networking"
+      },
+      "el": {
+        "title": "Θύρες και Υπηρεσίες",
+        "path": "pages/el/networking/ports.html",
+        "module": "02 · Δίκτυα"
+      }
+    },
+    {
+      "id": "linux-overview",
+      "en": {
+        "title": "Linux Fundamentals",
+        "path": "pages/en/linux/index.html",
+        "module": "03 · Linux"
+      },
+      "el": {
+        "title": "Βασικές Αρχές Linux",
+        "path": "pages/el/linux/index.html",
+        "module": "03 · Linux"
+      }
+    },
+    {
+      "id": "linux-challenges",
+      "en": {
+        "title": "Linux Challenges",
+        "path": "pages/en/linux/challenges.html",
+        "module": "03 · Linux"
+      },
+      "el": {
+        "title": "Linux Challenges",
+        "path": "pages/el/linux/challenges.html",
+        "module": "03 · Linux"
+      }
+    },
+    {
+      "id": "lab-overview",
+      "en": {
+        "title": "Virtual Lab Overview",
+        "path": "pages/en/virtual-lab/index.html",
+        "module": "04 · Virtual Lab"
+      },
+      "el": {
+        "title": "Επισκόπηση Εργαστηρίου",
+        "path": "pages/el/virtual-lab/index.html",
+        "module": "04 · Εικονικό Εργαστήριο"
+      }
+    },
+    {
+      "id": "what-is-vm",
+      "en": {
+        "title": "What is a Virtual Machine?",
+        "path": "pages/en/virtual-lab/what-is-a-virtual-machine.html",
+        "module": "04 · Virtual Lab"
+      },
+      "el": {
+        "title": "Τι είναι μια Εικονική Μηχανή;",
+        "path": "pages/el/virtual-lab/what-is-a-virtual-machine.html",
+        "module": "04 · Εικονικό Εργαστήριο"
+      }
+    },
+    {
+      "id": "install-virtualbox",
+      "en": {
+        "title": "Installing VirtualBox",
+        "path": "pages/en/virtual-lab/installing-virtualbox.html",
+        "module": "04 · Virtual Lab"
+      },
+      "el": {
+        "title": "Εγκατάσταση VirtualBox",
+        "path": "pages/el/virtual-lab/installing-virtualbox.html",
+        "module": "04 · Εικονικό Εργαστήριο"
+      }
+    },
+    {
+      "id": "install-ubuntu",
+      "en": {
+        "title": "Installing Ubuntu",
+        "path": "pages/en/virtual-lab/installing-ubuntu.html",
+        "module": "04 · Virtual Lab"
+      },
+      "el": {
+        "title": "Εγκατάσταση Ubuntu",
+        "path": "pages/el/virtual-lab/installing-ubuntu.html",
+        "module": "04 · Εικονικό Εργαστήριο"
+      }
+    },
+    {
+      "id": "install-kali",
+      "en": {
+        "title": "Installing Kali Linux",
+        "path": "pages/en/virtual-lab/installing-kali-linux.html",
+        "module": "04 · Virtual Lab"
+      },
+      "el": {
+        "title": "Εγκατάσταση Kali Linux",
+        "path": "pages/el/virtual-lab/installing-kali-linux.html",
+        "module": "04 · Εικονικό Εργαστήριο"
+      }
+    },
+    {
+      "id": "snapshots",
+      "en": {
+        "title": "Snapshots",
+        "path": "pages/en/virtual-lab/snapshots.html",
+        "module": "04 · Virtual Lab"
+      },
+      "el": {
+        "title": "Snapshots",
+        "path": "pages/el/virtual-lab/snapshots.html",
+        "module": "04 · Εικονικό Εργαστήριο"
+      }
+    },
+    {
+      "id": "python-overview",
+      "en": {
+        "title": "Python Basics Overview",
+        "path": "pages/en/python-basics/index.html",
+        "module": "05 · Python Basics"
+      },
+      "el": {
+        "title": "Επισκόπηση Python",
+        "path": "pages/el/python-basics/index.html",
+        "module": "05 · Βασικά Python"
+      }
+    },
+    {
+      "id": "python-introduction",
+      "en": {
+        "title": "Python Introduction",
+        "path": "pages/en/python-basics/python-introduction.html",
+        "module": "05 · Python Basics"
+      },
+      "el": {
+        "title": "Εισαγωγή στην Python",
+        "path": "pages/el/python-basics/python-introduction.html",
+        "module": "05 · Βασικά Python"
+      }
+    },
+    {
+      "id": "variables-data-types",
+      "en": {
+        "title": "Variables and Data Types",
+        "path": "pages/en/python-basics/variables-and-data-types.html",
+        "module": "05 · Python Basics"
+      },
+      "el": {
+        "title": "Μεταβλητές και Τύποι Δεδομένων",
+        "path": "pages/el/python-basics/variables-and-data-types.html",
+        "module": "05 · Βασικά Python"
+      }
+    },
+    {
+      "id": "conditions-loops",
+      "en": {
+        "title": "Conditions and Loops",
+        "path": "pages/en/python-basics/conditions-and-loops.html",
+        "module": "05 · Python Basics"
+      },
+      "el": {
+        "title": "Συνθήκες και Επαναλήψεις",
+        "path": "pages/el/python-basics/conditions-and-loops.html",
+        "module": "05 · Βασικά Python"
+      }
+    },
+    {
+      "id": "functions",
+      "en": {
+        "title": "Functions",
+        "path": "pages/en/python-basics/functions.html",
+        "module": "05 · Python Basics"
+      },
+      "el": {
+        "title": "Συναρτήσεις",
+        "path": "pages/el/python-basics/functions.html",
+        "module": "05 · Βασικά Python"
+      }
+    },
+    {
+      "id": "working-with-files",
+      "en": {
+        "title": "Working with Files",
+        "path": "pages/en/python-basics/working-with-files.html",
+        "module": "05 · Python Basics"
+      },
+      "el": {
+        "title": "Εργασία με Αρχεία",
+        "path": "pages/el/python-basics/working-with-files.html",
+        "module": "05 · Βασικά Python"
+      }
+    },
+    {
+      "id": "python-challenges",
+      "en": {
+        "title": "Python Challenges",
+        "path": "pages/en/python-basics/challenges.html",
+        "module": "05 · Python Basics"
+      },
+      "el": {
+        "title": "Python Challenges",
+        "path": "pages/el/python-basics/challenges.html",
+        "module": "05 · Βασικά Python"
+      }
+    },
+    {
+      "id": "web-overview",
+      "en": {
+        "title": "Web Security Overview",
+        "path": "pages/en/web-security/index.html",
+        "module": "06 · Web Security"
+      },
+      "el": {
+        "title": "Επισκόπηση Ασφάλειας Web",
+        "path": "pages/el/web-security/index.html",
+        "module": "06 · Ασφάλεια Web"
+      }
+    },
+    {
+      "id": "web-basics",
+      "en": {
+        "title": "How the Web Works",
+        "path": "pages/en/web-security/web-basics.html",
+        "module": "06 · Web Security"
+      },
+      "el": {
+        "title": "Πώς Λειτουργεί το Web",
+        "path": "pages/el/web-security/web-basics.html",
+        "module": "06 · Ασφάλεια Web"
+      }
+    },
+    {
+      "id": "http-web",
+      "en": {
+        "title": "HTTP Fundamentals",
+        "path": "pages/en/web-security/http.html",
+        "module": "06 · Web Security"
+      },
+      "el": {
+        "title": "Βασικές Αρχές HTTP",
+        "path": "pages/el/web-security/http.html",
+        "module": "06 · Ασφάλεια Web"
+      }
+    },
+    {
+      "id": "authentication",
+      "en": {
+        "title": "Authentication and Sessions",
+        "path": "pages/en/web-security/authentication.html",
+        "module": "06 · Web Security"
+      },
+      "el": {
+        "title": "Ταυτοποίηση και Sessions",
+        "path": "pages/el/web-security/authentication.html",
+        "module": "06 · Ασφάλεια Web"
+      }
+    },
+    {
+      "id": "command-reference",
+      "en": {
+        "title": "Cross-Platform Command Reference",
+        "path": "pages/en/reference/index.html",
+        "module": "07 · Reference"
+      },
+      "el": {
+        "title": "Οδηγός Εντολών Πολλαπλών Πλατφορμών",
+        "path": "pages/el/reference/index.html",
+        "module": "07 · Αναφορά"
+      }
+    },
+    {
+      "id": "glossary",
+      "en": {
+        "title": "Cybersecurity Glossary",
+        "path": "pages/en/reference/glossary.html",
+        "module": "07 · Reference"
+      },
+      "el": {
+        "title": "Γλωσσάρι Κυβερνοασφάλειας",
+        "path": "pages/el/reference/glossary.html",
+        "module": "07 · Αναφορά"
+      }
+    },
+    {
+      "id": "safety",
+      "en": {
+        "title": "Safe and Legal Practice",
+        "path": "pages/en/safety/index.html",
+        "module": "08 · Safety & Ethics"
+      },
+      "el": {
+        "title": "Ασφαλής και Νόμιμη Εξάσκηση",
+        "path": "pages/el/safety/index.html",
+        "module": "08 · Ασφάλεια & Δεοντολογία"
+      }
+    }
+  ]
+}
