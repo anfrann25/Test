@@ -1,472 +1,1472 @@
 {
-  "version": 1,
+  "version": 2,
+  "practical_hours": 126,
   "lessons": [
     {
       "id": "intro-overview",
       "en": {
         "title": "Overview",
         "path": "pages/en/introduction/index.html",
-        "module": "00 · Introduction"
+        "module": "00 · Introduction",
+        "icon": "shield"
       },
       "el": {
         "title": "Επισκόπηση",
         "path": "pages/el/introduction/index.html",
-        "module": "00 · Εισαγωγή"
-      }
+        "module": "00 · Εισαγωγή",
+        "icon": "shield"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "what-is-cybersecurity",
       "en": {
         "title": "What is Cybersecurity?",
         "path": "pages/en/introduction/what-is-cybersecurity.html",
-        "module": "00 · Introduction"
+        "module": "00 · Introduction",
+        "icon": "shield"
       },
       "el": {
         "title": "Τι είναι η Κυβερνοασφάλεια;",
         "path": "pages/el/introduction/what-is-cybersecurity.html",
-        "module": "00 · Εισαγωγή"
-      }
+        "module": "00 · Εισαγωγή",
+        "icon": "shield"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "cybersecurity-domains",
       "en": {
         "title": "Cybersecurity Domains",
         "path": "pages/en/introduction/cybersecurity-domains.html",
-        "module": "00 · Introduction"
+        "module": "00 · Introduction",
+        "icon": "shield"
       },
       "el": {
         "title": "Τομείς Κυβερνοασφάλειας",
         "path": "pages/el/introduction/cybersecurity-domains.html",
-        "module": "00 · Εισαγωγή"
-      }
+        "module": "00 · Εισαγωγή",
+        "icon": "shield"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "device-overview",
       "en": {
         "title": "Choose Your Learning Device",
         "path": "pages/en/device-setup/index.html",
-        "module": "01 · Start on Your Device"
+        "module": "01 · Start on Your Device",
+        "icon": "device"
       },
       "el": {
         "title": "Επίλεξε τη Συσκευή Μάθησης",
         "path": "pages/el/device-setup/index.html",
-        "module": "01 · Ξεκίνα στη Συσκευή σου"
-      }
+        "module": "01 · Ξεκίνα στη Συσκευή σου",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "windows-setup",
       "en": {
         "title": "Windows Setup",
         "path": "pages/en/device-setup/windows.html",
-        "module": "01 · Start on Your Device"
+        "module": "01 · Start on Your Device",
+        "icon": "device"
       },
       "el": {
         "title": "Ρύθμιση Windows",
         "path": "pages/el/device-setup/windows.html",
-        "module": "01 · Ξεκίνα στη Συσκευή σου"
-      }
+        "module": "01 · Ξεκίνα στη Συσκευή σου",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "linux-setup",
       "en": {
         "title": "Linux Setup",
         "path": "pages/en/device-setup/linux.html",
-        "module": "01 · Start on Your Device"
+        "module": "01 · Start on Your Device",
+        "icon": "device"
       },
       "el": {
         "title": "Ρύθμιση Linux",
         "path": "pages/el/device-setup/linux.html",
-        "module": "01 · Ξεκίνα στη Συσκευή σου"
-      }
+        "module": "01 · Ξεκίνα στη Συσκευή σου",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "termux-setup",
       "en": {
         "title": "Android and Termux Setup",
         "path": "pages/en/device-setup/termux.html",
-        "module": "01 · Start on Your Device"
+        "module": "01 · Start on Your Device",
+        "icon": "device"
       },
       "el": {
         "title": "Ρύθμιση Android και Termux",
         "path": "pages/el/device-setup/termux.html",
-        "module": "01 · Ξεκίνα στη Συσκευή σου"
-      }
+        "module": "01 · Ξεκίνα στη Συσκευή σου",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "command-lab",
       "en": {
         "title": "Local Practice Guide",
         "path": "pages/en/device-setup/command-lab.html",
-        "module": "01 · Start on Your Device"
+        "module": "01 · Start on Your Device",
+        "icon": "device"
       },
       "el": {
         "title": "Οδηγός Τοπικής Εξάσκησης",
         "path": "pages/el/device-setup/command-lab.html",
-        "module": "01 · Ξεκίνα στη Συσκευή σου"
-      }
+        "module": "01 · Ξεκίνα στη Συσκευή σου",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "networking-overview",
       "en": {
         "title": "Networking Fundamentals",
         "path": "pages/en/networking/index.html",
-        "module": "02 · Networking"
+        "module": "02 · Networking",
+        "icon": "network"
       },
       "el": {
         "title": "Βασικές Αρχές Δικτύων",
         "path": "pages/el/networking/index.html",
-        "module": "02 · Δίκτυα"
-      }
+        "module": "02 · Δίκτυα",
+        "icon": "network"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "osi-model",
       "en": {
         "title": "OSI Model",
         "path": "pages/en/networking/osi-model.html",
-        "module": "02 · Networking"
+        "module": "02 · Networking",
+        "icon": "network"
       },
       "el": {
         "title": "Μοντέλο OSI",
         "path": "pages/el/networking/osi-model.html",
-        "module": "02 · Δίκτυα"
-      }
+        "module": "02 · Δίκτυα",
+        "icon": "network"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "ip-addresses",
       "en": {
         "title": "IP Addresses",
         "path": "pages/en/networking/ip-addresses.html",
-        "module": "02 · Networking"
+        "module": "02 · Networking",
+        "icon": "network"
       },
       "el": {
         "title": "Διευθύνσεις IP",
         "path": "pages/el/networking/ip-addresses.html",
-        "module": "02 · Δίκτυα"
-      }
+        "module": "02 · Δίκτυα",
+        "icon": "network"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "dns",
       "en": {
         "title": "DNS",
         "path": "pages/en/networking/dns.html",
-        "module": "02 · Networking"
+        "module": "02 · Networking",
+        "icon": "network"
       },
       "el": {
         "title": "DNS",
         "path": "pages/el/networking/dns.html",
-        "module": "02 · Δίκτυα"
-      }
+        "module": "02 · Δίκτυα",
+        "icon": "network"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "http-https-networking",
       "en": {
         "title": "HTTP and HTTPS",
         "path": "pages/en/networking/http-https.html",
-        "module": "02 · Networking"
+        "module": "02 · Networking",
+        "icon": "network"
       },
       "el": {
         "title": "HTTP και HTTPS",
         "path": "pages/el/networking/http-https.html",
-        "module": "02 · Δίκτυα"
-      }
+        "module": "02 · Δίκτυα",
+        "icon": "network"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "ports",
       "en": {
         "title": "Ports and Services",
         "path": "pages/en/networking/ports.html",
-        "module": "02 · Networking"
+        "module": "02 · Networking",
+        "icon": "network"
       },
       "el": {
         "title": "Θύρες και Υπηρεσίες",
         "path": "pages/el/networking/ports.html",
-        "module": "02 · Δίκτυα"
-      }
+        "module": "02 · Δίκτυα",
+        "icon": "network"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "linux-overview",
       "en": {
         "title": "Linux Fundamentals",
         "path": "pages/en/linux/index.html",
-        "module": "03 · Linux"
+        "module": "03 · Linux",
+        "icon": "terminal"
       },
       "el": {
         "title": "Βασικές Αρχές Linux",
         "path": "pages/el/linux/index.html",
-        "module": "03 · Linux"
-      }
+        "module": "03 · Linux",
+        "icon": "terminal"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "linux-challenges",
       "en": {
         "title": "Linux Challenges",
         "path": "pages/en/linux/challenges.html",
-        "module": "03 · Linux"
+        "module": "03 · Linux",
+        "icon": "terminal"
       },
       "el": {
         "title": "Linux Challenges",
         "path": "pages/el/linux/challenges.html",
-        "module": "03 · Linux"
-      }
+        "module": "03 · Linux",
+        "icon": "terminal"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "lab-overview",
       "en": {
         "title": "Virtual Lab Overview",
         "path": "pages/en/virtual-lab/index.html",
-        "module": "04 · Virtual Lab"
+        "module": "04 · Virtual Lab",
+        "icon": "device"
       },
       "el": {
         "title": "Επισκόπηση Εργαστηρίου",
         "path": "pages/el/virtual-lab/index.html",
-        "module": "04 · Εικονικό Εργαστήριο"
-      }
+        "module": "04 · Εικονικό Εργαστήριο",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "what-is-vm",
       "en": {
         "title": "What is a Virtual Machine?",
         "path": "pages/en/virtual-lab/what-is-a-virtual-machine.html",
-        "module": "04 · Virtual Lab"
+        "module": "04 · Virtual Lab",
+        "icon": "device"
       },
       "el": {
         "title": "Τι είναι μια Εικονική Μηχανή;",
         "path": "pages/el/virtual-lab/what-is-a-virtual-machine.html",
-        "module": "04 · Εικονικό Εργαστήριο"
-      }
+        "module": "04 · Εικονικό Εργαστήριο",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "install-virtualbox",
       "en": {
         "title": "Installing VirtualBox",
         "path": "pages/en/virtual-lab/installing-virtualbox.html",
-        "module": "04 · Virtual Lab"
+        "module": "04 · Virtual Lab",
+        "icon": "device"
       },
       "el": {
         "title": "Εγκατάσταση VirtualBox",
         "path": "pages/el/virtual-lab/installing-virtualbox.html",
-        "module": "04 · Εικονικό Εργαστήριο"
-      }
+        "module": "04 · Εικονικό Εργαστήριο",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "install-ubuntu",
       "en": {
         "title": "Installing Ubuntu",
         "path": "pages/en/virtual-lab/installing-ubuntu.html",
-        "module": "04 · Virtual Lab"
+        "module": "04 · Virtual Lab",
+        "icon": "device"
       },
       "el": {
         "title": "Εγκατάσταση Ubuntu",
         "path": "pages/el/virtual-lab/installing-ubuntu.html",
-        "module": "04 · Εικονικό Εργαστήριο"
-      }
+        "module": "04 · Εικονικό Εργαστήριο",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "install-kali",
       "en": {
         "title": "Installing Kali Linux",
         "path": "pages/en/virtual-lab/installing-kali-linux.html",
-        "module": "04 · Virtual Lab"
+        "module": "04 · Virtual Lab",
+        "icon": "device"
       },
       "el": {
         "title": "Εγκατάσταση Kali Linux",
         "path": "pages/el/virtual-lab/installing-kali-linux.html",
-        "module": "04 · Εικονικό Εργαστήριο"
-      }
+        "module": "04 · Εικονικό Εργαστήριο",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "snapshots",
       "en": {
         "title": "Snapshots",
         "path": "pages/en/virtual-lab/snapshots.html",
-        "module": "04 · Virtual Lab"
+        "module": "04 · Virtual Lab",
+        "icon": "device"
       },
       "el": {
         "title": "Snapshots",
         "path": "pages/el/virtual-lab/snapshots.html",
-        "module": "04 · Εικονικό Εργαστήριο"
-      }
+        "module": "04 · Εικονικό Εργαστήριο",
+        "icon": "device"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "python-overview",
       "en": {
         "title": "Python Basics Overview",
         "path": "pages/en/python-basics/index.html",
-        "module": "05 · Python Basics"
+        "module": "05 · Python Basics",
+        "icon": "code"
       },
       "el": {
         "title": "Επισκόπηση Python",
         "path": "pages/el/python-basics/index.html",
-        "module": "05 · Βασικά Python"
-      }
+        "module": "05 · Βασικά Python",
+        "icon": "code"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "python-introduction",
       "en": {
         "title": "Python Introduction",
         "path": "pages/en/python-basics/python-introduction.html",
-        "module": "05 · Python Basics"
+        "module": "05 · Python Basics",
+        "icon": "code"
       },
       "el": {
         "title": "Εισαγωγή στην Python",
         "path": "pages/el/python-basics/python-introduction.html",
-        "module": "05 · Βασικά Python"
-      }
+        "module": "05 · Βασικά Python",
+        "icon": "code"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "variables-data-types",
       "en": {
         "title": "Variables and Data Types",
         "path": "pages/en/python-basics/variables-and-data-types.html",
-        "module": "05 · Python Basics"
+        "module": "05 · Python Basics",
+        "icon": "code"
       },
       "el": {
         "title": "Μεταβλητές και Τύποι Δεδομένων",
         "path": "pages/el/python-basics/variables-and-data-types.html",
-        "module": "05 · Βασικά Python"
-      }
+        "module": "05 · Βασικά Python",
+        "icon": "code"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "conditions-loops",
       "en": {
         "title": "Conditions and Loops",
         "path": "pages/en/python-basics/conditions-and-loops.html",
-        "module": "05 · Python Basics"
+        "module": "05 · Python Basics",
+        "icon": "code"
       },
       "el": {
         "title": "Συνθήκες και Επαναλήψεις",
         "path": "pages/el/python-basics/conditions-and-loops.html",
-        "module": "05 · Βασικά Python"
-      }
+        "module": "05 · Βασικά Python",
+        "icon": "code"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "functions",
       "en": {
         "title": "Functions",
         "path": "pages/en/python-basics/functions.html",
-        "module": "05 · Python Basics"
+        "module": "05 · Python Basics",
+        "icon": "code"
       },
       "el": {
         "title": "Συναρτήσεις",
         "path": "pages/el/python-basics/functions.html",
-        "module": "05 · Βασικά Python"
-      }
+        "module": "05 · Βασικά Python",
+        "icon": "code"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "working-with-files",
       "en": {
         "title": "Working with Files",
         "path": "pages/en/python-basics/working-with-files.html",
-        "module": "05 · Python Basics"
+        "module": "05 · Python Basics",
+        "icon": "code"
       },
       "el": {
         "title": "Εργασία με Αρχεία",
         "path": "pages/el/python-basics/working-with-files.html",
-        "module": "05 · Βασικά Python"
-      }
+        "module": "05 · Βασικά Python",
+        "icon": "code"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "python-challenges",
       "en": {
         "title": "Python Challenges",
         "path": "pages/en/python-basics/challenges.html",
-        "module": "05 · Python Basics"
+        "module": "05 · Python Basics",
+        "icon": "code"
       },
       "el": {
         "title": "Python Challenges",
         "path": "pages/el/python-basics/challenges.html",
-        "module": "05 · Βασικά Python"
-      }
+        "module": "05 · Βασικά Python",
+        "icon": "code"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "web-overview",
       "en": {
         "title": "Web Security Overview",
         "path": "pages/en/web-security/index.html",
-        "module": "06 · Web Security"
+        "module": "06 · Web Security",
+        "icon": "globe"
       },
       "el": {
         "title": "Επισκόπηση Ασφάλειας Web",
         "path": "pages/el/web-security/index.html",
-        "module": "06 · Ασφάλεια Web"
-      }
+        "module": "06 · Ασφάλεια Web",
+        "icon": "globe"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "web-basics",
       "en": {
         "title": "How the Web Works",
         "path": "pages/en/web-security/web-basics.html",
-        "module": "06 · Web Security"
+        "module": "06 · Web Security",
+        "icon": "globe"
       },
       "el": {
         "title": "Πώς Λειτουργεί το Web",
         "path": "pages/el/web-security/web-basics.html",
-        "module": "06 · Ασφάλεια Web"
-      }
+        "module": "06 · Ασφάλεια Web",
+        "icon": "globe"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "http-web",
       "en": {
         "title": "HTTP Fundamentals",
         "path": "pages/en/web-security/http.html",
-        "module": "06 · Web Security"
+        "module": "06 · Web Security",
+        "icon": "globe"
       },
       "el": {
         "title": "Βασικές Αρχές HTTP",
         "path": "pages/el/web-security/http.html",
-        "module": "06 · Ασφάλεια Web"
-      }
+        "module": "06 · Ασφάλεια Web",
+        "icon": "globe"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "authentication",
       "en": {
         "title": "Authentication and Sessions",
         "path": "pages/en/web-security/authentication.html",
-        "module": "06 · Web Security"
+        "module": "06 · Web Security",
+        "icon": "globe"
       },
       "el": {
         "title": "Ταυτοποίηση και Sessions",
         "path": "pages/el/web-security/authentication.html",
-        "module": "06 · Ασφάλεια Web"
-      }
+        "module": "06 · Ασφάλεια Web",
+        "icon": "globe"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "command-reference",
       "en": {
         "title": "Cross-Platform Command Reference",
         "path": "pages/en/reference/index.html",
-        "module": "07 · Reference"
+        "module": "07 · Reference",
+        "icon": "list"
       },
       "el": {
         "title": "Οδηγός Εντολών Πολλαπλών Πλατφορμών",
         "path": "pages/el/reference/index.html",
-        "module": "07 · Αναφορά"
-      }
+        "module": "07 · Αναφορά",
+        "icon": "list"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "glossary",
       "en": {
         "title": "Cybersecurity Glossary",
         "path": "pages/en/reference/glossary.html",
-        "module": "07 · Reference"
+        "module": "07 · Reference",
+        "icon": "list"
       },
       "el": {
         "title": "Γλωσσάρι Κυβερνοασφάλειας",
         "path": "pages/el/reference/glossary.html",
-        "module": "07 · Αναφορά"
-      }
+        "module": "07 · Αναφορά",
+        "icon": "list"
+      },
+      "kind": "theory",
+      "hours": 0
     },
     {
       "id": "safety",
       "en": {
         "title": "Safe and Legal Practice",
         "path": "pages/en/safety/index.html",
-        "module": "08 · Safety & Ethics"
+        "module": "08 · Safety & Ethics",
+        "icon": "shield"
       },
       "el": {
         "title": "Ασφαλής και Νόμιμη Εξάσκηση",
         "path": "pages/el/safety/index.html",
-        "module": "08 · Ασφάλεια & Δεοντολογία"
+        "module": "08 · Ασφάλεια & Δεοντολογία",
+        "icon": "shield"
+      },
+      "kind": "theory",
+      "hours": 0
+    },
+    {
+      "id": "methodology",
+      "kind": "theory",
+      "hours": 0,
+      "en": {
+        "title": "Methodology and Standards",
+        "path": "pages/en/reference/methodology.html",
+        "module": "07 · Reference",
+        "summary": "How accessibility, practical duration and defensive outcomes were designed.",
+        "icon": "shield"
+      },
+      "el": {
+        "title": "Μεθοδολογία και Πρότυπα",
+        "path": "pages/el/reference/methodology.html",
+        "module": "07 · Αναφορά",
+        "summary": "Πώς σχεδιάστηκαν η προσβασιμότητα, η πρακτική διάρκεια και τα αμυντικά αποτελέσματα.",
+        "icon": "shield"
+      }
+    },
+    {
+      "id": "practical-index",
+      "kind": "theory",
+      "hours": 0,
+      "en": {
+        "title": "126-Hour Practical Track",
+        "path": "pages/en/practical/index.html",
+        "module": "09–16 · Practical Curriculum",
+        "summary": "Forty-three local labs with concrete evidence for Windows, Linux and Termux.",
+        "icon": "terminal"
+      },
+      "el": {
+        "title": "Πρακτική Διαδρομή 126 Ωρών",
+        "path": "pages/el/practical/index.html",
+        "module": "09–16 · Πρακτικό Πρόγραμμα",
+        "summary": "Σαράντα τρία τοπικά labs με συγκεκριμένα παραδοτέα για Windows, Linux και Termux.",
+        "icon": "terminal"
+      }
+    },
+    {
+      "id": "environment-inventory",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Build a Device Inventory",
+        "path": "pages/en/practical/workspace/environment-inventory.html",
+        "module": "09 · Workspace Foundations",
+        "summary": "Identify the operating system, architecture, shell, Python version and storage available for the academy.",
+        "icon": "shield"
+      },
+      "el": {
+        "title": "Καταγραφή της Συσκευής σου",
+        "path": "pages/el/practical/workspace/environment-inventory.html",
+        "module": "09 · Θεμέλια Χώρου Εργασίας",
+        "summary": "Εντόπισε λειτουργικό σύστημα, αρχιτεκτονική, shell, έκδοση Python και διαθέσιμο χώρο.",
+        "icon": "shield"
+      }
+    },
+    {
+      "id": "safe-workspace",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Create an Isolated Workspace",
+        "path": "pages/en/practical/workspace/safe-workspace.html",
+        "module": "09 · Workspace Foundations",
+        "summary": "Organize a local workspace that separates source files, evidence, notes and disposable output.",
+        "icon": "shield"
+      },
+      "el": {
+        "title": "Δημιουργία Απομονωμένου Χώρου",
+        "path": "pages/el/practical/workspace/safe-workspace.html",
+        "module": "09 · Θεμέλια Χώρου Εργασίας",
+        "summary": "Οργάνωσε τοπικό χώρο που διαχωρίζει πηγαία αρχεία, τεκμήρια, σημειώσεις και προσωρινά αποτελέσματα.",
+        "icon": "shield"
+      }
+    },
+    {
+      "id": "analyst-notebook",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Design an Analyst Notebook",
+        "path": "pages/en/practical/workspace/analyst-notebook.html",
+        "module": "09 · Workspace Foundations",
+        "summary": "Create a note format that separates observations, assumptions, commands, results and decisions.",
+        "icon": "shield"
+      },
+      "el": {
+        "title": "Σχεδίαση Ημερολογίου Αναλυτή",
+        "path": "pages/el/practical/workspace/analyst-notebook.html",
+        "module": "09 · Θεμέλια Χώρου Εργασίας",
+        "summary": "Δημιούργησε μορφή σημειώσεων που χωρίζει παρατηρήσεις, υποθέσεις, εντολές, αποτελέσματα και αποφάσεις.",
+        "icon": "shield"
+      }
+    },
+    {
+      "id": "hash-baseline",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Create a File Hash Baseline",
+        "path": "pages/en/practical/workspace/hash-baseline.html",
+        "module": "09 · Workspace Foundations",
+        "summary": "Use cryptographic hashes to recognize later changes in a controlled set of files.",
+        "icon": "shield"
+      },
+      "el": {
+        "title": "Δημιουργία Βάσης Hash Αρχείων",
+        "path": "pages/el/practical/workspace/hash-baseline.html",
+        "module": "09 · Θεμέλια Χώρου Εργασίας",
+        "summary": "Χρησιμοποίησε κρυπτογραφικά hashes για αναγνώριση μεταβολών σε ελεγχόμενο σύνολο αρχείων.",
+        "icon": "shield"
+      }
+    },
+    {
+      "id": "archive-evidence",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Package Evidence Reliably",
+        "path": "pages/en/practical/workspace/archive-evidence.html",
+        "module": "09 · Workspace Foundations",
+        "summary": "Create portable archives while preserving a clear inventory of their contents.",
+        "icon": "shield"
+      },
+      "el": {
+        "title": "Αξιόπιστη Συσκευασία Τεκμηρίων",
+        "path": "pages/el/practical/workspace/archive-evidence.html",
+        "module": "09 · Θεμέλια Χώρου Εργασίας",
+        "summary": "Δημιούργησε φορητά αρχεία συμπίεσης διατηρώντας σαφή απογραφή περιεχομένων.",
+        "icon": "shield"
+      }
+    },
+    {
+      "id": "permission-map",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Map Local Permissions",
+        "path": "pages/en/practical/workspace/permission-map.html",
+        "module": "09 · Workspace Foundations",
+        "summary": "Read file ownership and access rules without changing system-wide security settings.",
+        "icon": "shield"
+      },
+      "el": {
+        "title": "Χαρτογράφηση Τοπικών Δικαιωμάτων",
+        "path": "pages/el/practical/workspace/permission-map.html",
+        "module": "09 · Θεμέλια Χώρου Εργασίας",
+        "summary": "Διάβασε ιδιοκτησία και κανόνες πρόσβασης χωρίς αλλαγή ρυθμίσεων ασφαλείας συστήματος.",
+        "icon": "shield"
+      }
+    },
+    {
+      "id": "path-navigation",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Navigate Without Losing Context",
+        "path": "pages/en/practical/terminal/path-navigation.html",
+        "module": "10 · Terminal & Files",
+        "summary": "Move through nested directories confidently and recover from path mistakes.",
+        "icon": "terminal"
+      },
+      "el": {
+        "title": "Πλοήγηση Χωρίς Απώλεια Προσανατολισμού",
+        "path": "pages/el/practical/terminal/path-navigation.html",
+        "module": "10 · Terminal και Αρχεία",
+        "summary": "Κινήσου με σιγουριά σε ένθετους φακέλους και διόρθωσε λάθη διαδρομών.",
+        "icon": "terminal"
+      }
+    },
+    {
+      "id": "file-discovery",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Find Evidence by Metadata",
+        "path": "pages/en/practical/terminal/file-discovery.html",
+        "module": "10 · Terminal & Files",
+        "summary": "Locate files by name, type, size and modification time in a controlled dataset.",
+        "icon": "terminal"
+      },
+      "el": {
+        "title": "Εντοπισμός Τεκμηρίων από Μεταδεδομένα",
+        "path": "pages/el/practical/terminal/file-discovery.html",
+        "module": "10 · Terminal και Αρχεία",
+        "summary": "Εντόπισε αρχεία με όνομα, τύπο, μέγεθος και χρόνο αλλαγής σε ελεγχόμενο dataset.",
+        "icon": "terminal"
+      }
+    },
+    {
+      "id": "text-triage",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Triage Large Text Files",
+        "path": "pages/en/practical/terminal/text-triage.html",
+        "module": "10 · Terminal & Files",
+        "summary": "Inspect unfamiliar text efficiently without opening everything in an editor.",
+        "icon": "terminal"
+      },
+      "el": {
+        "title": "Διαλογή Μεγάλων Αρχείων Κειμένου",
+        "path": "pages/el/practical/terminal/text-triage.html",
+        "module": "10 · Terminal και Αρχεία",
+        "summary": "Επιθεώρησε άγνωστο κείμενο αποδοτικά χωρίς πλήρες άνοιγμα σε editor.",
+        "icon": "terminal"
+      }
+    },
+    {
+      "id": "pipeline-builder",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Build Reproducible Pipelines",
+        "path": "pages/en/practical/terminal/pipeline-builder.html",
+        "module": "10 · Terminal & Files",
+        "summary": "Combine small commands into transparent data-processing pipelines.",
+        "icon": "terminal"
+      },
+      "el": {
+        "title": "Δημιουργία Επαναλήψιμων Pipelines",
+        "path": "pages/el/practical/terminal/pipeline-builder.html",
+        "module": "10 · Terminal και Αρχεία",
+        "summary": "Συνδύασε μικρές εντολές σε διαφανή pipelines επεξεργασίας δεδομένων.",
+        "icon": "terminal"
+      }
+    },
+    {
+      "id": "process-observation",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Observe Local Processes",
+        "path": "pages/en/practical/terminal/process-observation.html",
+        "module": "10 · Terminal & Files",
+        "summary": "Understand what is running on your own device and how resource usage changes.",
+        "icon": "terminal"
+      },
+      "el": {
+        "title": "Παρατήρηση Τοπικών Διεργασιών",
+        "path": "pages/el/practical/terminal/process-observation.html",
+        "module": "10 · Terminal και Αρχεία",
+        "summary": "Κατανόησε τι εκτελείται στη δική σου συσκευή και πώς αλλάζει η χρήση πόρων.",
+        "icon": "terminal"
+      }
+    },
+    {
+      "id": "backup-recovery",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Test Backup and Recovery",
+        "path": "pages/en/practical/terminal/backup-recovery.html",
+        "module": "10 · Terminal & Files",
+        "summary": "Prove that a backup can actually restore a working practice directory.",
+        "icon": "terminal"
+      },
+      "el": {
+        "title": "Δοκιμή Αντιγράφου και Επαναφοράς",
+        "path": "pages/el/practical/terminal/backup-recovery.html",
+        "module": "10 · Terminal και Αρχεία",
+        "summary": "Απόδειξε ότι ένα αντίγραφο μπορεί πράγματι να επαναφέρει λειτουργικό φάκελο πρακτικής.",
+        "icon": "terminal"
+      }
+    },
+    {
+      "id": "interface-map",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Map Your Network Interfaces",
+        "path": "pages/en/practical/networking-practical/interface-map.html",
+        "module": "11 · Network Observation",
+        "summary": "Document the interfaces, addresses and routes visible on your own device.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Χαρτογράφηση Διεπαφών Δικτύου",
+        "path": "pages/el/practical/networking-practical/interface-map.html",
+        "module": "11 · Παρατήρηση Δικτύου",
+        "summary": "Κατέγραψε διεπαφές, διευθύνσεις και διαδρομές που φαίνονται στη δική σου συσκευή.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "dns-observation",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Trace DNS Answers",
+        "path": "pages/en/practical/networking-practical/dns-observation.html",
+        "module": "11 · Network Observation",
+        "summary": "Compare DNS answers, record types, caching and resolver behavior using public test names.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Ιχνηλάτηση Απαντήσεων DNS",
+        "path": "pages/el/practical/networking-practical/dns-observation.html",
+        "module": "11 · Παρατήρηση Δικτύου",
+        "summary": "Σύγκρινε απαντήσεις DNS, τύπους εγγραφών, caching και συμπεριφορά resolver με δημόσια test names.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "local-ports",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Audit Listening Ports Locally",
+        "path": "pages/en/practical/networking-practical/local-ports.html",
+        "module": "11 · Network Observation",
+        "summary": "Identify services listening on your device without probing other machines.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Έλεγχος Τοπικών Listening Ports",
+        "path": "pages/el/practical/networking-practical/local-ports.html",
+        "module": "11 · Παρατήρηση Δικτύου",
+        "summary": "Εντόπισε υπηρεσίες που ακούν στη συσκευή σου χωρίς probing άλλων μηχανημάτων.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "http-observation",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Inspect an HTTP Conversation",
+        "path": "pages/en/practical/networking-practical/http-observation.html",
+        "module": "11 · Network Observation",
+        "summary": "Observe request and response metadata for a site you own or a documentation endpoint.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Επιθεώρηση Συνομιλίας HTTP",
+        "path": "pages/el/practical/networking-practical/http-observation.html",
+        "module": "11 · Παρατήρηση Δικτύου",
+        "summary": "Παρατήρησε μεταδεδομένα request και response για δικό σου site ή documentation endpoint.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "packet-reasoning",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Reason from Packet Metadata",
+        "path": "pages/en/practical/networking-practical/packet-reasoning.html",
+        "module": "11 · Network Observation",
+        "summary": "Interpret a supplied packet summary without intercepting private communications.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Συλλογισμός από Μεταδεδομένα Πακέτων",
+        "path": "pages/el/practical/networking-practical/packet-reasoning.html",
+        "module": "11 · Παρατήρηση Δικτύου",
+        "summary": "Ερμήνευσε δοσμένη περίληψη πακέτων χωρίς υποκλοπή ιδιωτικών επικοινωνιών.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "network-baseline",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Build a Personal Network Baseline",
+        "path": "pages/en/practical/networking-practical/network-baseline.html",
+        "module": "11 · Network Observation",
+        "summary": "Measure normal local activity so future differences have context.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Δημιουργία Προσωπικής Βάσης Δικτύου",
+        "path": "pages/el/practical/networking-practical/network-baseline.html",
+        "module": "11 · Παρατήρηση Δικτύου",
+        "summary": "Μέτρησε τη φυσιολογική τοπική δραστηριότητα ώστε οι μελλοντικές διαφορές να έχουν πλαίσιο.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "cli-arguments",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Build a Reliable CLI",
+        "path": "pages/en/practical/python-automation/cli-arguments.html",
+        "module": "12 · Python Automation",
+        "summary": "Write a Python command-line tool that validates input and fails clearly.",
+        "icon": "code"
+      },
+      "el": {
+        "title": "Δημιουργία Αξιόπιστου CLI",
+        "path": "pages/el/practical/python-automation/cli-arguments.html",
+        "module": "12 · Αυτοματισμοί Python",
+        "summary": "Γράψε εργαλείο Python γραμμής εντολών που ελέγχει input και αποτυγχάνει καθαρά.",
+        "icon": "code"
+      }
+    },
+    {
+      "id": "file-organizer",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Create a Safe File Organizer",
+        "path": "pages/en/practical/python-automation/file-organizer.html",
+        "module": "12 · Python Automation",
+        "summary": "Organize copied sample files by extension without overwriting originals.",
+        "icon": "code"
+      },
+      "el": {
+        "title": "Δημιουργία Ασφαλούς Οργανωτή Αρχείων",
+        "path": "pages/el/practical/python-automation/file-organizer.html",
+        "module": "12 · Αυτοματισμοί Python",
+        "summary": "Οργάνωσε αντίγραφα δειγμάτων ανά extension χωρίς αντικατάσταση πρωτοτύπων.",
+        "icon": "code"
+      }
+    },
+    {
+      "id": "log-parser",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Parse Structured Logs",
+        "path": "pages/en/practical/python-automation/log-parser.html",
+        "module": "12 · Python Automation",
+        "summary": "Convert a mixed sample log into normalized records and useful counts.",
+        "icon": "code"
+      },
+      "el": {
+        "title": "Ανάλυση Δομημένων Logs",
+        "path": "pages/el/practical/python-automation/log-parser.html",
+        "module": "12 · Αυτοματισμοί Python",
+        "summary": "Μετέτρεψε μικτό sample log σε κανονικοποιημένες εγγραφές και χρήσιμες μετρήσεις.",
+        "icon": "code"
+      }
+    },
+    {
+      "id": "integrity-monitor",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Implement an Integrity Monitor",
+        "path": "pages/en/practical/python-automation/integrity-monitor.html",
+        "module": "12 · Python Automation",
+        "summary": "Build a small program that compares a directory with a trusted hash manifest.",
+        "icon": "code"
+      },
+      "el": {
+        "title": "Υλοποίηση Integrity Monitor",
+        "path": "pages/el/practical/python-automation/integrity-monitor.html",
+        "module": "12 · Αυτοματισμοί Python",
+        "summary": "Δημιούργησε μικρό πρόγραμμα που συγκρίνει φάκελο με έμπιστο hash manifest.",
+        "icon": "code"
+      }
+    },
+    {
+      "id": "header-checker",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Build an HTTP Header Checker",
+        "path": "pages/en/practical/python-automation/header-checker.html",
+        "module": "12 · Python Automation",
+        "summary": "Inspect response headers for URLs you own or approved documentation targets.",
+        "icon": "code"
+      },
+      "el": {
+        "title": "Δημιουργία HTTP Header Checker",
+        "path": "pages/el/practical/python-automation/header-checker.html",
+        "module": "12 · Αυτοματισμοί Python",
+        "summary": "Επιθεώρησε response headers για δικά σου URLs ή εγκεκριμένους documentation targets.",
+        "icon": "code"
+      }
+    },
+    {
+      "id": "report-generator",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Generate an Evidence Report",
+        "path": "pages/en/practical/python-automation/report-generator.html",
+        "module": "12 · Python Automation",
+        "summary": "Transform structured findings into a readable Markdown report.",
+        "icon": "code"
+      },
+      "el": {
+        "title": "Δημιουργία Αναφοράς Τεκμηρίων",
+        "path": "pages/el/practical/python-automation/report-generator.html",
+        "module": "12 · Αυτοματισμοί Python",
+        "summary": "Μετέτρεψε δομημένα ευρήματα σε κατανοητή αναφορά Markdown.",
+        "icon": "code"
+      }
+    },
+    {
+      "id": "request-anatomy",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Reconstruct a Web Request",
+        "path": "pages/en/practical/web-defence/request-anatomy.html",
+        "module": "13 · Web & Secure Coding",
+        "summary": "Break down a supplied request into method, path, headers, body and trust boundaries.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Ανακατασκευή Web Request",
+        "path": "pages/el/practical/web-defence/request-anatomy.html",
+        "module": "13 · Web και Ασφαλής Κώδικας",
+        "summary": "Ανάλυσε δοσμένο request σε method, path, headers, body και trust boundaries.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "session-model",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Model Cookies and Sessions",
+        "path": "pages/en/practical/web-defence/session-model.html",
+        "module": "13 · Web & Secure Coding",
+        "summary": "Create a defensive model of login state using a local toy application or supplied traces.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Μοντελοποίηση Cookies και Sessions",
+        "path": "pages/el/practical/web-defence/session-model.html",
+        "module": "13 · Web και Ασφαλής Κώδικας",
+        "summary": "Δημιούργησε αμυντικό μοντέλο login state με τοπική toy εφαρμογή ή δοσμένα traces.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "input-validation",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Design Input Validation",
+        "path": "pages/en/practical/web-defence/input-validation.html",
+        "module": "13 · Web & Secure Coding",
+        "summary": "Define explicit acceptance rules for a small local form or CLI endpoint.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Σχεδίαση Ελέγχου Εισόδου",
+        "path": "pages/el/practical/web-defence/input-validation.html",
+        "module": "13 · Web και Ασφαλής Κώδικας",
+        "summary": "Όρισε ρητούς κανόνες αποδοχής για μικρή τοπική φόρμα ή CLI endpoint.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "security-headers",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Harden Response Headers",
+        "path": "pages/en/practical/web-defence/security-headers.html",
+        "module": "13 · Web & Secure Coding",
+        "summary": "Review and improve headers in a local sample server you control.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Θωράκιση Response Headers",
+        "path": "pages/el/practical/web-defence/security-headers.html",
+        "module": "13 · Web και Ασφαλής Κώδικας",
+        "summary": "Έλεγξε και βελτίωσε headers σε τοπικό sample server που ελέγχεις.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "local-code-review",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Review a Local Web Handler",
+        "path": "pages/en/practical/web-defence/local-code-review.html",
+        "module": "13 · Web & Secure Coding",
+        "summary": "Read a deliberately simple local handler and identify defensive improvements.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Έλεγχος Τοπικού Web Handler",
+        "path": "pages/el/practical/web-defence/local-code-review.html",
+        "module": "13 · Web και Ασφαλής Κώδικας",
+        "summary": "Διάβασε σκόπιμα απλό τοπικό handler και βρες αμυντικές βελτιώσεις.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "threat-model",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Threat-Model a Small Service",
+        "path": "pages/en/practical/web-defence/threat-model.html",
+        "module": "13 · Web & Secure Coding",
+        "summary": "Map assets, actors, entry points and controls for a fictional local service.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Threat Modeling Μικρής Υπηρεσίας",
+        "path": "pages/el/practical/web-defence/threat-model.html",
+        "module": "13 · Web και Ασφαλής Κώδικας",
+        "summary": "Χαρτογράφησε assets, actors, entry points και controls για φανταστική τοπική υπηρεσία.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "log-normalization",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Normalize Heterogeneous Logs",
+        "path": "pages/en/practical/monitoring/log-normalization.html",
+        "module": "14 · Defensive Monitoring",
+        "summary": "Bring several supplied log formats into one consistent event model.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Κανονικοποίηση Ετερογενών Logs",
+        "path": "pages/el/practical/monitoring/log-normalization.html",
+        "module": "14 · Αμυντική Παρακολούθηση",
+        "summary": "Μετέφερε διαφορετικά δοσμένα log formats σε ενιαίο μοντέλο συμβάντων.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "failed-login-analysis",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Analyze Failed Logins",
+        "path": "pages/en/practical/monitoring/failed-login-analysis.html",
+        "module": "14 · Defensive Monitoring",
+        "summary": "Investigate a synthetic authentication dataset for patterns and benign explanations.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Ανάλυση Αποτυχημένων Συνδέσεων",
+        "path": "pages/el/practical/monitoring/failed-login-analysis.html",
+        "module": "14 · Αμυντική Παρακολούθηση",
+        "summary": "Διερεύνησε συνθετικό authentication dataset για μοτίβα και αθώες εξηγήσεις.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "ioc-matching",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Match Indicators Carefully",
+        "path": "pages/en/practical/monitoring/ioc-matching.html",
+        "module": "14 · Defensive Monitoring",
+        "summary": "Compare a supplied indicator list with local synthetic events while controlling false matches.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Προσεκτική Αντιστοίχιση Δεικτών",
+        "path": "pages/el/practical/monitoring/ioc-matching.html",
+        "module": "14 · Αμυντική Παρακολούθηση",
+        "summary": "Σύγκρινε δοσμένη λίστα indicators με τοπικά συνθετικά events ελέγχοντας false matches.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "change-triage",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Triage File Changes",
+        "path": "pages/en/practical/monitoring/change-triage.html",
+        "module": "14 · Defensive Monitoring",
+        "summary": "Classify changes reported by the integrity-monitor lab in a simulated incident.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Διαλογή Αλλαγών Αρχείων",
+        "path": "pages/el/practical/monitoring/change-triage.html",
+        "module": "14 · Αμυντική Παρακολούθηση",
+        "summary": "Ταξινόμησε αλλαγές από το integrity-monitor lab σε προσομοιωμένο περιστατικό.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "incident-timeline",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Construct an Incident Timeline",
+        "path": "pages/en/practical/monitoring/incident-timeline.html",
+        "module": "14 · Defensive Monitoring",
+        "summary": "Merge synthetic file, authentication and network events into a defensible sequence.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Δημιουργία Χρονογραμμής Περιστατικού",
+        "path": "pages/el/practical/monitoring/incident-timeline.html",
+        "module": "14 · Αμυντική Παρακολούθηση",
+        "summary": "Συνδύασε συνθετικά file, authentication και network events σε τεκμηριωμένη ακολουθία.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "detection-rule",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Write and Test a Detection Rule",
+        "path": "pages/en/practical/monitoring/detection-rule.html",
+        "module": "14 · Defensive Monitoring",
+        "summary": "Create a transparent local rule for one pattern in the synthetic dataset.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Σύνταξη και Δοκιμή Detection Rule",
+        "path": "pages/el/practical/monitoring/detection-rule.html",
+        "module": "14 · Αμυντική Παρακολούθηση",
+        "summary": "Δημιούργησε διαφανή τοπικό κανόνα για ένα μοτίβο στο συνθετικό dataset.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "password-policy",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Evaluate a Password Policy",
+        "path": "pages/en/practical/hardening/password-policy.html",
+        "module": "15 · Identity & Hardening",
+        "summary": "Assess a fictional organization's password and recovery rules against practical risks.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Αξιολόγηση Πολιτικής Κωδικών",
+        "path": "pages/el/practical/hardening/password-policy.html",
+        "module": "15 · Ταυτότητα και Θωράκιση",
+        "summary": "Αξιολόγησε κανόνες password και recovery φανταστικού οργανισμού απέναντι σε πρακτικούς κινδύνους.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "privilege-audit",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Audit Local Privileges",
+        "path": "pages/en/practical/hardening/privilege-audit.html",
+        "module": "15 · Identity & Hardening",
+        "summary": "Review accounts and privileged groups on a device you administer.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Έλεγχος Τοπικών Προνομίων",
+        "path": "pages/el/practical/hardening/privilege-audit.html",
+        "module": "15 · Ταυτότητα και Θωράκιση",
+        "summary": "Έλεγξε λογαριασμούς και privileged groups σε συσκευή που διαχειρίζεσαι.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "service-exposure",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Review Service Exposure",
+        "path": "pages/en/practical/hardening/service-exposure.html",
+        "module": "15 · Identity & Hardening",
+        "summary": "Combine local listeners, startup configuration and firewall context on your own device.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Έλεγχος Έκθεσης Υπηρεσιών",
+        "path": "pages/el/practical/hardening/service-exposure.html",
+        "module": "15 · Ταυτότητα και Θωράκιση",
+        "summary": "Συνδύασε local listeners, startup configuration και firewall context στη δική σου συσκευή.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "hardening-plan",
+      "kind": "practical",
+      "hours": 3,
+      "en": {
+        "title": "Produce a Device Hardening Plan",
+        "path": "pages/en/practical/hardening/hardening-plan.html",
+        "module": "15 · Identity & Hardening",
+        "summary": "Turn the academy findings into prioritized, device-specific defensive work.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Δημιουργία Σχεδίου Θωράκισης Συσκευής",
+        "path": "pages/el/practical/hardening/hardening-plan.html",
+        "module": "15 · Ταυτότητα και Θωράκιση",
+        "summary": "Μετέτρεψε τα ευρήματα της ακαδημίας σε ιεραρχημένη, device-specific αμυντική εργασία.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "capstone-baseline",
+      "kind": "practical",
+      "hours": 4,
+      "en": {
+        "title": "Capstone: Establish the Baseline",
+        "path": "pages/en/practical/capstone/capstone-baseline.html",
+        "module": "16 · Capstone Missions",
+        "summary": "Create a complete, privacy-aware baseline of the supplied fictional workstation.",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Capstone: Δημιουργία Baseline",
+        "path": "pages/el/practical/capstone/capstone-baseline.html",
+        "module": "16 · Τελικές Αποστολές",
+        "summary": "Δημιούργησε πλήρη, privacy-aware baseline του δοσμένου φανταστικού workstation.",
+        "icon": "award"
+      }
+    },
+    {
+      "id": "capstone-incident",
+      "kind": "practical",
+      "hours": 4,
+      "en": {
+        "title": "Capstone: Investigate the Incident",
+        "path": "pages/en/practical/capstone/capstone-incident.html",
+        "module": "16 · Capstone Missions",
+        "summary": "Analyze the supplied synthetic incident without altering the source evidence.",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Capstone: Διερεύνηση Περιστατικού",
+        "path": "pages/el/practical/capstone/capstone-incident.html",
+        "module": "16 · Τελικές Αποστολές",
+        "summary": "Ανάλυσε το δοσμένο συνθετικό περιστατικό χωρίς αλλαγή source evidence.",
+        "icon": "award"
+      }
+    },
+    {
+      "id": "capstone-portfolio",
+      "kind": "practical",
+      "hours": 4,
+      "en": {
+        "title": "Capstone: Publish the Portfolio",
+        "path": "pages/en/practical/capstone/capstone-portfolio.html",
+        "module": "16 · Capstone Missions",
+        "summary": "Convert the completed work into a clear portfolio that demonstrates process, not secrets.",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Capstone: Δημιουργία Portfolio",
+        "path": "pages/el/practical/capstone/capstone-portfolio.html",
+        "module": "16 · Τελικές Αποστολές",
+        "summary": "Μετέτρεψε την ολοκληρωμένη εργασία σε σαφές portfolio που δείχνει διαδικασία, όχι secrets.",
+        "icon": "award"
       }
     }
   ]

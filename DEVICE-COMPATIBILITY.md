@@ -1,20 +1,19 @@
-# Device Compatibility
+# Device compatibility
 
-| Feature | Windows | Linux | Android + Termux | Website only |
+| Capability | Windows | Linux | Android + Termux | Website only |
 |---|---|---|---|---|
-| Educational lessons | Yes | Yes | Yes | Yes |
-| English/Greek switch | Yes | Yes | Yes | Yes |
-| Blue light/dark themes | Yes | Yes | Yes | Yes |
-| Top navigation search | Yes | Yes | Yes | Yes |
+| English and Greek lessons | Yes | Yes | Yes | Yes |
+| 43-lab, 126-hour practical track | Yes | Yes | Yes, with documented alternatives | Explanations only |
 | Local `academy.py` progress | Yes | Yes | Yes | No |
-| Python exercises | Native Python or WSL | Native Python | Termux Python | Explanation only |
-| Portable shell tasks | PowerShell/WSL | Native shell | Most tasks | Explanation only |
-| x86-64 challenge binaries | WSL compatibility varies | Yes on x86-64 | Usually no on ARM | No |
-| Virtual machine labs | Supported | Supported where available | Not normally | Explanation only |
-| Local educational site | `academy.py serve` | `academy.py serve` | `academy.py serve` | GitHub Pages |
+| Workspace generator | `py academy.py prepare LAB_ID` | `python3 academy.py prepare LAB_ID` | `python academy.py prepare LAB_ID` | No |
+| Python automation labs | Native Python or WSL | Native Python | Termux Python | No |
+| Shell and file labs | PowerShell or WSL | Native shell | Termux shell | No |
+| x86-64 bundled binaries | WSL compatibility varies | x86-64 Linux only | Usually unavailable on ARM | No |
+| Virtual-machine work | Supported | Supported where virtualization exists | Use a separate PC or safe alternative | No |
+| Local academy server | `py academy.py serve` | `python3 academy.py serve` | `python academy.py serve` | GitHub Pages |
 
-## Design boundary
+## Boundary
 
-The website does not provide a simulated terminal, execute commands, access local files or store practical progress. Learners run the included programs in their own terminal. The local academy program stores progress under the current user's home directory.
+The website is an educational interface. It does not simulate a terminal, execute commands, access local files or save practical progress. Programs, sample data, evidence and completion records stay on the learner's device.
 
-The local web server binds to `127.0.0.1` by default, so it is accessible only from the current device.
+The local server binds to `127.0.0.1` by default, so it is visible only to the current device unless the learner deliberately changes the host option.

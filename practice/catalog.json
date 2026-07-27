@@ -1,0 +1,1339 @@
+{
+  "version": 1,
+  "hours": 126,
+  "labs": [
+    {
+      "id": "environment-inventory",
+      "module": "workspace",
+      "hours": 2,
+      "en": {
+        "title": "Build a Device Inventory",
+        "summary": "Identify the operating system, architecture, shell, Python version and storage available for the academy.",
+        "deliverable": "A dated device-inventory.md with command output and compatibility notes.",
+        "tasks": [
+          "Record OS and architecture without exposing serial numbers",
+          "Compare the available shells and Python launch commands",
+          "Measure free space and choose a dedicated academy folder",
+          "Write one limitation and one safe workaround"
+        ],
+        "module": "Workspace Foundations"
+      },
+      "el": {
+        "title": "Καταγραφή της Συσκευής σου",
+        "summary": "Εντόπισε λειτουργικό σύστημα, αρχιτεκτονική, shell, έκδοση Python και διαθέσιμο χώρο.",
+        "deliverable": "Ένα χρονολογημένο device-inventory.md με αποτελέσματα εντολών και σημειώσεις συμβατότητας.",
+        "tasks": [
+          "Κατέγραψε λειτουργικό και αρχιτεκτονική χωρίς σειριακούς αριθμούς",
+          "Σύγκρινε τα διαθέσιμα shells και τις εντολές εκκίνησης Python",
+          "Μέτρησε τον ελεύθερο χώρο και επίλεξε φάκελο ακαδημίας",
+          "Γράψε έναν περιορισμό και μία ασφαλή λύση"
+        ],
+        "module": "Θεμέλια Χώρου Εργασίας"
+      },
+      "icon": "shield",
+      "number": "09"
+    },
+    {
+      "id": "safe-workspace",
+      "module": "workspace",
+      "hours": 2,
+      "en": {
+        "title": "Create an Isolated Workspace",
+        "summary": "Organize a local workspace that separates source files, evidence, notes and disposable output.",
+        "deliverable": "A documented folder tree with read-only source copies and a cleanup plan.",
+        "tasks": [
+          "Create source, working, evidence and reports directories",
+          "Copy a harmless sample into source and protect the original",
+          "Document where temporary files may be deleted safely",
+          "Test the cleanup plan without removing evidence"
+        ],
+        "module": "Workspace Foundations"
+      },
+      "el": {
+        "title": "Δημιουργία Απομονωμένου Χώρου",
+        "summary": "Οργάνωσε τοπικό χώρο που διαχωρίζει πηγαία αρχεία, τεκμήρια, σημειώσεις και προσωρινά αποτελέσματα.",
+        "deliverable": "Τεκμηριωμένη δομή φακέλων με αντίγραφα μόνο για ανάγνωση και σχέδιο καθαρισμού.",
+        "tasks": [
+          "Δημιούργησε φακέλους source, working, evidence και reports",
+          "Αντέγραψε ασφαλές δείγμα στο source και προστάτευσε το πρωτότυπο",
+          "Κατέγραψε πού μπορούν να διαγραφούν προσωρινά αρχεία",
+          "Δοκίμασε το σχέδιο καθαρισμού χωρίς απώλεια τεκμηρίων"
+        ],
+        "module": "Θεμέλια Χώρου Εργασίας"
+      },
+      "icon": "shield",
+      "number": "09"
+    },
+    {
+      "id": "analyst-notebook",
+      "module": "workspace",
+      "hours": 2,
+      "en": {
+        "title": "Design an Analyst Notebook",
+        "summary": "Create a note format that separates observations, assumptions, commands, results and decisions.",
+        "deliverable": "A reusable notebook template plus one completed example entry.",
+        "tasks": [
+          "Define fields for time, source, action and result",
+          "Mark facts separately from interpretation",
+          "Record a failed command and the correction",
+          "Review the entry so another learner can reproduce it"
+        ],
+        "module": "Workspace Foundations"
+      },
+      "el": {
+        "title": "Σχεδίαση Ημερολογίου Αναλυτή",
+        "summary": "Δημιούργησε μορφή σημειώσεων που χωρίζει παρατηρήσεις, υποθέσεις, εντολές, αποτελέσματα και αποφάσεις.",
+        "deliverable": "Επαναχρησιμοποιήσιμο πρότυπο ημερολογίου και μία συμπληρωμένη εγγραφή.",
+        "tasks": [
+          "Όρισε πεδία για χρόνο, πηγή, ενέργεια και αποτέλεσμα",
+          "Χώρισε τα γεγονότα από την ερμηνεία",
+          "Κατέγραψε αποτυχημένη εντολή και τη διόρθωση",
+          "Έλεγξε αν άλλος μαθητής μπορεί να αναπαράγει την εργασία"
+        ],
+        "module": "Θεμέλια Χώρου Εργασίας"
+      },
+      "icon": "shield",
+      "number": "09"
+    },
+    {
+      "id": "hash-baseline",
+      "module": "workspace",
+      "hours": 2,
+      "en": {
+        "title": "Create a File Hash Baseline",
+        "summary": "Use cryptographic hashes to recognize later changes in a controlled set of files.",
+        "deliverable": "A baseline manifest and a comparison report showing one intentional change.",
+        "tasks": [
+          "Generate SHA-256 values for the sample directory",
+          "Store paths and hashes in a stable text format",
+          "Modify one copy and rerun the measurement",
+          "Explain what a hash proves and what it cannot prove"
+        ],
+        "module": "Workspace Foundations"
+      },
+      "el": {
+        "title": "Δημιουργία Βάσης Hash Αρχείων",
+        "summary": "Χρησιμοποίησε κρυπτογραφικά hashes για αναγνώριση μεταβολών σε ελεγχόμενο σύνολο αρχείων.",
+        "deliverable": "Manifest βάσης και αναφορά σύγκρισης με μία σκόπιμη αλλαγή.",
+        "tasks": [
+          "Δημιούργησε SHA-256 για τον φάκελο δείγματος",
+          "Αποθήκευσε διαδρομές και hashes σε σταθερή μορφή",
+          "Άλλαξε ένα αντίγραφο και επανάλαβε τη μέτρηση",
+          "Εξήγησε τι αποδεικνύει και τι δεν αποδεικνύει ένα hash"
+        ],
+        "module": "Θεμέλια Χώρου Εργασίας"
+      },
+      "icon": "shield",
+      "number": "09"
+    },
+    {
+      "id": "archive-evidence",
+      "module": "workspace",
+      "hours": 2,
+      "en": {
+        "title": "Package Evidence Reliably",
+        "summary": "Create portable archives while preserving a clear inventory of their contents.",
+        "deliverable": "A ZIP or TAR archive, inventory, checksum and successful restore test.",
+        "tasks": [
+          "Prepare a small evidence collection with neutral filenames",
+          "Archive it using the native tool for your device",
+          "Hash the archive and list its contents without extraction",
+          "Restore into a new folder and compare the result"
+        ],
+        "module": "Workspace Foundations"
+      },
+      "el": {
+        "title": "Αξιόπιστη Συσκευασία Τεκμηρίων",
+        "summary": "Δημιούργησε φορητά αρχεία συμπίεσης διατηρώντας σαφή απογραφή περιεχομένων.",
+        "deliverable": "ZIP ή TAR, απογραφή, checksum και επιτυχής δοκιμή επαναφοράς.",
+        "tasks": [
+          "Ετοίμασε μικρή συλλογή τεκμηρίων με ουδέτερα ονόματα",
+          "Συμπίεσέ την με το εγγενές εργαλείο της συσκευής",
+          "Υπολόγισε hash και δες τα περιεχόμενα χωρίς αποσυμπίεση",
+          "Επανέφερε σε νέο φάκελο και σύγκρινε το αποτέλεσμα"
+        ],
+        "module": "Θεμέλια Χώρου Εργασίας"
+      },
+      "icon": "shield",
+      "number": "09"
+    },
+    {
+      "id": "permission-map",
+      "module": "workspace",
+      "hours": 2,
+      "en": {
+        "title": "Map Local Permissions",
+        "summary": "Read file ownership and access rules without changing system-wide security settings.",
+        "deliverable": "A permission matrix for the academy workspace and two justified corrections.",
+        "tasks": [
+          "Inspect permissions on source, working and evidence folders",
+          "Identify where write access is broader than necessary",
+          "Apply a safer permission to a disposable test file",
+          "Verify the intended user can still complete the task"
+        ],
+        "module": "Workspace Foundations"
+      },
+      "el": {
+        "title": "Χαρτογράφηση Τοπικών Δικαιωμάτων",
+        "summary": "Διάβασε ιδιοκτησία και κανόνες πρόσβασης χωρίς αλλαγή ρυθμίσεων ασφαλείας συστήματος.",
+        "deliverable": "Πίνακας δικαιωμάτων για τον χώρο ακαδημίας και δύο αιτιολογημένες διορθώσεις.",
+        "tasks": [
+          "Επιθεώρησε δικαιώματα στους φακέλους source, working και evidence",
+          "Βρες πού η εγγραφή είναι ευρύτερη από όσο χρειάζεται",
+          "Εφάρμοσε ασφαλέστερο δικαίωμα σε προσωρινό αρχείο",
+          "Επιβεβαίωσε ότι ο σωστός χρήστης συνεχίζει να εργάζεται"
+        ],
+        "module": "Θεμέλια Χώρου Εργασίας"
+      },
+      "icon": "shield",
+      "number": "09"
+    },
+    {
+      "id": "path-navigation",
+      "module": "terminal",
+      "hours": 3,
+      "en": {
+        "title": "Navigate Without Losing Context",
+        "summary": "Move through nested directories confidently and recover from path mistakes.",
+        "deliverable": "A command transcript that reaches six targets using absolute and relative paths.",
+        "tasks": [
+          "Build a nested practice tree from the supplied blueprint",
+          "Reach each target first with an absolute path",
+          "Repeat using relative paths and parent references",
+          "Explain the safest way to confirm location before deletion"
+        ],
+        "module": "Terminal & Files"
+      },
+      "el": {
+        "title": "Πλοήγηση Χωρίς Απώλεια Προσανατολισμού",
+        "summary": "Κινήσου με σιγουριά σε ένθετους φακέλους και διόρθωσε λάθη διαδρομών.",
+        "deliverable": "Καταγραφή εντολών που φτάνει έξι στόχους με απόλυτες και σχετικές διαδρομές.",
+        "tasks": [
+          "Δημιούργησε ένθετη δομή από το δοσμένο σχέδιο",
+          "Φτάσε κάθε στόχο με απόλυτη διαδρομή",
+          "Επανάλαβε με σχετικές διαδρομές και αναφορές γονέα",
+          "Εξήγησε τον ασφαλέστερο έλεγχο θέσης πριν από διαγραφή"
+        ],
+        "module": "Terminal και Αρχεία"
+      },
+      "icon": "terminal",
+      "number": "10"
+    },
+    {
+      "id": "file-discovery",
+      "module": "terminal",
+      "hours": 3,
+      "en": {
+        "title": "Find Evidence by Metadata",
+        "summary": "Locate files by name, type, size and modification time in a controlled dataset.",
+        "deliverable": "A search worksheet with queries, hit counts and false-positive notes.",
+        "tasks": [
+          "Find all files matching three naming patterns",
+          "Filter candidates by size and recent modification",
+          "Separate directories, regular files and symbolic links",
+          "Document why one broad query produced misleading matches"
+        ],
+        "module": "Terminal & Files"
+      },
+      "el": {
+        "title": "Εντοπισμός Τεκμηρίων από Μεταδεδομένα",
+        "summary": "Εντόπισε αρχεία με όνομα, τύπο, μέγεθος και χρόνο αλλαγής σε ελεγχόμενο dataset.",
+        "deliverable": "Φύλλο αναζήτησης με ερωτήματα, πλήθος ευρημάτων και ψευδώς θετικά.",
+        "tasks": [
+          "Βρες αρχεία που ταιριάζουν σε τρία μοτίβα ονομάτων",
+          "Φίλτραρε υποψηφίους με μέγεθος και πρόσφατη αλλαγή",
+          "Ξεχώρισε φακέλους, κανονικά αρχεία και συμβολικούς συνδέσμους",
+          "Κατέγραψε γιατί ένα ευρύ ερώτημα έδωσε παραπλανητικά ευρήματα"
+        ],
+        "module": "Terminal και Αρχεία"
+      },
+      "icon": "terminal",
+      "number": "10"
+    },
+    {
+      "id": "text-triage",
+      "module": "terminal",
+      "hours": 3,
+      "en": {
+        "title": "Triage Large Text Files",
+        "summary": "Inspect unfamiliar text efficiently without opening everything in an editor.",
+        "deliverable": "A triage report identifying structure, suspicious lines and data quality issues.",
+        "tasks": [
+          "Count lines and inspect the beginning and end safely",
+          "Search case-insensitively for a supplied indicator list",
+          "Extract surrounding context for each meaningful hit",
+          "Distinguish malformed records from genuinely notable events"
+        ],
+        "module": "Terminal & Files"
+      },
+      "el": {
+        "title": "Διαλογή Μεγάλων Αρχείων Κειμένου",
+        "summary": "Επιθεώρησε άγνωστο κείμενο αποδοτικά χωρίς πλήρες άνοιγμα σε editor.",
+        "deliverable": "Αναφορά διαλογής με δομή, ύποπτες γραμμές και προβλήματα ποιότητας.",
+        "tasks": [
+          "Μέτρησε γραμμές και έλεγξε αρχή και τέλος με ασφάλεια",
+          "Αναζήτησε χωρίς διάκριση πεζών-κεφαλαίων δοσμένους δείκτες",
+          "Εξήγαγε συμφραζόμενα γύρω από κάθε ουσιαστικό εύρημα",
+          "Ξεχώρισε κακοσχηματισμένες εγγραφές από σημαντικά συμβάντα"
+        ],
+        "module": "Terminal και Αρχεία"
+      },
+      "icon": "terminal",
+      "number": "10"
+    },
+    {
+      "id": "pipeline-builder",
+      "module": "terminal",
+      "hours": 3,
+      "en": {
+        "title": "Build Reproducible Pipelines",
+        "summary": "Combine small commands into transparent data-processing pipelines.",
+        "deliverable": "Three annotated pipelines that transform raw records into concise summaries.",
+        "tasks": [
+          "Extract one field from a delimited sample",
+          "Normalize capitalization and remove empty values",
+          "Sort and count recurring values deterministically",
+          "Save the final pipeline and explain every stage"
+        ],
+        "module": "Terminal & Files"
+      },
+      "el": {
+        "title": "Δημιουργία Επαναλήψιμων Pipelines",
+        "summary": "Συνδύασε μικρές εντολές σε διαφανή pipelines επεξεργασίας δεδομένων.",
+        "deliverable": "Τρία σχολιασμένα pipelines που μετατρέπουν ακατέργαστες εγγραφές σε περιλήψεις.",
+        "tasks": [
+          "Εξήγαγε ένα πεδίο από οριοθετημένο δείγμα",
+          "Κανονικοποίησε πεζά-κεφαλαία και αφαίρεσε κενές τιμές",
+          "Ταξινόμησε και μέτρησε επαναλήψεις με σταθερό τρόπο",
+          "Αποθήκευσε το pipeline και εξήγησε κάθε στάδιο"
+        ],
+        "module": "Terminal και Αρχεία"
+      },
+      "icon": "terminal",
+      "number": "10"
+    },
+    {
+      "id": "process-observation",
+      "module": "terminal",
+      "hours": 3,
+      "en": {
+        "title": "Observe Local Processes",
+        "summary": "Understand what is running on your own device and how resource usage changes.",
+        "deliverable": "A process snapshot comparing idle state with one controlled workload.",
+        "tasks": [
+          "Capture an idle process and memory snapshot",
+          "Start a harmless CPU or file-processing task",
+          "Identify the task by name, identifier and parent process",
+          "Stop only the process you created and verify recovery"
+        ],
+        "module": "Terminal & Files"
+      },
+      "el": {
+        "title": "Παρατήρηση Τοπικών Διεργασιών",
+        "summary": "Κατανόησε τι εκτελείται στη δική σου συσκευή και πώς αλλάζει η χρήση πόρων.",
+        "deliverable": "Στιγμιότυπο διεργασιών που συγκρίνει αδράνεια με ελεγχόμενο φόρτο.",
+        "tasks": [
+          "Κατέγραψε διεργασίες και μνήμη σε αδράνεια",
+          "Ξεκίνησε ασφαλή εργασία CPU ή επεξεργασίας αρχείων",
+          "Εντόπισε την εργασία από όνομα, αναγνωριστικό και γονική διεργασία",
+          "Σταμάτησε μόνο τη διεργασία που δημιούργησες και έλεγξε την επαναφορά"
+        ],
+        "module": "Terminal και Αρχεία"
+      },
+      "icon": "terminal",
+      "number": "10"
+    },
+    {
+      "id": "backup-recovery",
+      "module": "terminal",
+      "hours": 3,
+      "en": {
+        "title": "Test Backup and Recovery",
+        "summary": "Prove that a backup can actually restore a working practice directory.",
+        "deliverable": "A recovery record with backup time, restore steps, hash comparison and lessons learned.",
+        "tasks": [
+          "Create a versioned backup of the practice workspace",
+          "Delete only a disposable working copy",
+          "Restore to a separate recovery directory",
+          "Compare file count, hashes and expected permissions"
+        ],
+        "module": "Terminal & Files"
+      },
+      "el": {
+        "title": "Δοκιμή Αντιγράφου και Επαναφοράς",
+        "summary": "Απόδειξε ότι ένα αντίγραφο μπορεί πράγματι να επαναφέρει λειτουργικό φάκελο πρακτικής.",
+        "deliverable": "Καταγραφή επαναφοράς με χρόνο backup, βήματα, σύγκριση hash και συμπεράσματα.",
+        "tasks": [
+          "Δημιούργησε έκδοση backup του χώρου πρακτικής",
+          "Διέγραψε μόνο ένα προσωρινό working copy",
+          "Επανέφερε σε ξεχωριστό φάκελο recovery",
+          "Σύγκρινε πλήθος αρχείων, hashes και αναμενόμενα δικαιώματα"
+        ],
+        "module": "Terminal και Αρχεία"
+      },
+      "icon": "terminal",
+      "number": "10"
+    },
+    {
+      "id": "interface-map",
+      "module": "networking-practical",
+      "hours": 3,
+      "en": {
+        "title": "Map Your Network Interfaces",
+        "summary": "Document the interfaces, addresses and routes visible on your own device.",
+        "deliverable": "A redacted interface diagram with default route and address roles.",
+        "tasks": [
+          "List active and inactive interfaces",
+          "Classify loopback, private and link-local addresses",
+          "Identify the default route without publishing the public address",
+          "Draw how traffic leaves the device toward the local gateway"
+        ],
+        "module": "Network Observation"
+      },
+      "el": {
+        "title": "Χαρτογράφηση Διεπαφών Δικτύου",
+        "summary": "Κατέγραψε διεπαφές, διευθύνσεις και διαδρομές που φαίνονται στη δική σου συσκευή.",
+        "deliverable": "Αποπροσωποποιημένο διάγραμμα διεπαφών με προεπιλεγμένη διαδρομή και ρόλους διευθύνσεων.",
+        "tasks": [
+          "Κατάγραψε ενεργές και ανενεργές διεπαφές",
+          "Ταξινόμησε loopback, ιδιωτικές και link-local διευθύνσεις",
+          "Βρες την προεπιλεγμένη διαδρομή χωρίς δημοσίευση δημόσιας διεύθυνσης",
+          "Σχεδίασε πώς η κίνηση φεύγει προς την τοπική πύλη"
+        ],
+        "module": "Παρατήρηση Δικτύου"
+      },
+      "icon": "network",
+      "number": "11"
+    },
+    {
+      "id": "dns-observation",
+      "module": "networking-practical",
+      "hours": 3,
+      "en": {
+        "title": "Trace DNS Answers",
+        "summary": "Compare DNS answers, record types, caching and resolver behavior using public test names.",
+        "deliverable": "A DNS worksheet covering A, AAAA, CNAME, MX and TXT observations.",
+        "tasks": [
+          "Query a reserved or public documentation domain",
+          "Compare answers from the system resolver and one explicit resolver",
+          "Record time-to-live values and repeat after a short delay",
+          "Explain why an answer is useful evidence but not proof of trust"
+        ],
+        "module": "Network Observation"
+      },
+      "el": {
+        "title": "Ιχνηλάτηση Απαντήσεων DNS",
+        "summary": "Σύγκρινε απαντήσεις DNS, τύπους εγγραφών, caching και συμπεριφορά resolver με δημόσια test names.",
+        "deliverable": "Φύλλο DNS με παρατηρήσεις για A, AAAA, CNAME, MX και TXT.",
+        "tasks": [
+          "Κάνε ερώτημα σε δεσμευμένο ή δημόσιο documentation domain",
+          "Σύγκρινε τον resolver συστήματος με έναν ρητά επιλεγμένο resolver",
+          "Κατέγραψε TTL και επανάλαβε μετά από σύντομη αναμονή",
+          "Εξήγησε γιατί η απάντηση είναι τεκμήριο αλλά όχι απόδειξη εμπιστοσύνης"
+        ],
+        "module": "Παρατήρηση Δικτύου"
+      },
+      "icon": "network",
+      "number": "11"
+    },
+    {
+      "id": "local-ports",
+      "module": "networking-practical",
+      "hours": 3,
+      "en": {
+        "title": "Audit Listening Ports Locally",
+        "summary": "Identify services listening on your device without probing other machines.",
+        "deliverable": "A local exposure table with process, address, port and justified disposition.",
+        "tasks": [
+          "Capture listening TCP and UDP endpoints",
+          "Map each endpoint to its owning process where permitted",
+          "Distinguish loopback-only from network-accessible listeners",
+          "Close one unnecessary test service and confirm the port disappears"
+        ],
+        "module": "Network Observation"
+      },
+      "el": {
+        "title": "Έλεγχος Τοπικών Listening Ports",
+        "summary": "Εντόπισε υπηρεσίες που ακούν στη συσκευή σου χωρίς probing άλλων μηχανημάτων.",
+        "deliverable": "Πίνακας τοπικής έκθεσης με διεργασία, διεύθυνση, port και αιτιολογημένη απόφαση.",
+        "tasks": [
+          "Κατέγραψε TCP και UDP endpoints που ακούν",
+          "Σύνδεσε κάθε endpoint με τη διεργασία του όπου επιτρέπεται",
+          "Ξεχώρισε loopback-only από υπηρεσίες προσβάσιμες στο δίκτυο",
+          "Κλείσε μία περιττή δοκιμαστική υπηρεσία και επιβεβαίωσε ότι το port εξαφανίστηκε"
+        ],
+        "module": "Παρατήρηση Δικτύου"
+      },
+      "icon": "network",
+      "number": "11"
+    },
+    {
+      "id": "http-observation",
+      "module": "networking-practical",
+      "hours": 3,
+      "en": {
+        "title": "Inspect an HTTP Conversation",
+        "summary": "Observe request and response metadata for a site you own or a documentation endpoint.",
+        "deliverable": "An annotated transaction showing method, status, headers, redirects and timing.",
+        "tasks": [
+          "Send a HEAD request before downloading content",
+          "Follow and document a redirect chain",
+          "Compare selected security and caching headers",
+          "Save a redacted transcript that excludes cookies and tokens"
+        ],
+        "module": "Network Observation"
+      },
+      "el": {
+        "title": "Επιθεώρηση Συνομιλίας HTTP",
+        "summary": "Παρατήρησε μεταδεδομένα request και response για δικό σου site ή documentation endpoint.",
+        "deliverable": "Σχολιασμένη συναλλαγή με method, status, headers, redirects και timing.",
+        "tasks": [
+          "Στείλε HEAD request πριν τη λήψη περιεχομένου",
+          "Ακολούθησε και κατέγραψε αλυσίδα redirect",
+          "Σύγκρινε επιλεγμένα security και caching headers",
+          "Αποθήκευσε αποπροσωποποιημένο transcript χωρίς cookies και tokens"
+        ],
+        "module": "Παρατήρηση Δικτύου"
+      },
+      "icon": "network",
+      "number": "11"
+    },
+    {
+      "id": "packet-reasoning",
+      "module": "networking-practical",
+      "hours": 3,
+      "en": {
+        "title": "Reason from Packet Metadata",
+        "summary": "Interpret a supplied packet summary without intercepting private communications.",
+        "deliverable": "A flow table that reconstructs DNS, TCP and HTTPS sequence from metadata.",
+        "tasks": [
+          "Order the supplied records by timestamp",
+          "Group packets into conversations using endpoints and protocol",
+          "Identify handshake, query and teardown stages",
+          "State which conclusions remain uncertain without payload access"
+        ],
+        "module": "Network Observation"
+      },
+      "el": {
+        "title": "Συλλογισμός από Μεταδεδομένα Πακέτων",
+        "summary": "Ερμήνευσε δοσμένη περίληψη πακέτων χωρίς υποκλοπή ιδιωτικών επικοινωνιών.",
+        "deliverable": "Πίνακας ροής που ανακατασκευάζει DNS, TCP και HTTPS από μεταδεδομένα.",
+        "tasks": [
+          "Ταξινόμησε τις δοσμένες εγγραφές χρονικά",
+          "Ομαδοποίησε πακέτα σε συνομιλίες με endpoints και protocol",
+          "Εντόπισε handshake, query και teardown",
+          "Δήλωσε ποια συμπεράσματα παραμένουν αβέβαια χωρίς payload"
+        ],
+        "module": "Παρατήρηση Δικτύου"
+      },
+      "icon": "network",
+      "number": "11"
+    },
+    {
+      "id": "network-baseline",
+      "module": "networking-practical",
+      "hours": 3,
+      "en": {
+        "title": "Build a Personal Network Baseline",
+        "summary": "Measure normal local activity so future differences have context.",
+        "deliverable": "A two-period baseline comparing interfaces, listeners, DNS and connection counts.",
+        "tasks": [
+          "Collect the same network snapshot at two planned times",
+          "Normalize volatile fields before comparison",
+          "Identify expected changes caused by applications you opened",
+          "Define three conditions that deserve investigation later"
+        ],
+        "module": "Network Observation"
+      },
+      "el": {
+        "title": "Δημιουργία Προσωπικής Βάσης Δικτύου",
+        "summary": "Μέτρησε τη φυσιολογική τοπική δραστηριότητα ώστε οι μελλοντικές διαφορές να έχουν πλαίσιο.",
+        "deliverable": "Βάση δύο περιόδων που συγκρίνει διεπαφές, listeners, DNS και πλήθος συνδέσεων.",
+        "tasks": [
+          "Συνέλεξε το ίδιο network snapshot σε δύο προγραμματισμένες στιγμές",
+          "Κανονικοποίησε μεταβλητά πεδία πριν τη σύγκριση",
+          "Εντόπισε αναμενόμενες αλλαγές από εφαρμογές που άνοιξες",
+          "Όρισε τρεις συνθήκες που αξίζουν μελλοντική διερεύνηση"
+        ],
+        "module": "Παρατήρηση Δικτύου"
+      },
+      "icon": "network",
+      "number": "11"
+    },
+    {
+      "id": "cli-arguments",
+      "module": "python-automation",
+      "hours": 3,
+      "en": {
+        "title": "Build a Reliable CLI",
+        "summary": "Write a Python command-line tool that validates input and fails clearly.",
+        "deliverable": "A documented CLI with help text, exit codes and six test cases.",
+        "tasks": [
+          "Accept input and output paths with argparse",
+          "Reject missing or unsafe paths before processing",
+          "Return distinct exit codes for usage and data errors",
+          "Test help, success and four failure conditions"
+        ],
+        "module": "Python Automation"
+      },
+      "el": {
+        "title": "Δημιουργία Αξιόπιστου CLI",
+        "summary": "Γράψε εργαλείο Python γραμμής εντολών που ελέγχει input και αποτυγχάνει καθαρά.",
+        "deliverable": "Τεκμηριωμένο CLI με help, exit codes και έξι test cases.",
+        "tasks": [
+          "Δέξου input και output paths με argparse",
+          "Απόρριψε ανύπαρκτες ή μη ασφαλείς διαδρομές πριν την επεξεργασία",
+          "Επέστρεψε διαφορετικά exit codes για usage και data errors",
+          "Δοκίμασε help, επιτυχία και τέσσερις συνθήκες αποτυχίας"
+        ],
+        "module": "Αυτοματισμοί Python"
+      },
+      "icon": "code",
+      "number": "12"
+    },
+    {
+      "id": "file-organizer",
+      "module": "python-automation",
+      "hours": 3,
+      "en": {
+        "title": "Create a Safe File Organizer",
+        "summary": "Organize copied sample files by extension without overwriting originals.",
+        "deliverable": "A dry-run capable organizer plus before-and-after manifests.",
+        "tasks": [
+          "Scan only the prepared working directory",
+          "Preview every planned move before changing files",
+          "Handle name collisions deterministically",
+          "Verify the source set remains untouched"
+        ],
+        "module": "Python Automation"
+      },
+      "el": {
+        "title": "Δημιουργία Ασφαλούς Οργανωτή Αρχείων",
+        "summary": "Οργάνωσε αντίγραφα δειγμάτων ανά extension χωρίς αντικατάσταση πρωτοτύπων.",
+        "deliverable": "Organizer με dry-run και manifests πριν και μετά.",
+        "tasks": [
+          "Σάρωσε μόνο τον προετοιμασμένο working φάκελο",
+          "Προεπισκόπησε κάθε μετακίνηση πριν από αλλαγές",
+          "Χειρίσου συγκρούσεις ονομάτων με σταθερό τρόπο",
+          "Επιβεβαίωσε ότι το source set έμεινε ανέπαφο"
+        ],
+        "module": "Αυτοματισμοί Python"
+      },
+      "icon": "code",
+      "number": "12"
+    },
+    {
+      "id": "log-parser",
+      "module": "python-automation",
+      "hours": 3,
+      "en": {
+        "title": "Parse Structured Logs",
+        "summary": "Convert a mixed sample log into normalized records and useful counts.",
+        "deliverable": "A parser, cleaned CSV or JSON output and an error summary.",
+        "tasks": [
+          "Recognize valid records and preserve source line numbers",
+          "Normalize timestamps into one explicit timezone",
+          "Count event types without discarding malformed lines",
+          "Write rejected records to a separate review file"
+        ],
+        "module": "Python Automation"
+      },
+      "el": {
+        "title": "Ανάλυση Δομημένων Logs",
+        "summary": "Μετέτρεψε μικτό sample log σε κανονικοποιημένες εγγραφές και χρήσιμες μετρήσεις.",
+        "deliverable": "Parser, καθαρό CSV ή JSON output και περίληψη σφαλμάτων.",
+        "tasks": [
+          "Αναγνώρισε έγκυρες εγγραφές και κράτησε αριθμούς γραμμών",
+          "Κανονικοποίησε timestamps σε μία ρητή ζώνη ώρας",
+          "Μέτρησε τύπους συμβάντων χωρίς απόρριψη κακοσχηματισμένων γραμμών",
+          "Γράψε τις απορριφθείσες εγγραφές σε ξεχωριστό review file"
+        ],
+        "module": "Αυτοματισμοί Python"
+      },
+      "icon": "code",
+      "number": "12"
+    },
+    {
+      "id": "integrity-monitor",
+      "module": "python-automation",
+      "hours": 3,
+      "en": {
+        "title": "Implement an Integrity Monitor",
+        "summary": "Build a small program that compares a directory with a trusted hash manifest.",
+        "deliverable": "A baseline command, check command and report for added, changed and removed files.",
+        "tasks": [
+          "Create a deterministic manifest with relative paths",
+          "Detect additions, modifications and deletions separately",
+          "Ignore the tool's own report directory safely",
+          "Test all three change categories with copied samples"
+        ],
+        "module": "Python Automation"
+      },
+      "el": {
+        "title": "Υλοποίηση Integrity Monitor",
+        "summary": "Δημιούργησε μικρό πρόγραμμα που συγκρίνει φάκελο με έμπιστο hash manifest.",
+        "deliverable": "Εντολή baseline, εντολή check και αναφορά για προσθήκες, αλλαγές και αφαιρέσεις.",
+        "tasks": [
+          "Δημιούργησε σταθερό manifest με σχετικές διαδρομές",
+          "Εντόπισε ξεχωριστά προσθήκες, μεταβολές και διαγραφές",
+          "Αγνόησε με ασφάλεια τον φάκελο reports του εργαλείου",
+          "Δοκίμασε και τις τρεις κατηγορίες αλλαγών με αντίγραφα"
+        ],
+        "module": "Αυτοματισμοί Python"
+      },
+      "icon": "code",
+      "number": "12"
+    },
+    {
+      "id": "header-checker",
+      "module": "python-automation",
+      "hours": 3,
+      "en": {
+        "title": "Build an HTTP Header Checker",
+        "summary": "Inspect response headers for URLs you own or approved documentation targets.",
+        "deliverable": "A checker that reports presence, value and context without declaring a site secure.",
+        "tasks": [
+          "Validate schemes and restrict the target list",
+          "Handle redirects, timeouts and connection errors",
+          "Report selected security headers with neutral language",
+          "Save machine-readable and human-readable results"
+        ],
+        "module": "Python Automation"
+      },
+      "el": {
+        "title": "Δημιουργία HTTP Header Checker",
+        "summary": "Επιθεώρησε response headers για δικά σου URLs ή εγκεκριμένους documentation targets.",
+        "deliverable": "Checker που αναφέρει παρουσία, τιμή και πλαίσιο χωρίς να χαρακτηρίζει site ασφαλές.",
+        "tasks": [
+          "Έλεγξε schemes και περιόρισε τη λίστα στόχων",
+          "Χειρίσου redirects, timeouts και connection errors",
+          "Ανάφερε επιλεγμένα security headers με ουδέτερη γλώσσα",
+          "Αποθήκευσε machine-readable και human-readable αποτελέσματα"
+        ],
+        "module": "Αυτοματισμοί Python"
+      },
+      "icon": "code",
+      "number": "12"
+    },
+    {
+      "id": "report-generator",
+      "module": "python-automation",
+      "hours": 3,
+      "en": {
+        "title": "Generate an Evidence Report",
+        "summary": "Transform structured findings into a readable Markdown report.",
+        "deliverable": "A report generator with title, scope, evidence table, limitations and recommendations.",
+        "tasks": [
+          "Define a small JSON schema for findings",
+          "Escape untrusted text before rendering Markdown",
+          "Sort findings by severity and stable identifier",
+          "Generate the report twice and confirm identical output"
+        ],
+        "module": "Python Automation"
+      },
+      "el": {
+        "title": "Δημιουργία Αναφοράς Τεκμηρίων",
+        "summary": "Μετέτρεψε δομημένα ευρήματα σε κατανοητή αναφορά Markdown.",
+        "deliverable": "Generator αναφοράς με τίτλο, scope, πίνακα τεκμηρίων, περιορισμούς και προτάσεις.",
+        "tasks": [
+          "Όρισε μικρό JSON schema για ευρήματα",
+          "Κάνε escape μη έμπιστο κείμενο πριν το Markdown",
+          "Ταξινόμησε ευρήματα ανά severity και σταθερό identifier",
+          "Δημιούργησε την αναφορά δύο φορές και επιβεβαίωσε ίδιο output"
+        ],
+        "module": "Αυτοματισμοί Python"
+      },
+      "icon": "code",
+      "number": "12"
+    },
+    {
+      "id": "request-anatomy",
+      "module": "web-defence",
+      "hours": 3,
+      "en": {
+        "title": "Reconstruct a Web Request",
+        "summary": "Break down a supplied request into method, path, headers, body and trust boundaries.",
+        "deliverable": "An annotated request map and a list of validation responsibilities.",
+        "tasks": [
+          "Label every request component and its origin",
+          "Mark values controlled by the user or network",
+          "Identify where authentication and authorization differ",
+          "Describe safe logging choices for sensitive fields"
+        ],
+        "module": "Web & Secure Coding"
+      },
+      "el": {
+        "title": "Ανακατασκευή Web Request",
+        "summary": "Ανάλυσε δοσμένο request σε method, path, headers, body και trust boundaries.",
+        "deliverable": "Σχολιασμένος χάρτης request και λίστα ευθυνών validation.",
+        "tasks": [
+          "Σήμανε κάθε μέρος του request και την προέλευσή του",
+          "Σημείωσε τι ελέγχεται από χρήστη ή δίκτυο",
+          "Εντόπισε τη διαφορά authentication και authorization",
+          "Περιέγραψε ασφαλή logging για ευαίσθητα πεδία"
+        ],
+        "module": "Web και Ασφαλής Κώδικας"
+      },
+      "icon": "globe",
+      "number": "13"
+    },
+    {
+      "id": "session-model",
+      "module": "web-defence",
+      "hours": 3,
+      "en": {
+        "title": "Model Cookies and Sessions",
+        "summary": "Create a defensive model of login state using a local toy application or supplied traces.",
+        "deliverable": "A session lifecycle diagram covering creation, rotation, expiry and logout.",
+        "tasks": [
+          "Trace the identifier from login response to later request",
+          "Separate cookie attributes from server-side session state",
+          "Explain when the identifier should rotate",
+          "Test logout and expiry in the local sample only"
+        ],
+        "module": "Web & Secure Coding"
+      },
+      "el": {
+        "title": "Μοντελοποίηση Cookies και Sessions",
+        "summary": "Δημιούργησε αμυντικό μοντέλο login state με τοπική toy εφαρμογή ή δοσμένα traces.",
+        "deliverable": "Διάγραμμα κύκλου ζωής session με δημιουργία, rotation, expiry και logout.",
+        "tasks": [
+          "Ιχνηλάτησε το identifier από login response σε επόμενο request",
+          "Χώρισε cookie attributes από server-side session state",
+          "Εξήγησε πότε πρέπει να γίνεται rotation",
+          "Δοκίμασε logout και expiry μόνο στο τοπικό δείγμα"
+        ],
+        "module": "Web και Ασφαλής Κώδικας"
+      },
+      "icon": "globe",
+      "number": "13"
+    },
+    {
+      "id": "input-validation",
+      "module": "web-defence",
+      "hours": 3,
+      "en": {
+        "title": "Design Input Validation",
+        "summary": "Define explicit acceptance rules for a small local form or CLI endpoint.",
+        "deliverable": "A validation matrix with valid, invalid, boundary and ambiguous examples.",
+        "tasks": [
+          "Specify type, length, format and allowed range",
+          "Distinguish validation from output encoding",
+          "Create boundary tests around every numeric or length limit",
+          "Return useful errors without echoing secrets"
+        ],
+        "module": "Web & Secure Coding"
+      },
+      "el": {
+        "title": "Σχεδίαση Ελέγχου Εισόδου",
+        "summary": "Όρισε ρητούς κανόνες αποδοχής για μικρή τοπική φόρμα ή CLI endpoint.",
+        "deliverable": "Πίνακας validation με έγκυρα, άκυρα, οριακά και αμφίσημα παραδείγματα.",
+        "tasks": [
+          "Όρισε τύπο, μήκος, μορφή και επιτρεπτό εύρος",
+          "Ξεχώρισε validation από output encoding",
+          "Δημιούργησε boundary tests γύρω από κάθε όριο",
+          "Επέστρεψε χρήσιμα errors χωρίς εμφάνιση secrets"
+        ],
+        "module": "Web και Ασφαλής Κώδικας"
+      },
+      "icon": "globe",
+      "number": "13"
+    },
+    {
+      "id": "security-headers",
+      "module": "web-defence",
+      "hours": 3,
+      "en": {
+        "title": "Harden Response Headers",
+        "summary": "Review and improve headers in a local sample server you control.",
+        "deliverable": "A before-and-after header table with rationale and compatibility notes.",
+        "tasks": [
+          "Capture the original local response headers",
+          "Add a minimal set suited to the sample application",
+          "Test that legitimate pages and assets still load",
+          "Explain why headers reduce risk but do not replace secure code"
+        ],
+        "module": "Web & Secure Coding"
+      },
+      "el": {
+        "title": "Θωράκιση Response Headers",
+        "summary": "Έλεγξε και βελτίωσε headers σε τοπικό sample server που ελέγχεις.",
+        "deliverable": "Πίνακας headers πριν και μετά με αιτιολόγηση και σημειώσεις συμβατότητας.",
+        "tasks": [
+          "Κατέγραψε τα αρχικά local response headers",
+          "Πρόσθεσε ελάχιστο σύνολο κατάλληλο για το sample app",
+          "Δοκίμασε ότι νόμιμες σελίδες και assets συνεχίζουν να φορτώνουν",
+          "Εξήγησε γιατί τα headers μειώνουν κίνδυνο αλλά δεν αντικαθιστούν ασφαλή κώδικα"
+        ],
+        "module": "Web και Ασφαλής Κώδικας"
+      },
+      "icon": "globe",
+      "number": "13"
+    },
+    {
+      "id": "local-code-review",
+      "module": "web-defence",
+      "hours": 3,
+      "en": {
+        "title": "Review a Local Web Handler",
+        "summary": "Read a deliberately simple local handler and identify defensive improvements.",
+        "deliverable": "A code-review note with evidence, impact, fix and verification for each issue.",
+        "tasks": [
+          "Trace data from input to storage or output",
+          "Find one missing validation and one unsafe error path",
+          "Apply the smallest clear correction",
+          "Write tests that fail before and pass after the fix"
+        ],
+        "module": "Web & Secure Coding"
+      },
+      "el": {
+        "title": "Έλεγχος Τοπικού Web Handler",
+        "summary": "Διάβασε σκόπιμα απλό τοπικό handler και βρες αμυντικές βελτιώσεις.",
+        "deliverable": "Σημείωση code review με evidence, impact, fix και verification για κάθε θέμα.",
+        "tasks": [
+          "Ιχνηλάτησε δεδομένα από input σε storage ή output",
+          "Βρες ένα ελλιπές validation και ένα unsafe error path",
+          "Εφάρμοσε τη μικρότερη σαφή διόρθωση",
+          "Γράψε tests που αποτυγχάνουν πριν και περνούν μετά"
+        ],
+        "module": "Web και Ασφαλής Κώδικας"
+      },
+      "icon": "globe",
+      "number": "13"
+    },
+    {
+      "id": "threat-model",
+      "module": "web-defence",
+      "hours": 3,
+      "en": {
+        "title": "Threat-Model a Small Service",
+        "summary": "Map assets, actors, entry points and controls for a fictional local service.",
+        "deliverable": "A one-page data-flow diagram and prioritized risk register.",
+        "tasks": [
+          "Define the service scope and valuable assets",
+          "Draw processes, data stores and trust boundaries",
+          "Describe six realistic misuse cases without exploit instructions",
+          "Prioritize mitigations by likelihood, impact and effort"
+        ],
+        "module": "Web & Secure Coding"
+      },
+      "el": {
+        "title": "Threat Modeling Μικρής Υπηρεσίας",
+        "summary": "Χαρτογράφησε assets, actors, entry points και controls για φανταστική τοπική υπηρεσία.",
+        "deliverable": "Μονοσέλιδο data-flow diagram και ιεραρχημένο risk register.",
+        "tasks": [
+          "Όρισε scope υπηρεσίας και πολύτιμα assets",
+          "Σχεδίασε processes, data stores και trust boundaries",
+          "Περιέγραψε έξι ρεαλιστικές καταχρήσεις χωρίς exploit οδηγίες",
+          "Ιεράρχησε mitigations με likelihood, impact και effort"
+        ],
+        "module": "Web και Ασφαλής Κώδικας"
+      },
+      "icon": "globe",
+      "number": "13"
+    },
+    {
+      "id": "log-normalization",
+      "module": "monitoring",
+      "hours": 3,
+      "en": {
+        "title": "Normalize Heterogeneous Logs",
+        "summary": "Bring several supplied log formats into one consistent event model.",
+        "deliverable": "A normalized event file with source provenance and parsing statistics.",
+        "tasks": [
+          "Define mandatory and optional event fields",
+          "Parse three formats while preserving raw text",
+          "Convert times and severity labels consistently",
+          "Report coverage and every record that could not be normalized"
+        ],
+        "module": "Defensive Monitoring"
+      },
+      "el": {
+        "title": "Κανονικοποίηση Ετερογενών Logs",
+        "summary": "Μετέφερε διαφορετικά δοσμένα log formats σε ενιαίο μοντέλο συμβάντων.",
+        "deliverable": "Κανονικοποιημένο event file με προέλευση πηγής και στατιστικά parsing.",
+        "tasks": [
+          "Όρισε υποχρεωτικά και προαιρετικά event fields",
+          "Κάνε parse τρεις μορφές διατηρώντας raw text",
+          "Μετέτρεψε χρόνους και severity labels με συνέπεια",
+          "Ανάφερε coverage και κάθε μη κανονικοποιημένη εγγραφή"
+        ],
+        "module": "Αμυντική Παρακολούθηση"
+      },
+      "icon": "activity",
+      "number": "14"
+    },
+    {
+      "id": "failed-login-analysis",
+      "module": "monitoring",
+      "hours": 3,
+      "en": {
+        "title": "Analyze Failed Logins",
+        "summary": "Investigate a synthetic authentication dataset for patterns and benign explanations.",
+        "deliverable": "A finding table grouped by account, source, time window and confidence.",
+        "tasks": [
+          "Establish the normal failure rate in the sample",
+          "Group bursts by account and source identifier",
+          "Compare failures with later successful logins",
+          "Separate confirmed observations from hypotheses"
+        ],
+        "module": "Defensive Monitoring"
+      },
+      "el": {
+        "title": "Ανάλυση Αποτυχημένων Συνδέσεων",
+        "summary": "Διερεύνησε συνθετικό authentication dataset για μοτίβα και αθώες εξηγήσεις.",
+        "deliverable": "Πίνακας ευρημάτων ανά λογαριασμό, πηγή, χρονικό παράθυρο και confidence.",
+        "tasks": [
+          "Υπολόγισε τον φυσιολογικό ρυθμό αποτυχιών στο δείγμα",
+          "Ομαδοποίησε bursts ανά account και source identifier",
+          "Σύγκρινε αποτυχίες με επόμενα επιτυχημένα logins",
+          "Χώρισε επιβεβαιωμένες παρατηρήσεις από υποθέσεις"
+        ],
+        "module": "Αμυντική Παρακολούθηση"
+      },
+      "icon": "activity",
+      "number": "14"
+    },
+    {
+      "id": "ioc-matching",
+      "module": "monitoring",
+      "hours": 3,
+      "en": {
+        "title": "Match Indicators Carefully",
+        "summary": "Compare a supplied indicator list with local synthetic events while controlling false matches.",
+        "deliverable": "A match report with normalization rules, context and confidence.",
+        "tasks": [
+          "Validate and normalize domains, addresses and hashes",
+          "Use exact matching where substring matching is unsafe",
+          "Attach surrounding event context to every hit",
+          "Explain why an indicator match is a lead rather than a verdict"
+        ],
+        "module": "Defensive Monitoring"
+      },
+      "el": {
+        "title": "Προσεκτική Αντιστοίχιση Δεικτών",
+        "summary": "Σύγκρινε δοσμένη λίστα indicators με τοπικά συνθετικά events ελέγχοντας false matches.",
+        "deliverable": "Αναφορά matches με κανόνες normalization, context και confidence.",
+        "tasks": [
+          "Έλεγξε και κανονικοποίησε domains, addresses και hashes",
+          "Χρησιμοποίησε exact matching όπου το substring είναι ανασφαλές",
+          "Πρόσθεσε συμφραζόμενα συμβάντος σε κάθε hit",
+          "Εξήγησε γιατί ένα indicator match είναι ένδειξη και όχι απόφαση"
+        ],
+        "module": "Αμυντική Παρακολούθηση"
+      },
+      "icon": "activity",
+      "number": "14"
+    },
+    {
+      "id": "change-triage",
+      "module": "monitoring",
+      "hours": 3,
+      "en": {
+        "title": "Triage File Changes",
+        "summary": "Classify changes reported by the integrity-monitor lab in a simulated incident.",
+        "deliverable": "A change register with expected, suspicious and unresolved categories.",
+        "tasks": [
+          "Compare the incident snapshot with the trusted baseline",
+          "Attribute expected changes to documented maintenance",
+          "Prioritize unexplained executable and configuration changes",
+          "Preserve uncertain items for further review instead of deleting them"
+        ],
+        "module": "Defensive Monitoring"
+      },
+      "el": {
+        "title": "Διαλογή Αλλαγών Αρχείων",
+        "summary": "Ταξινόμησε αλλαγές από το integrity-monitor lab σε προσομοιωμένο περιστατικό.",
+        "deliverable": "Μητρώο αλλαγών με expected, suspicious και unresolved κατηγορίες.",
+        "tasks": [
+          "Σύγκρινε incident snapshot με την έμπιστη baseline",
+          "Απέδωσε expected changes σε τεκμηριωμένη συντήρηση",
+          "Ιεράρχησε ανεξήγητες αλλαγές σε executable και configuration files",
+          "Διατήρησε αβέβαια στοιχεία για έλεγχο αντί να τα διαγράψεις"
+        ],
+        "module": "Αμυντική Παρακολούθηση"
+      },
+      "icon": "activity",
+      "number": "14"
+    },
+    {
+      "id": "incident-timeline",
+      "module": "monitoring",
+      "hours": 3,
+      "en": {
+        "title": "Construct an Incident Timeline",
+        "summary": "Merge synthetic file, authentication and network events into a defensible sequence.",
+        "deliverable": "A timestamped timeline with source citations, uncertainty and key pivots.",
+        "tasks": [
+          "Normalize all source timestamps before sorting",
+          "Keep original source and record identifiers in every row",
+          "Mark inferred ordering when timestamps collide",
+          "Write a concise narrative that does not exceed the evidence"
+        ],
+        "module": "Defensive Monitoring"
+      },
+      "el": {
+        "title": "Δημιουργία Χρονογραμμής Περιστατικού",
+        "summary": "Συνδύασε συνθετικά file, authentication και network events σε τεκμηριωμένη ακολουθία.",
+        "deliverable": "Χρονογραμμή με timestamps, παραπομπές πηγών, αβεβαιότητα και βασικά pivots.",
+        "tasks": [
+          "Κανονικοποίησε όλα τα timestamps πριν την ταξινόμηση",
+          "Κράτησε source και record identifiers σε κάθε γραμμή",
+          "Σήμανε inferred σειρά όταν συμπίπτουν timestamps",
+          "Γράψε σύντομη αφήγηση που δεν υπερβαίνει τα τεκμήρια"
+        ],
+        "module": "Αμυντική Παρακολούθηση"
+      },
+      "icon": "activity",
+      "number": "14"
+    },
+    {
+      "id": "detection-rule",
+      "module": "monitoring",
+      "hours": 3,
+      "en": {
+        "title": "Write and Test a Detection Rule",
+        "summary": "Create a transparent local rule for one pattern in the synthetic dataset.",
+        "deliverable": "A rule specification, test corpus, expected results and tuning record.",
+        "tasks": [
+          "Describe the behavior before writing the expression",
+          "Build positive, negative and boundary test events",
+          "Measure true and false matches on the supplied sample",
+          "Tune once and document the trade-off introduced"
+        ],
+        "module": "Defensive Monitoring"
+      },
+      "el": {
+        "title": "Σύνταξη και Δοκιμή Detection Rule",
+        "summary": "Δημιούργησε διαφανή τοπικό κανόνα για ένα μοτίβο στο συνθετικό dataset.",
+        "deliverable": "Προδιαγραφή κανόνα, test corpus, αναμενόμενα αποτελέσματα και tuning record.",
+        "tasks": [
+          "Περιέγραψε τη συμπεριφορά πριν γράψεις την έκφραση",
+          "Δημιούργησε positive, negative και boundary test events",
+          "Μέτρησε true και false matches στο δοσμένο δείγμα",
+          "Κάνε ένα tuning και κατέγραψε το trade-off"
+        ],
+        "module": "Αμυντική Παρακολούθηση"
+      },
+      "icon": "activity",
+      "number": "14"
+    },
+    {
+      "id": "password-policy",
+      "module": "hardening",
+      "hours": 3,
+      "en": {
+        "title": "Evaluate a Password Policy",
+        "summary": "Assess a fictional organization's password and recovery rules against practical risks.",
+        "deliverable": "A revised policy with rationale, exceptions and rollout checks.",
+        "tasks": [
+          "Identify rules that encourage predictable user behavior",
+          "Add protections for recovery and privileged accounts",
+          "Define how password managers and MFA fit the policy",
+          "Create a migration checklist that avoids locking users out"
+        ],
+        "module": "Identity & Hardening"
+      },
+      "el": {
+        "title": "Αξιολόγηση Πολιτικής Κωδικών",
+        "summary": "Αξιολόγησε κανόνες password και recovery φανταστικού οργανισμού απέναντι σε πρακτικούς κινδύνους.",
+        "deliverable": "Αναθεωρημένη πολιτική με αιτιολόγηση, εξαιρέσεις και ελέγχους rollout.",
+        "tasks": [
+          "Εντόπισε κανόνες που ενθαρρύνουν προβλέψιμη συμπεριφορά",
+          "Πρόσθεσε προστασίες για recovery και privileged accounts",
+          "Όρισε πώς εντάσσονται password managers και MFA",
+          "Δημιούργησε migration checklist χωρίς αποκλεισμό χρηστών"
+        ],
+        "module": "Ταυτότητα και Θωράκιση"
+      },
+      "icon": "lock",
+      "number": "15"
+    },
+    {
+      "id": "privilege-audit",
+      "module": "hardening",
+      "hours": 3,
+      "en": {
+        "title": "Audit Local Privileges",
+        "summary": "Review accounts and privileged groups on a device you administer.",
+        "deliverable": "A redacted privilege map and a least-privilege remediation plan.",
+        "tasks": [
+          "List local accounts without exporting sensitive identifiers",
+          "Map membership in administrative groups",
+          "Identify dormant or unnecessary test access",
+          "Plan reversible changes and verify the required work still functions"
+        ],
+        "module": "Identity & Hardening"
+      },
+      "el": {
+        "title": "Έλεγχος Τοπικών Προνομίων",
+        "summary": "Έλεγξε λογαριασμούς και privileged groups σε συσκευή που διαχειρίζεσαι.",
+        "deliverable": "Αποπροσωποποιημένος χάρτης privileges και σχέδιο least privilege.",
+        "tasks": [
+          "Κατάγραψε local accounts χωρίς εξαγωγή ευαίσθητων identifiers",
+          "Χαρτογράφησε συμμετοχή σε administrative groups",
+          "Εντόπισε ανενεργή ή περιττή test access",
+          "Σχεδίασε αναστρέψιμες αλλαγές και έλεγξε ότι η εργασία λειτουργεί"
+        ],
+        "module": "Ταυτότητα και Θωράκιση"
+      },
+      "icon": "lock",
+      "number": "15"
+    },
+    {
+      "id": "service-exposure",
+      "module": "hardening",
+      "hours": 3,
+      "en": {
+        "title": "Review Service Exposure",
+        "summary": "Combine local listeners, startup configuration and firewall context on your own device.",
+        "deliverable": "A service inventory with owner, purpose, exposure and recommended action.",
+        "tasks": [
+          "Reconcile listening ports with installed or launched services",
+          "Determine whether each service starts automatically",
+          "Check whether exposure is loopback, local network or broader",
+          "Disable one disposable test service and document rollback"
+        ],
+        "module": "Identity & Hardening"
+      },
+      "el": {
+        "title": "Έλεγχος Έκθεσης Υπηρεσιών",
+        "summary": "Συνδύασε local listeners, startup configuration και firewall context στη δική σου συσκευή.",
+        "deliverable": "Απογραφή υπηρεσιών με owner, purpose, exposure και προτεινόμενη ενέργεια.",
+        "tasks": [
+          "Συσχέτισε listening ports με εγκατεστημένες ή ενεργές υπηρεσίες",
+          "Βρες αν κάθε υπηρεσία ξεκινά αυτόματα",
+          "Έλεγξε αν η έκθεση είναι loopback, local network ή ευρύτερη",
+          "Απενεργοποίησε μία προσωρινή test service και κατέγραψε rollback"
+        ],
+        "module": "Ταυτότητα και Θωράκιση"
+      },
+      "icon": "lock",
+      "number": "15"
+    },
+    {
+      "id": "hardening-plan",
+      "module": "hardening",
+      "hours": 3,
+      "en": {
+        "title": "Produce a Device Hardening Plan",
+        "summary": "Turn the academy findings into prioritized, device-specific defensive work.",
+        "deliverable": "A 30-day hardening backlog with verification and rollback for every change.",
+        "tasks": [
+          "Group findings into identity, software, network and recovery",
+          "Rank actions by risk reduction and operational cost",
+          "Define a success check and rollback before implementation",
+          "Schedule quick wins separately from disruptive changes"
+        ],
+        "module": "Identity & Hardening"
+      },
+      "el": {
+        "title": "Δημιουργία Σχεδίου Θωράκισης Συσκευής",
+        "summary": "Μετέτρεψε τα ευρήματα της ακαδημίας σε ιεραρχημένη, device-specific αμυντική εργασία.",
+        "deliverable": "30ήμερο hardening backlog με verification και rollback για κάθε αλλαγή.",
+        "tasks": [
+          "Ομαδοποίησε ευρήματα σε identity, software, network και recovery",
+          "Ιεράρχησε actions με risk reduction και operational cost",
+          "Όρισε success check και rollback πριν την υλοποίηση",
+          "Προγραμμάτισε quick wins χωριστά από disruptive changes"
+        ],
+        "module": "Ταυτότητα και Θωράκιση"
+      },
+      "icon": "lock",
+      "number": "15"
+    },
+    {
+      "id": "capstone-baseline",
+      "module": "capstone",
+      "hours": 4,
+      "en": {
+        "title": "Capstone: Establish the Baseline",
+        "summary": "Create a complete, privacy-aware baseline of the supplied fictional workstation.",
+        "deliverable": "A baseline pack containing inventory, hashes, services, network state and assumptions.",
+        "tasks": [
+          "Prepare the capstone workspace and verify source hashes",
+          "Collect host, process, service and network summaries",
+          "Document normal application behavior from the scenario",
+          "Package the baseline with an index and integrity checksum"
+        ],
+        "module": "Capstone Missions"
+      },
+      "el": {
+        "title": "Capstone: Δημιουργία Baseline",
+        "summary": "Δημιούργησε πλήρη, privacy-aware baseline του δοσμένου φανταστικού workstation.",
+        "deliverable": "Baseline pack με inventory, hashes, services, network state και assumptions.",
+        "tasks": [
+          "Προετοίμασε το capstone workspace και έλεγξε source hashes",
+          "Συνέλεξε host, process, service και network summaries",
+          "Κατέγραψε φυσιολογική συμπεριφορά εφαρμογών από το scenario",
+          "Συσκεύασε τη baseline με index και integrity checksum"
+        ],
+        "module": "Τελικές Αποστολές"
+      },
+      "icon": "award",
+      "number": "16"
+    },
+    {
+      "id": "capstone-incident",
+      "module": "capstone",
+      "hours": 4,
+      "en": {
+        "title": "Capstone: Investigate the Incident",
+        "summary": "Analyze the supplied synthetic incident without altering the source evidence.",
+        "deliverable": "An investigation package with timeline, findings, confidence and containment advice.",
+        "tasks": [
+          "Verify every evidence file before analysis",
+          "Correlate authentication, network and file-change records",
+          "Test at least two competing explanations",
+          "Recommend proportionate containment while preserving evidence"
+        ],
+        "module": "Capstone Missions"
+      },
+      "el": {
+        "title": "Capstone: Διερεύνηση Περιστατικού",
+        "summary": "Ανάλυσε το δοσμένο συνθετικό περιστατικό χωρίς αλλαγή source evidence.",
+        "deliverable": "Investigation package με timeline, findings, confidence και συμβουλές containment.",
+        "tasks": [
+          "Επιβεβαίωσε κάθε evidence file πριν την ανάλυση",
+          "Συσχέτισε authentication, network και file-change records",
+          "Δοκίμασε τουλάχιστον δύο ανταγωνιστικές εξηγήσεις",
+          "Πρότεινε αναλογικό containment διατηρώντας τεκμήρια"
+        ],
+        "module": "Τελικές Αποστολές"
+      },
+      "icon": "award",
+      "number": "16"
+    },
+    {
+      "id": "capstone-portfolio",
+      "module": "capstone",
+      "hours": 4,
+      "en": {
+        "title": "Capstone: Publish the Portfolio",
+        "summary": "Convert the completed work into a clear portfolio that demonstrates process, not secrets.",
+        "deliverable": "A bilingual-ready portfolio report, sanitized evidence appendix and personal skills map.",
+        "tasks": [
+          "Select artifacts that demonstrate distinct competencies",
+          "Remove usernames, addresses, tokens and unnecessary raw data",
+          "Describe method, result, limitation and next step for each artifact",
+          "Map the portfolio to the academy skills and define a future study plan"
+        ],
+        "module": "Capstone Missions"
+      },
+      "el": {
+        "title": "Capstone: Δημιουργία Portfolio",
+        "summary": "Μετέτρεψε την ολοκληρωμένη εργασία σε σαφές portfolio που δείχνει διαδικασία, όχι secrets.",
+        "deliverable": "Portfolio report έτοιμο για δίγλωσση χρήση, sanitized appendix και προσωπικός χάρτης δεξιοτήτων.",
+        "tasks": [
+          "Επίλεξε artifacts που αποδεικνύουν διαφορετικές ικανότητες",
+          "Αφαίρεσε usernames, addresses, tokens και περιττά raw data",
+          "Περιέγραψε method, result, limitation και next step για κάθε artifact",
+          "Σύνδεσε το portfolio με skills και όρισε μελλοντικό study plan"
+        ],
+        "module": "Τελικές Αποστολές"
+      },
+      "icon": "award",
+      "number": "16"
+    }
+  ]
+}
