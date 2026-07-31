@@ -37,7 +37,8 @@ def cmd_list(args):
         print(f"{mark} {x['id']:<28} {x[lang]['title']}{hours}")
 def cmd_status(_):
     s=state(); practical=[x for x in catalog() if x.get('kind')=='practical'];done={x for x in s['completed']};dh=sum(x.get('hours',0) for x in practical if x['id'] in done)
-    print(f'Device: {device()[0]}');print(f'Progress file: {STATE_FILE}');print(f'Practical labs: {sum(x["id"] in done for x in practical)}/{len(practical)}');print(f'Estimated practical hours completed: {dh}/126')
+    total=sum(x.get('hours',0) for x in practical)
+    print(f'Device: {device()[0]}');print(f'Progress file: {STATE_FILE}');print(f'Practical labs: {sum(x["id"] in done for x in practical)}/{len(practical)}');print(f'Estimated practical hours completed: {dh}/{total}')
 def cmd_complete(args):
     x=find(args.lesson)
     if not x: raise SystemExit('Lesson or lab not found. Use: academy.py list')

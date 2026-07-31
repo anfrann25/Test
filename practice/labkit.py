@@ -30,6 +30,38 @@ def sample_files(lab):
         common['source/response-headers.txt']='HTTP/1.1 200 OK\nContent-Type: text/html; charset=utf-8\nCache-Control: no-store\n'
     elif module=='hardening':
         common['source/device-services.csv']='service,purpose,startup,exposure\nacademy-demo,training,manual,loopback\nfile-share,example,disabled,none\n'
+    elif module=='device-defense':
+        common['source/device-state.csv']='item,category,state,owner\ntraining-browser,application,enabled,student\ndemo-updater,startup,manual,student\n'
+    elif module=='network-diagnostics':
+        common['source/network-checks.csv']='time,test,target,result\n09:00,dns,example.test,192.0.2.10\n09:01,latency,192.0.2.10,24ms\n'
+    elif module=='secure-development':
+        common['source/app.py']='from pathlib import Path\nBASE=Path("workspace").resolve()\nprint("training sample")\n'
+        common['source/settings.json']='{"mode":"training","output":"reports/result.txt"}\n'
+    elif module=='incident-response':
+        common['source/alert.json']='{"time":"2026-02-01T10:12:00Z","type":"training-alert","severity":"medium","source":"sample"}\n'
+        common['source/incident-files.csv']='time,path,event,hash_state\n10:05,docs/plan.md,modified,changed\n10:14,config/demo.ini,modified,unknown\n'
+    elif module=='privacy':
+        common['source/sample-contacts.csv']='name,email,purpose\nExample User,example@example.test,training\n'
+        common['source/sample-metadata.txt']='file=training-photo.jpg\nauthor=Example User\nlocation=removed-in-sanitized-copy\n'
+    elif module=='account-security':
+        common['source/account-sessions.csv']='device,location,last_seen,status\nTraining Phone,Local,2026-02-01T10:00Z,known\nExample Browser,Unknown,2026-01-30T08:12Z,review\n'
+        common['source/recovery-options.csv']='method,state,last_verified\nemail,active,2026-01-10\nbackup-code,active,2025-12-01\nold-phone,obsolete,2024-04-02\n'
+    elif module=='email-security':
+        common['source/message-headers.txt']='From: Support <support@example.test>\nReply-To: review@examp1e.test\nAuthentication-Results: spf=fail dkim=none dmarc=fail\nReceived: from training.local by mailbox.test\n'
+        common['source/mailbox-rules.csv']='name,action,target,state\nArchive receipts,move,Receipts,enabled\nForward copy,forward,external@example.test,review\n'
+    elif module=='data-forensics':
+        common['source/events-a.csv']='time,source,event\n2026-02-01T10:00:00Z,login,success\n2026-02-01T10:04:00Z,file,modified\n'
+        common['source/events-b.csv']='time,source,event\n2026-02-01T12:03:00+02:00,network,connected\n'
+        common['source/file-list.csv']='name,extension,claimed_type\nphoto.jpg,.jpg,image\nreport.txt,.txt,text\narchive.zip,.zip,archive\n'
+    elif module=='web-operations':
+        common['source/response-headers.txt']='HTTP/1.1 200 OK\nSet-Cookie: session=training; Path=/; HttpOnly\nCache-Control: public, max-age=3600\nContent-Security-Policy: default-src *\nLocation: https://docs.example.test/final\n'
+        common['source/published-files.txt']='index.html\nassets/app.js\nbackup/config.old\n.env.example\n'
+    elif module=='resilience':
+        common['source/asset-priority.csv']='asset,priority,recovery_target\nnotes,high,1h\ntraining-data,medium,4h\ncache,low,24h\n'
+        common['source/outage-scenario.txt']='Synthetic outage: the primary documentation service is unavailable. No production system is involved.\n'
+    elif module=='reporting':
+        common['source/findings.csv']='id,title,impact,likelihood,status\nF-01,Weak test setting,medium,high,open\nF-02,Missing backup check,high,medium,open\n'
+        common['source/evidence-note.txt']='Synthetic evidence only. The sample setting allows unnecessary access in the local training app.\n'
     elif module=='capstone':
         common['source/capstone-auth.log']='2026-02-01T10:00:00Z login_ok account=owner source=console\n2026-02-01T10:12:00Z login_failed account=owner source=remote-test\n'
         common['source/capstone-network.csv']='time,protocol,destination,result\n10:00,DNS,updates.example.test,allowed\n10:13,HTTPS,docs.example.test,allowed\n'
@@ -49,8 +81,8 @@ def prepare(lab_id,base,language='en',force=False):
     data=lab['el' if language=='el' else 'en']
     for rel,text in sample_files(lab).items():
         p=folder/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text,encoding='utf-8')
-    tasks='\n'.join(f'- [ ] {t}' for t in data['tasks'])
-    readme=f"# {data['title']}\n\nEstimated active time: {lab['hours']} hours\n\n## Objective\n{data['summary']}\n\n## Tasks\n{tasks}\n\n## Evidence\n{data['deliverable']}\n\nWork only with the supplied samples or systems you are authorized to administer.\n"
+    tasks='\n'.join(f'- [ ] {t}' for t in data['tasks'][:3])
+    readme=f"# {data['title']}\n\n{lab['hours']}h active practice\n\n{tasks}\n\nEvidence: {data['deliverable']}\n\nUse supplied samples or systems you own.\n"
     (folder/'README.md').write_text(readme,encoding='utf-8')
     (folder/'notes.md').write_text('# Notes\n\n## Observations\n\n## Assumptions\n\n## Commands and results\n\n## Limitations\n',encoding='utf-8')
     (folder/'evidence.md').write_text('# Evidence\n\nScope:\nDate:\nDevice:\n\n## Result\n\n## Verification\n\n## Limitations\n',encoding='utf-8')
