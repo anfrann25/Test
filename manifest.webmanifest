@@ -1,7 +1,7 @@
 {
   "name": "HackTheBasics.gr Academy",
   "short_name": "HackTheBasics",
-  "description": "Bilingual local-first cybersecurity academy with 258 practical hours.",
+  "description": "A clear bilingual beginner path for learning cybersecurity through practical work.",
   "start_url": "./home.html",
   "scope": "./",
   "display": "standalone",

@@ -1,7 +1,24 @@
 {
-  "version": 4,
+  "version": 5,
   "practical_hours": 258,
   "lessons": [
+    {
+      "id": "guided-path",
+      "en": {
+        "title": "Start Learning",
+        "path": "pages/en/path/index.html",
+        "module": "00 · Guided Path",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Ξεκίνα τη Μάθηση",
+        "path": "pages/el/path/index.html",
+        "module": "00 · Καθοδηγούμενη Διαδρομή",
+        "icon": "award"
+      },
+      "kind": "theory",
+      "hours": 0
+    },
     {
       "id": "intro-overview",
       "en": {

@@ -2,11 +2,13 @@
 
 A bilingual, local-first cybersecurity academy for Windows, Linux and Android with Termux. The website explains each mission; commands, evidence and progress stay on the learner's device.
 
-## Curriculum
+## Learning structure
 
-- 109 distinct practical labs
-- 258 estimated active hours
-- 147 English pages and 147 matching Greek pages
+- One seven-stage beginner path that shows exactly what to learn next
+- 38 core practices selected from the complete library
+- 109 distinct practical labs and 258 estimated active hours in total
+- 148 English pages and 148 matching Greek pages
+- Six collapsed optional-practice collections instead of one overwhelming catalog
 - Ultra-compact four-block labs: start, do, save, finish
 - Windows, Linux and Termux instructions
 - GitHub Pages-safe relative paths
