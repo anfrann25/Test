@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "practical_hours": 258,
+  "version": 6,
+  "practical_hours": 338,
   "lessons": [
     {
       "id": "guided-path",
@@ -653,19 +653,19 @@
     {
       "id": "practical-index",
       "kind": "theory",
-      "hours": 258,
+      "hours": 338,
       "en": {
-        "title": "258-Hour Practical Track",
+        "title": "338-Hour Practical Track",
         "path": "pages/en/practical/index.html",
-        "module": "09–27 · Practical Curriculum",
-        "summary": "109 ultra-compact labs: start, do, save, finish.",
+        "module": "09–35 · Practical Curriculum",
+        "summary": "149 compact labs across 27 practical categories.",
         "icon": "terminal"
       },
       "el": {
-        "title": "Πρακτική Διαδρομή 258 Ωρών",
+        "title": "Πρακτική Διαδρομή 338 Ωρών",
         "path": "pages/el/practical/index.html",
-        "module": "09–27 · Πρακτικό Πρόγραμμα",
-        "summary": "109 πολύ σύντομα labs: έναρξη, πράξη, αποθήκευση, τέλος.",
+        "module": "09–35 · Πρακτικό Πρόγραμμα",
+        "summary": "149 σύντομα labs σε 27 πρακτικές κατηγορίες.",
         "icon": "terminal"
       }
     },
@@ -2737,6 +2737,766 @@
         "path": "pages/el/practical/capstone/capstone-portfolio.html",
         "module": "27 · Τελικές Αποστολές",
         "summary": "Μετέτρεψε την ολοκληρωμένη εργασία σε σαφές portfolio που δείχνει διαδικασία, όχι secrets.",
+        "icon": "award"
+      }
+    },
+    {
+      "id": "least-privilege-role-map",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Map Least-Privilege Roles",
+        "path": "pages/en/practical/identity-access/least-privilege-role-map.html",
+        "module": "28 · Identity & Access Management",
+        "summary": "Match common tasks to the minimum access each role needs.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Χαρτογράφηση Ρόλων Ελάχιστου Προνομίου",
+        "path": "pages/el/practical/identity-access/least-privilege-role-map.html",
+        "module": "28 · Διαχείριση Ταυτότητας και Πρόσβασης",
+        "summary": "Αντιστοίχισε συνηθισμένες εργασίες με την ελάχιστη πρόσβαση που χρειάζεται κάθε ρόλος.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "access-review-cycle",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Run an Access Review",
+        "path": "pages/en/practical/identity-access/access-review-cycle.html",
+        "module": "28 · Identity & Access Management",
+        "summary": "Review who can reach a small set of files and services.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Εκτέλεση Ελέγχου Πρόσβασης",
+        "path": "pages/el/practical/identity-access/access-review-cycle.html",
+        "module": "28 · Διαχείριση Ταυτότητας και Πρόσβασης",
+        "summary": "Έλεγξε ποιος μπορεί να προσπελάσει ένα μικρό σύνολο αρχείων και υπηρεσιών.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "joiner-mover-leaver",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Design an Account Lifecycle",
+        "path": "pages/en/practical/identity-access/joiner-mover-leaver.html",
+        "module": "28 · Identity & Access Management",
+        "summary": "Create safe account steps for joining, role changes and departure.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Σχεδίαση Κύκλου Ζωής Λογαριασμού",
+        "path": "pages/el/practical/identity-access/joiner-mover-leaver.html",
+        "module": "28 · Διαχείριση Ταυτότητας και Πρόσβασης",
+        "summary": "Δημιούργησε ασφαλή βήματα για πρόσληψη, αλλαγή ρόλου και αποχώρηση.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "service-account-inventory",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Inventory Service Accounts",
+        "path": "pages/en/practical/identity-access/service-account-inventory.html",
+        "module": "28 · Identity & Access Management",
+        "summary": "Separate human accounts from automated service identities.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Καταγραφή Service Accounts",
+        "path": "pages/el/practical/identity-access/service-account-inventory.html",
+        "module": "28 · Διαχείριση Ταυτότητας και Πρόσβασης",
+        "summary": "Ξεχώρισε ανθρώπινους λογαριασμούς από αυτοματοποιημένες ταυτότητες υπηρεσιών.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "privileged-action-log",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Review Privileged Actions",
+        "path": "pages/en/practical/identity-access/privileged-action-log.html",
+        "module": "28 · Identity & Access Management",
+        "summary": "Turn a synthetic admin log into a clear record of high-impact changes.",
+        "icon": "lock"
+      },
+      "el": {
+        "title": "Έλεγχος Προνομιακών Ενεργειών",
+        "path": "pages/el/practical/identity-access/privileged-action-log.html",
+        "module": "28 · Διαχείριση Ταυτότητας και Πρόσβασης",
+        "summary": "Μετέτρεψε συνθετικό admin log σε καθαρή καταγραφή σημαντικών αλλαγών.",
+        "icon": "lock"
+      }
+    },
+    {
+      "id": "app-source-review",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Review App Sources",
+        "path": "pages/en/practical/mobile-security/app-source-review.html",
+        "module": "29 · Mobile Security",
+        "summary": "Check where installed apps came from and whether they still need trust.",
+        "icon": "device"
+      },
+      "el": {
+        "title": "Έλεγχος Πηγών Εφαρμογών",
+        "path": "pages/el/practical/mobile-security/app-source-review.html",
+        "module": "29 · Ασφάλεια Κινητών",
+        "summary": "Έλεγξε από πού προήλθαν οι εφαρμογές και αν εξακολουθούν να είναι αξιόπιστες.",
+        "icon": "device"
+      }
+    },
+    {
+      "id": "screen-lock-audit",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Audit Screen-Lock Security",
+        "path": "pages/en/practical/mobile-security/screen-lock-audit.html",
+        "module": "29 · Mobile Security",
+        "summary": "Evaluate lock timing, unlock methods and notification exposure.",
+        "icon": "device"
+      },
+      "el": {
+        "title": "Έλεγχος Ασφάλειας Κλειδώματος",
+        "path": "pages/el/practical/mobile-security/screen-lock-audit.html",
+        "module": "29 · Ασφάλεια Κινητών",
+        "summary": "Αξιολόγησε χρόνο κλειδώματος, μεθόδους ξεκλειδώματος και έκθεση ειδοποιήσεων.",
+        "icon": "device"
+      }
+    },
+    {
+      "id": "mobile-backup-review",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Review Mobile Backups",
+        "path": "pages/en/practical/mobile-security/mobile-backup-review.html",
+        "module": "29 · Mobile Security",
+        "summary": "Confirm what the phone backs up and how restoration is protected.",
+        "icon": "device"
+      },
+      "el": {
+        "title": "Έλεγχος Backup Κινητού",
+        "path": "pages/el/practical/mobile-security/mobile-backup-review.html",
+        "module": "29 · Ασφάλεια Κινητών",
+        "summary": "Επιβεβαίωσε τι αποθηκεύεται και πώς προστατεύεται η επαναφορά.",
+        "icon": "device"
+      }
+    },
+    {
+      "id": "notification-privacy",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Reduce Notification Exposure",
+        "path": "pages/en/practical/mobile-security/notification-privacy.html",
+        "module": "29 · Mobile Security",
+        "summary": "Limit sensitive information shown on locked or shared screens.",
+        "icon": "device"
+      },
+      "el": {
+        "title": "Μείωση Έκθεσης Ειδοποιήσεων",
+        "path": "pages/el/practical/mobile-security/notification-privacy.html",
+        "module": "29 · Ασφάλεια Κινητών",
+        "summary": "Περιορίσε ευαίσθητες πληροφορίες σε κλειδωμένες ή κοινόχρηστες οθόνες.",
+        "icon": "device"
+      }
+    },
+    {
+      "id": "lost-phone-response",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Build a Lost-Phone Response",
+        "path": "pages/en/practical/mobile-security/lost-phone-response.html",
+        "module": "29 · Mobile Security",
+        "summary": "Prepare fast actions before a phone is lost or stolen.",
+        "icon": "device"
+      },
+      "el": {
+        "title": "Δημιουργία Αντίδρασης για Χαμένο Κινητό",
+        "path": "pages/el/practical/mobile-security/lost-phone-response.html",
+        "module": "29 · Ασφάλεια Κινητών",
+        "summary": "Προετοίμασε γρήγορες ενέργειες πριν χαθεί ή κλαπεί ένα κινητό.",
+        "icon": "device"
+      }
+    },
+    {
+      "id": "router-admin-audit",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Audit Router Administration",
+        "path": "pages/en/practical/wifi-router-defense/router-admin-audit.html",
+        "module": "30 · Wi-Fi & Router Defense",
+        "summary": "Review router admin access, updates and recovery settings.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Έλεγχος Διαχείρισης Router",
+        "path": "pages/el/practical/wifi-router-defense/router-admin-audit.html",
+        "module": "30 · Άμυνα Wi-Fi και Router",
+        "summary": "Έλεγξε admin πρόσβαση, ενημερώσεις και ρυθμίσεις ανάκτησης router.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "wifi-encryption-check",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Check Wi-Fi Encryption",
+        "path": "pages/en/practical/wifi-router-defense/wifi-encryption-check.html",
+        "module": "30 · Wi-Fi & Router Defense",
+        "summary": "Verify the wireless network uses a current security mode and strong key.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Έλεγχος Κρυπτογράφησης Wi-Fi",
+        "path": "pages/el/practical/wifi-router-defense/wifi-encryption-check.html",
+        "module": "30 · Άμυνα Wi-Fi και Router",
+        "summary": "Επαλήθευσε ότι το ασύρματο δίκτυο χρησιμοποιεί σύγχρονη ασφάλεια και ισχυρό κλειδί.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "guest-network-plan",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Create a Guest Network Plan",
+        "path": "pages/en/practical/wifi-router-defense/guest-network-plan.html",
+        "module": "30 · Wi-Fi & Router Defense",
+        "summary": "Separate visitors and untrusted devices from personal systems.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Σχεδίαση Guest Network",
+        "path": "pages/el/practical/wifi-router-defense/guest-network-plan.html",
+        "module": "30 · Άμυνα Wi-Fi και Router",
+        "summary": "Χώρισε επισκέπτες και μη αξιόπιστες συσκευές από προσωπικά συστήματα.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "dns-setting-review",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Review Router DNS Settings",
+        "path": "pages/en/practical/wifi-router-defense/dns-setting-review.html",
+        "module": "30 · Wi-Fi & Router Defense",
+        "summary": "Check resolver settings and document intentional changes.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Έλεγχος Ρυθμίσεων DNS Router",
+        "path": "pages/el/practical/wifi-router-defense/dns-setting-review.html",
+        "module": "30 · Άμυνα Wi-Fi και Router",
+        "summary": "Έλεγξε resolvers και κατέγραψε σκόπιμες αλλαγές.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "connected-device-inventory",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Inventory Connected Devices",
+        "path": "pages/en/practical/wifi-router-defense/connected-device-inventory.html",
+        "module": "30 · Wi-Fi & Router Defense",
+        "summary": "Identify devices on a network you own and remove stale access.",
+        "icon": "network"
+      },
+      "el": {
+        "title": "Καταγραφή Συνδεδεμένων Συσκευών",
+        "path": "pages/el/practical/wifi-router-defense/connected-device-inventory.html",
+        "module": "30 · Άμυνα Wi-Fi και Router",
+        "summary": "Εντόπισε συσκευές σε δίκτυο που σου ανήκει και αφαίρεσε παλιά πρόσβαση.",
+        "icon": "network"
+      }
+    },
+    {
+      "id": "cloud-sharing-audit",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Audit Cloud Sharing",
+        "path": "pages/en/practical/cloud-security/cloud-sharing-audit.html",
+        "module": "31 · Cloud Security Basics",
+        "summary": "Review who can access a controlled cloud folder.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Έλεγχος Κοινής Χρήσης Cloud",
+        "path": "pages/el/practical/cloud-security/cloud-sharing-audit.html",
+        "module": "31 · Βασικά Ασφάλειας Cloud",
+        "summary": "Έλεγξε ποιος έχει πρόσβαση σε ελεγχόμενο cloud φάκελο.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "public-link-review",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Review Public Links",
+        "path": "pages/en/practical/cloud-security/public-link-review.html",
+        "module": "31 · Cloud Security Basics",
+        "summary": "Find and limit public or broadly shared links.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Έλεγχος Δημόσιων Links",
+        "path": "pages/el/practical/cloud-security/public-link-review.html",
+        "module": "31 · Βασικά Ασφάλειας Cloud",
+        "summary": "Βρες και περιόρισε δημόσια ή πολύ ευρέως κοινόχρηστα links.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "cloud-mfa-check",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Verify Cloud MFA",
+        "path": "pages/en/practical/cloud-security/cloud-mfa-check.html",
+        "module": "31 · Cloud Security Basics",
+        "summary": "Confirm strong sign-in and recovery for a cloud account.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Επαλήθευση MFA Cloud",
+        "path": "pages/el/practical/cloud-security/cloud-mfa-check.html",
+        "module": "31 · Βασικά Ασφάλειας Cloud",
+        "summary": "Επιβεβαίωσε ισχυρή σύνδεση και ανάκτηση για cloud λογαριασμό.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "cloud-activity-log",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Review Cloud Activity",
+        "path": "pages/en/practical/cloud-security/cloud-activity-log.html",
+        "module": "31 · Cloud Security Basics",
+        "summary": "Read a synthetic cloud activity log and identify important changes.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Έλεγχος Δραστηριότητας Cloud",
+        "path": "pages/el/practical/cloud-security/cloud-activity-log.html",
+        "module": "31 · Βασικά Ασφάλειας Cloud",
+        "summary": "Διάβασε συνθετικό cloud activity log και εντόπισε σημαντικές αλλαγές.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "cloud-backup-export",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Test a Cloud Data Export",
+        "path": "pages/en/practical/cloud-security/cloud-backup-export.html",
+        "module": "31 · Cloud Security Basics",
+        "summary": "Prepare and verify an offline copy of important cloud data.",
+        "icon": "globe"
+      },
+      "el": {
+        "title": "Δοκιμή Εξαγωγής Δεδομένων Cloud",
+        "path": "pages/el/practical/cloud-security/cloud-backup-export.html",
+        "module": "31 · Βασικά Ασφάλειας Cloud",
+        "summary": "Προετοίμασε και επαλήθευσε offline αντίγραφο σημαντικών cloud δεδομένων.",
+        "icon": "globe"
+      }
+    },
+    {
+      "id": "indicator-validation",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Validate Threat Indicators",
+        "path": "pages/en/practical/threat-intelligence/indicator-validation.html",
+        "module": "32 · Threat Intelligence",
+        "summary": "Check whether supplied indicators are correctly formatted and still useful.",
+        "icon": "search"
+      },
+      "el": {
+        "title": "Επαλήθευση Indicators Απειλών",
+        "path": "pages/el/practical/threat-intelligence/indicator-validation.html",
+        "module": "32 · Πληροφορίες Απειλών",
+        "summary": "Έλεγξε αν δοσμένα indicators έχουν σωστή μορφή και παραμένουν χρήσιμα.",
+        "icon": "search"
+      }
+    },
+    {
+      "id": "source-reliability-score",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Score Intelligence Sources",
+        "path": "pages/en/practical/threat-intelligence/source-reliability-score.html",
+        "module": "32 · Threat Intelligence",
+        "summary": "Compare source reliability, evidence quality and freshness.",
+        "icon": "search"
+      },
+      "el": {
+        "title": "Βαθμολόγηση Πηγών Πληροφοριών",
+        "path": "pages/el/practical/threat-intelligence/source-reliability-score.html",
+        "module": "32 · Πληροφορίες Απειλών",
+        "summary": "Σύγκρινε αξιοπιστία πηγής, ποιότητα τεκμηρίων και φρεσκάδα.",
+        "icon": "search"
+      }
+    },
+    {
+      "id": "domain-context-report",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Build Domain Context",
+        "path": "pages/en/practical/threat-intelligence/domain-context-report.html",
+        "module": "32 · Threat Intelligence",
+        "summary": "Turn safe, supplied domain facts into a concise context report.",
+        "icon": "search"
+      },
+      "el": {
+        "title": "Δημιουργία Context Domain",
+        "path": "pages/el/practical/threat-intelligence/domain-context-report.html",
+        "module": "32 · Πληροφορίες Απειλών",
+        "summary": "Μετέτρεψε ασφαλή, δοσμένα στοιχεία domain σε σύντομη αναφορά.",
+        "icon": "search"
+      }
+    },
+    {
+      "id": "campaign-timeline",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Build a Campaign Timeline",
+        "path": "pages/en/practical/threat-intelligence/campaign-timeline.html",
+        "module": "32 · Threat Intelligence",
+        "summary": "Order supplied public events into a defensible threat timeline.",
+        "icon": "search"
+      },
+      "el": {
+        "title": "Δημιουργία Χρονογραμμής Καμπάνιας",
+        "path": "pages/el/practical/threat-intelligence/campaign-timeline.html",
+        "module": "32 · Πληροφορίες Απειλών",
+        "summary": "Ταξινόμησε δοσμένα δημόσια γεγονότα σε τεκμηριωμένη χρονογραμμή απειλής.",
+        "icon": "search"
+      }
+    },
+    {
+      "id": "intelligence-brief",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Write a Threat Brief",
+        "path": "pages/en/practical/threat-intelligence/intelligence-brief.html",
+        "module": "32 · Threat Intelligence",
+        "summary": "Summarize a synthetic threat for a specific audience.",
+        "icon": "search"
+      },
+      "el": {
+        "title": "Γραφή Threat Brief",
+        "path": "pages/el/practical/threat-intelligence/intelligence-brief.html",
+        "module": "32 · Πληροφορίες Απειλών",
+        "summary": "Συνόψισε συνθετική απειλή για συγκεκριμένο κοινό.",
+        "icon": "search"
+      }
+    },
+    {
+      "id": "suspicious-file-intake",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Intake a Suspicious File Safely",
+        "path": "pages/en/practical/malware-triage/suspicious-file-intake.html",
+        "module": "33 · Safe Malware Triage",
+        "summary": "Document and isolate a harmless training sample without executing it.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Ασφαλής Παραλαβή Ύποπτου Αρχείου",
+        "path": "pages/el/practical/malware-triage/suspicious-file-intake.html",
+        "module": "33 · Ασφαλής Διαλογή Malware",
+        "summary": "Κατέγραψε και απομόνωσε ασφαλές training sample χωρίς εκτέλεση.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "static-metadata-check",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Inspect Static File Metadata",
+        "path": "pages/en/practical/malware-triage/static-metadata-check.html",
+        "module": "33 · Safe Malware Triage",
+        "summary": "Collect basic metadata from a harmless sample without running it.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Έλεγχος Static Metadata Αρχείου",
+        "path": "pages/el/practical/malware-triage/static-metadata-check.html",
+        "module": "33 · Ασφαλής Διαλογή Malware",
+        "summary": "Συλλέξε βασικά metadata από ασφαλές sample χωρίς εκτέλεση.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "string-triage",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Triage Extracted Strings",
+        "path": "pages/en/practical/malware-triage/string-triage.html",
+        "module": "33 · Safe Malware Triage",
+        "summary": "Review supplied strings for paths, URLs and readable clues.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Διαλογή Extracted Strings",
+        "path": "pages/el/practical/malware-triage/string-triage.html",
+        "module": "33 · Ασφαλής Διαλογή Malware",
+        "summary": "Έλεγξε δοσμένα strings για paths, URLs και αναγνώσιμα στοιχεία.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "behavior-hypothesis",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Build a Behavior Hypothesis",
+        "path": "pages/en/practical/malware-triage/behavior-hypothesis.html",
+        "module": "33 · Safe Malware Triage",
+        "summary": "Infer possible behavior from synthetic static evidence without running code.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Δημιουργία Υπόθεσης Συμπεριφοράς",
+        "path": "pages/el/practical/malware-triage/behavior-hypothesis.html",
+        "module": "33 · Ασφαλής Διαλογή Malware",
+        "summary": "Συμπέρανε πιθανή συμπεριφορά από συνθετικά static evidence χωρίς εκτέλεση.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "malware-triage-report",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Write a Safe Triage Report",
+        "path": "pages/en/practical/malware-triage/malware-triage-report.html",
+        "module": "33 · Safe Malware Triage",
+        "summary": "Combine static observations into a clear non-execution report.",
+        "icon": "activity"
+      },
+      "el": {
+        "title": "Γραφή Ασφαλούς Αναφοράς Triage",
+        "path": "pages/el/practical/malware-triage/malware-triage-report.html",
+        "module": "33 · Ασφαλής Διαλογή Malware",
+        "summary": "Συνδύασε static observations σε καθαρή αναφορά χωρίς εκτέλεση.",
+        "icon": "activity"
+      }
+    },
+    {
+      "id": "phishing-red-flags",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Spot Phishing Red Flags",
+        "path": "pages/en/practical/security-awareness/phishing-red-flags.html",
+        "module": "34 · Security Awareness",
+        "summary": "Review synthetic messages and identify manipulation signals.",
+        "icon": "mail"
+      },
+      "el": {
+        "title": "Εντοπισμός Phishing Red Flags",
+        "path": "pages/el/practical/security-awareness/phishing-red-flags.html",
+        "module": "34 · Ενημέρωση Ασφάλειας",
+        "summary": "Έλεγξε συνθετικά μηνύματα και εντόπισε σημάδια χειραγώγησης.",
+        "icon": "mail"
+      }
+    },
+    {
+      "id": "qr-code-safety",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Assess QR-Code Requests",
+        "path": "pages/en/practical/security-awareness/qr-code-safety.html",
+        "module": "34 · Security Awareness",
+        "summary": "Evaluate QR-code scenarios without opening unknown destinations.",
+        "icon": "mail"
+      },
+      "el": {
+        "title": "Αξιολόγηση QR-Code Αιτημάτων",
+        "path": "pages/el/practical/security-awareness/qr-code-safety.html",
+        "module": "34 · Ενημέρωση Ασφάλειας",
+        "summary": "Αξιολόγησε σενάρια QR χωρίς άνοιγμα άγνωστων προορισμών.",
+        "icon": "mail"
+      }
+    },
+    {
+      "id": "social-engineering-scenario",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Handle a Social-Engineering Request",
+        "path": "pages/en/practical/security-awareness/social-engineering-scenario.html",
+        "module": "34 · Security Awareness",
+        "summary": "Practise refusing and verifying a synthetic high-pressure request.",
+        "icon": "mail"
+      },
+      "el": {
+        "title": "Διαχείριση Social-Engineering Αιτήματος",
+        "path": "pages/el/practical/security-awareness/social-engineering-scenario.html",
+        "module": "34 · Ενημέρωση Ασφάλειας",
+        "summary": "Εξασκήσου στην άρνηση και επαλήθευση συνθετικού πιεστικού αιτήματος.",
+        "icon": "mail"
+      }
+    },
+    {
+      "id": "secure-file-sharing",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Choose a Safe Sharing Method",
+        "path": "pages/en/practical/security-awareness/secure-file-sharing.html",
+        "module": "34 · Security Awareness",
+        "summary": "Select an appropriate way to share files by sensitivity and audience.",
+        "icon": "mail"
+      },
+      "el": {
+        "title": "Επιλογή Ασφαλούς Κοινής Χρήσης",
+        "path": "pages/el/practical/security-awareness/secure-file-sharing.html",
+        "module": "34 · Ενημέρωση Ασφάλειας",
+        "summary": "Επίλεξε κατάλληλο τρόπο κοινής χρήσης ανά ευαισθησία και κοινό.",
+        "icon": "mail"
+      }
+    },
+    {
+      "id": "incident-reporting-drill",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Run an Incident Reporting Drill",
+        "path": "pages/en/practical/security-awareness/incident-reporting-drill.html",
+        "module": "34 · Security Awareness",
+        "summary": "Turn a synthetic observation into a useful first report.",
+        "icon": "mail"
+      },
+      "el": {
+        "title": "Εκτέλεση Άσκησης Αναφοράς Περιστατικού",
+        "path": "pages/el/practical/security-awareness/incident-reporting-drill.html",
+        "module": "34 · Ενημέρωση Ασφάλειας",
+        "summary": "Μετέτρεψε συνθετική παρατήρηση σε χρήσιμη πρώτη αναφορά.",
+        "icon": "mail"
+      }
+    },
+    {
+      "id": "role-skill-map",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Map Cybersecurity Roles",
+        "path": "pages/en/practical/career-portfolio/role-skill-map.html",
+        "module": "35 · Career & Portfolio",
+        "summary": "Connect common defensive roles to concrete beginner skills.",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Χαρτογράφηση Ρόλων Κυβερνοασφάλειας",
+        "path": "pages/el/practical/career-portfolio/role-skill-map.html",
+        "module": "35 · Καριέρα και Portfolio",
+        "summary": "Σύνδεσε συνηθισμένους αμυντικούς ρόλους με συγκεκριμένες βασικές δεξιότητες.",
+        "icon": "award"
+      }
+    },
+    {
+      "id": "portfolio-evidence-cleanup",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Sanitize Portfolio Evidence",
+        "path": "pages/en/practical/career-portfolio/portfolio-evidence-cleanup.html",
+        "module": "35 · Career & Portfolio",
+        "summary": "Remove secrets and personal data before publishing training work.",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Καθαρισμός Evidence για Portfolio",
+        "path": "pages/el/practical/career-portfolio/portfolio-evidence-cleanup.html",
+        "module": "35 · Καριέρα και Portfolio",
+        "summary": "Αφαίρεσε secrets και προσωπικά δεδομένα πριν δημοσιεύσεις training work.",
+        "icon": "award"
+      }
+    },
+    {
+      "id": "lab-writeup-template",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Build a Lab Write-Up",
+        "path": "pages/en/practical/career-portfolio/lab-writeup-template.html",
+        "module": "35 · Career & Portfolio",
+        "summary": "Convert one completed lab into a clear portfolio case study.",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Δημιουργία Lab Write-Up",
+        "path": "pages/el/practical/career-portfolio/lab-writeup-template.html",
+        "module": "35 · Καριέρα και Portfolio",
+        "summary": "Μετέτρεψε ολοκληρωμένο lab σε καθαρό portfolio case study.",
+        "icon": "award"
+      }
+    },
+    {
+      "id": "interview-explanation-drill",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Explain a Security Finding",
+        "path": "pages/en/practical/career-portfolio/interview-explanation-drill.html",
+        "module": "35 · Career & Portfolio",
+        "summary": "Practise explaining one finding to technical and non-technical audiences.",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Εξήγηση Security Finding",
+        "path": "pages/el/practical/career-portfolio/interview-explanation-drill.html",
+        "module": "35 · Καριέρα και Portfolio",
+        "summary": "Εξασκήσου στην εξήγηση ενός finding σε τεχνικό και μη τεχνικό κοινό.",
+        "icon": "award"
+      }
+    },
+    {
+      "id": "learning-gap-plan",
+      "kind": "practical",
+      "hours": 2,
+      "en": {
+        "title": "Create a Learning Gap Plan",
+        "path": "pages/en/practical/career-portfolio/learning-gap-plan.html",
+        "module": "35 · Career & Portfolio",
+        "summary": "Use completed work to choose the next three skills to practise.",
+        "icon": "award"
+      },
+      "el": {
+        "title": "Δημιουργία Learning Gap Plan",
+        "path": "pages/el/practical/career-portfolio/learning-gap-plan.html",
+        "module": "35 · Καριέρα και Portfolio",
+        "summary": "Χρησιμοποίησε την ολοκληρωμένη εργασία για να επιλέξεις τις επόμενες τρεις δεξιότητες.",
         "icon": "award"
       }
     }

@@ -3,7 +3,7 @@
 | Capability | Windows | Linux | Android + Termux | Website only |
 |---|---|---|---|---|
 | English and Greek lessons | Yes | Yes | Yes | Yes |
-| 109-lab, 258-hour practical track | Yes | Yes | Yes, with documented alternatives | Explanations only |
+| 149-lab, 338-hour practical track | Yes | Yes | Yes, with documented alternatives | Explanations only |
 | Local `academy.py` progress | Yes | Yes | Yes | No |
 | Workspace generator | `py academy.py prepare LAB_ID` | `python3 academy.py prepare LAB_ID` | `python academy.py prepare LAB_ID` | No |
 | Python automation labs | Native Python or WSL | Native Python | Termux Python | No |

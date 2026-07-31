@@ -12,4 +12,4 @@ The website now presents one seven-stage guided path:
 6. Defend real systems
 7. Investigate and report
 
-The guided path selects the essential lessons and practices. The complete 109-lab library remains available as optional practice organised into six collapsed collections.
+The guided path selects the essential lessons and practices. The complete 149-lab library remains available as optional practice organised into eight collapsed collections and 27 categories.

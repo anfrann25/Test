@@ -6,9 +6,9 @@ A bilingual, local-first cybersecurity academy for Windows, Linux and Android wi
 
 - One seven-stage beginner path that shows exactly what to learn next
 - 38 core practices selected from the complete library
-- 109 distinct practical labs and 258 estimated active hours in total
-- 148 English pages and 148 matching Greek pages
-- Six collapsed optional-practice collections instead of one overwhelming catalog
+- 149 distinct practical labs and 338 estimated active hours in total
+- 188 English pages and 188 matching Greek pages
+- Eight collapsed optional-practice collections covering 27 clear categories
 - Ultra-compact four-block labs: start, do, save, finish
 - Windows, Linux and Termux instructions
 - GitHub Pages-safe relative paths

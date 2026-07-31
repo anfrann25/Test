@@ -62,6 +62,23 @@ def sample_files(lab):
     elif module=='reporting':
         common['source/findings.csv']='id,title,impact,likelihood,status\nF-01,Weak test setting,medium,high,open\nF-02,Missing backup check,high,medium,open\n'
         common['source/evidence-note.txt']='Synthetic evidence only. The sample setting allows unnecessary access in the local training app.\n'
+    elif module=='identity-access':
+        common['source/access-matrix.csv']='identity,type,resource,permission,owner\nstudent,human,training-folder,read-write,academy\nautomation,service,report-folder,write,academy\nold-user,human,archive,read,review\n'
+    elif module=='mobile-security':
+        common['source/mobile-settings.csv']='item,state,review\nscreen-lock,30-seconds,ok\nnotification-preview,always,change\nunknown-app-source,disabled,ok\n'
+    elif module=='wifi-router-defense':
+        common['source/router-settings.csv']='setting,value,status\nadmin-remote-access,disabled,ok\nwifi-security,WPA2-WPA3,review\nguest-isolation,enabled,ok\n'
+    elif module=='cloud-security':
+        common['source/cloud-access.csv']='resource,principal,access,expiry\ntraining-folder,student@example.test,editor,none\npublic-sample,anyone,viewer,2026-12-31\n'
+    elif module=='threat-intelligence':
+        common['source/indicators.csv']='type,value,confidence,source\ndomain,example.test,high,training\nip,192.0.2.10,medium,training\nsha256,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,low,training\n'
+    elif module=='malware-triage':
+        common['source/file-metadata.csv']='name,extension,detected_type,size\ntraining-sample.bin,.bin,data,128\n'
+        common['source/extracted-strings.txt']='training sample\nhttps://example.test/update\nC:/Users/Example/AppData/Local/Temp\nno code is executed in this lab\n'
+    elif module=='security-awareness':
+        common['source/messages.csv']='sender,request,signal\nmanager@example.test,share password,urgency\nsupport@examp1e.test,open QR,lookalike-domain\n'
+    elif module=='career-portfolio':
+        common['source/skills.csv']='skill,evidence,status\nlog-review,incident-timeline,complete\ncloud-security,sharing-audit,practice\n'
     elif module=='capstone':
         common['source/capstone-auth.log']='2026-02-01T10:00:00Z login_ok account=owner source=console\n2026-02-01T10:12:00Z login_failed account=owner source=remote-test\n'
         common['source/capstone-network.csv']='time,protocol,destination,result\n10:00,DNS,updates.example.test,allowed\n10:13,HTTPS,docs.example.test,allowed\n'
