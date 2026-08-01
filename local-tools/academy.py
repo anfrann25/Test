@@ -5,8 +5,8 @@ import argparse,json,os,platform,subprocess,sys,webbrowser
 from http.server import SimpleHTTPRequestHandler,ThreadingHTTPServer
 from pathlib import Path
 
-ROOT=Path(__file__).resolve().parent
-CATALOG=ROOT/'academy_catalog.json'
+ROOT=Path(__file__).resolve().parent.parent
+CATALOG=ROOT/'assets'/'data'/'academy_catalog.json'
 STATE_DIR=Path.home()/'.hackthebasics'
 STATE_FILE=STATE_DIR/'progress.json'
 

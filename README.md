@@ -16,16 +16,27 @@ A bilingual, local-first cybersecurity academy for Windows, Linux and Android wi
 ## Start locally
 
 ```bash
-python3 academy.py serve
-python3 academy.py list --practical
-python3 academy.py prepare patch-audit
-python3 academy.py check patch-audit
-python3 academy.py complete patch-audit
-python3 academy.py status
+python3 local-tools/academy.py serve
+python3 local-tools/academy.py list --practical
+python3 local-tools/academy.py prepare patch-audit
+python3 local-tools/academy.py check patch-audit
+python3 local-tools/academy.py complete patch-audit
+python3 local-tools/academy.py status
 ```
 
-On Windows use `py academy.py`; in Termux use `python academy.py`.
+On Windows use `py local-tools/academy.py`; in Termux use `python local-tools/academy.py`.
 
 ## GitHub Pages
 
 The included workflow publishes the repository root from the `main` branch. All links are relative and work under a project path such as `/Test/`.
+
+
+## Repository layout
+
+- `assets/` — CSS, JavaScript, icons and catalog data
+- `pages/` — English and Greek academy pages
+- `labs/` and `practice/` — local hands-on exercises
+- `course-source/` — curriculum source material
+- `docs/` — curriculum, compatibility and quality documentation
+- `local-tools/` — optional local server and academy command-line tools
+- `tools/` — supporting lab utilities

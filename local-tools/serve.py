@@ -18,7 +18,7 @@ def main() -> None:
     parser.add_argument("--port", type=int, default=8000)
     parser.add_argument("--no-browser", action="store_true")
     args = parser.parse_args()
-    os.chdir(Path(__file__).resolve().parent)
+    os.chdir(Path(__file__).resolve().parent.parent)
     handler = http.server.SimpleHTTPRequestHandler
     with ReusableTCPServer((args.host, args.port), handler) as server:
         url = f"http://127.0.0.1:{args.port}/"

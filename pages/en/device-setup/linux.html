@@ -6,16 +6,16 @@
 <meta content="Set up the local HackTheBasics academy program, Python and practical challenge directories on Linux." name="description"/>
 <meta content="#071a33" name="theme-color"/>
 <title>Linux Setup — HackTheBasics.gr</title>
-<link href="../../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../assets/branding/favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="../../../manifest.webmanifest" rel="manifest"/>
-<link href="../../../style.css" rel="stylesheet"/>
+<link href="../../../assets/css/style.css" rel="stylesheet"/>
 </head>
 <body class="lesson-page" data-alt-language-url="../../el/device-setup/linux.html" data-language="en" data-page-id="linux-setup" data-root="../../..">
 <a class="skip-link" href="#main-content">Skip to content</a>
-<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Search lessons and practical labs</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Search the academy…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Utilities" class="header-actions"><button aria-expanded="false" aria-label="Reading settings" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EL" type="button">Ελληνικά</button><button aria-label="Toggle theme" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Open menu" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Menu</b></button></nav></header>
+<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../assets/branding/favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Search lessons and practical labs</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Search the academy…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Utilities" class="header-actions"><button aria-expanded="false" aria-label="Reading settings" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EL" type="button">Ελληνικά</button><button aria-label="Toggle theme" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Open menu" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Menu</b></button></nav></header>
 <div class="reader-panel" data-reader-panel="" hidden=""><strong>Reading</strong><div><button aria-label="Decrease text" data-font-minus="" type="button">A−</button><button data-font-reset="" type="button">A</button><button aria-label="Increase text" data-font-plus="" type="button">A+</button><button aria-label="Toggle reading width" data-width-toggle="" type="button">↔</button></div></div>
 <div class="site-layout">
-<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Close menu" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Course curriculum" class="course-navigation" data-course-nav=""></nav></aside>
+<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../assets/branding/favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Close menu" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Course curriculum" class="course-navigation" data-course-nav=""></nav></aside>
 <button aria-label="Close menu" class="sidebar-backdrop" data-menu-close="" type="button"></button>
 <main class="lesson-main" id="main-content">
 <nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../../home.html">Home</a><span>/</span><a href="index.html">Start on Your Device</a><span>/</span><span>Linux Setup</span></nav><a class="path-return" href="../../../pages/en/path/index.html"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-award"></use></svg><span>Learning path</span></a>
@@ -28,7 +28,7 @@
 <div class="lesson-content">
 <p>Linux provides the most direct path for shell, Python and the bundled challenge files. The website explains each task; your local terminal performs it.</p>
 <h2>1. Start the academy program</h2><pre><code>chmod +x run-academy.sh
-./run-academy.sh</code></pre><p>Or use <code>python3 academy.py</code>. Progress is saved under your Linux home directory.</p>
+./run-academy.sh</code></pre><p>Or use <code>python3 local-tools/academy.py</code>. Progress is saved under your Linux home directory.</p>
 <h2>2. Install the learning tools</h2><div class="platform-tabs"><button class="is-active" data-tab-target="debian" type="button">Ubuntu / Debian</button><button data-tab-target="fedora" type="button">Fedora</button></div><div data-tab-panel="debian"><pre><code>sudo apt update
 sudo apt install python3 python3-pip git curl unzip</code></pre></div><div data-tab-panel="fedora" hidden=""><pre><code>sudo dnf upgrade --refresh
 sudo dnf install python3 python3-pip git curl unzip</code></pre></div>
@@ -38,7 +38,7 @@ uname -m</code></pre>
 <h2>4. Open local practice files</h2><pre><code>cd labs/linux/linux_challenges
 ls -la</code></pre><p>Python exercises are in <code>labs/python/python_challenges</code>. The command reference explains equivalent tasks across platforms.</p>
 <div class="callout warning"><strong>Use isolation</strong><p>Run unfamiliar binaries and deliberately vulnerable software in a disposable virtual machine or container. Do not modify a work or school system without authorization.</p></div>
-<h2>Checklist</h2><ul class="check-list"><li><code>python3 academy.py status</code> runs.</li><li>Your terminal can access the project folder.</li><li><code>uname -m</code> confirms the architecture.</li><li>You use isolation for risky or vulnerable software.</li></ul>
+<h2>Checklist</h2><ul class="check-list"><li><code>python3 local-tools/academy.py status</code> runs.</li><li>Your terminal can access the project folder.</li><li><code>uname -m</code> confirms the architecture.</li><li>You use isolation for risky or vulnerable software.</li></ul>
 </div>
 <footer class="lesson-navigation"><a class="lesson-nav-card prev" href="windows.html"><small>← Previous</small><strong>Windows Setup</strong></a><a class="lesson-nav-card next" href="termux.html"><small>Next →</small><strong>Android and Termux Setup</strong></a></footer>
 </article>
@@ -47,5 +47,5 @@ ls -la</code></pre><p>Python exercises are in <code>labs/python/python_challenge
 </div>
 <button aria-label="Back to top" class="back-to-top" data-back-to-top="" type="button">↑</button>
 <div aria-live="polite" class="toast" data-toast="" role="status"></div>
-<script defer="" src="../../../course-index.js"></script><script defer="" src="../../../script.js"></script>
+<script defer="" src="../../../assets/js/course-index.js"></script><script defer="" src="../../../assets/js/script.js"></script>
 </body></html>
