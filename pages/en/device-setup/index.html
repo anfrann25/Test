@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="Choose a Windows, Linux or Android with Termux path for the local-first HackTheBasics cybersecurity academy." name="description"/>
+<meta content="#06152e" name="theme-color"/>
+<title>Choose Your Learning Device — HackTheBasics.gr</title>
+<link href="../../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../manifest.webmanifest" rel="manifest"/>
+<link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page" data-alt-language-url="../../el/device-setup/index.html" data-language="en" data-page-id="device-overview" data-root="../../..">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Search lessons and practical labs</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Search the academy…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Utilities" class="header-actions"><button aria-expanded="false" aria-label="Reading settings" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EL" type="button">Ελληνικά</button><button aria-label="Toggle theme" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Open menu" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Menu</b></button></nav></header>
+<div class="reader-panel" data-reader-panel="" hidden=""><strong>Reading</strong><div><button aria-label="Decrease text" data-font-minus="" type="button">A−</button><button data-font-reset="" type="button">A</button><button aria-label="Increase text" data-font-plus="" type="button">A+</button><button aria-label="Toggle reading width" data-width-toggle="" type="button">↔</button></div></div>
+<div class="site-layout">
+<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Close menu" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Course curriculum" class="course-navigation" data-course-nav=""></nav></aside>
+<button aria-label="Close menu" class="sidebar-backdrop" data-menu-close="" type="button"></button>
+<main class="lesson-main" id="main-content">
+<nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../../home.html">Home</a><span>/</span><a href="index.html">Start on Your Device</a><span>/</span><span>Choose Your Learning Device</span></nav><a class="path-return" href="../../../pages/en/path/index.html"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-award"></use></svg><span>Learning path</span></a>
+<article class="lesson-article">
+<header class="lesson-header">
+<span class="module-label">01 · Start on Your Device</span>
+<h1>Choose Your Learning Device</h1>
+<div class="lesson-meta"><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-clock"></use></svg>1 min read</span><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-device"></use></svg>Windows · Linux · Termux</span></div>
+</header>
+<div class="lesson-content">
+<p><strong>HackTheBasics is an educational academy.</strong> The website explains concepts, shows commands and prepares you for practical work. It does not execute a terminal, run challenge files or store practical progress.</p>
+<div class="callout tip"><strong>How practical work is handled</strong><p>Open the terminal that belongs to your device, run the included local programs there, and use <code>academy.py</code> to store progress in your own user profile.</p></div>
+<div class="device-choice-grid">
+<a class="choice-card" href="windows.html"><span>▣</span><h2>Windows</h2><p>Use PowerShell and Python. Add WSL when a lesson specifically needs Linux commands or Linux challenge files.</p><b>Open Windows setup →</b></a>
+<a class="choice-card" href="linux.html"><span>🐧</span><h2>Linux</h2><p>Use the native shell, Python, local challenge directories and optional isolated virtual machines.</p><b>Open Linux setup →</b></a>
+<a class="choice-card" href="termux.html"><span>⌁</span><h2>Android + Termux</h2><p>Use Termux for portable shell and Python exercises. ARM limitations are clearly identified.</p><b>Open Termux setup →</b></a>
+</div>
+<h2>The local academy workflow</h2>
+<ol class="step-list"><li>Read the lesson in the website.</li><li>Open PowerShell, WSL, a Linux terminal or Termux.</li><li>Run the command or program locally on your device.</li><li>Use the terminal academy program to record completion.</li><li>Return to the website for the next explanation.</li></ol>
+<h2>Start the academy program</h2>
+<div class="platform-tabs" role="tablist"><button class="is-active" data-tab-target="windows" type="button">Windows</button><button data-tab-target="linux" type="button">Linux</button><button data-tab-target="termux" type="button">Termux</button></div>
+<div data-tab-panel="windows"><pre><code>run-academy.bat</code></pre><p>Or run <code>py academy.py</code> from PowerShell.</p></div>
+<div data-tab-panel="linux" hidden=""><pre><code>chmod +x run-academy.sh
+./run-academy.sh</code></pre></div>
+<div data-tab-panel="termux" hidden=""><pre><code>chmod +x run-academy.sh
+./run-academy.sh</code></pre></div>
+<div class="callout warning"><strong>Architecture compatibility</strong><p>The bundled compiled Linux challenge binaries target x86-64. Most Android phones use ARM, so those specific binaries must be completed on compatible Linux or WSL. Python and portable shell exercises work in Termux.</p></div>
+</div>
+<footer class="lesson-navigation"><a class="lesson-nav-card prev" href="../introduction/cybersecurity-domains.html"><small>← Previous</small><strong>Cybersecurity Domains</strong></a><a class="lesson-nav-card next" href="windows.html"><small>Next →</small><strong>Windows Setup</strong></a></footer>
+</article>
+<footer class="lesson-footer"><span>HackTheBasics.gr</span><a href="../safety/index.html">Safety &amp; Ethics</a></footer>
+</main>
+</div>
+<button aria-label="Back to top" class="back-to-top" data-back-to-top="" type="button">↑</button>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
+<script defer="" src="../../../course-index.js"></script><script defer="" src="../../../script.js"></script>
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="The OSI model is a seven-layer reference model used to describe network communication. Real protocols do not always fit perfectly into one layer, but the m" name="description"/>
+<meta content="#06152e" name="theme-color"/>
+<title>OSI Model — HackTheBasics.gr</title>
+<link href="../../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../manifest.webmanifest" rel="manifest"/>
+<link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page" data-alt-language-url="../../el/networking/osi-model.html" data-language="en" data-page-id="osi-model" data-root="../../..">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Search lessons and practical labs</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Search the academy…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Utilities" class="header-actions"><button aria-expanded="false" aria-label="Reading settings" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EL" type="button">Ελληνικά</button><button aria-label="Toggle theme" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Open menu" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Menu</b></button></nav></header>
+<div class="reader-panel" data-reader-panel="" hidden=""><strong>Reading</strong><div><button aria-label="Decrease text" data-font-minus="" type="button">A−</button><button data-font-reset="" type="button">A</button><button aria-label="Increase text" data-font-plus="" type="button">A+</button><button aria-label="Toggle reading width" data-width-toggle="" type="button">↔</button></div></div>
+<div class="site-layout">
+<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Close menu" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Course curriculum" class="course-navigation" data-course-nav=""></nav></aside>
+<button aria-label="Close menu" class="sidebar-backdrop" data-menu-close="" type="button"></button>
+<main class="lesson-main" id="main-content">
+<nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../../home.html">Home</a><span>/</span><a href="index.html">Networking</a><span>/</span><span>OSI Model</span></nav><a class="path-return" href="../../../pages/en/path/index.html"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-award"></use></svg><span>Learning path</span></a>
+<article class="lesson-article">
+<header class="lesson-header">
+<span class="module-label">02 · Networking</span>
+<h1>OSI Model</h1>
+<div class="lesson-meta"><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-clock"></use></svg>1 min read</span><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-device"></use></svg>Windows · Linux · Termux</span></div>
+</header>
+<div class="lesson-content"><p>The OSI model is a seven-layer reference model used to describe network communication. Real protocols do not always fit perfectly into one layer, but the model is useful for troubleshooting and security analysis.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Layer</th>
+<th>Name</th>
+<th>Typical examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">7</td>
+<td>Application</td>
+<td>HTTP, DNS, SMTP</td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td>Presentation</td>
+<td>Encoding, encryption formats</td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td>Session</td>
+<td>Session establishment and management</td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td>Transport</td>
+<td>TCP, UDP</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td>Network</td>
+<td>IP, routing</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td>Data Link</td>
+<td>Ethernet, MAC addressing</td>
+</tr>
+<tr>
+<td style="text-align:right">1</td>
+<td>Physical</td>
+<td>Cables, radio signals, hardware</td>
+</tr>
+</tbody>
+</table>
+<h2>How to use it</h2>
+<p>When a connection fails, work through the layers. Is the interface connected? Does the device have a valid address? Can packets reach the destination? Is the transport port open? Does the application respond correctly?</p>
+<p>For security, the model helps describe where a control or attack operates. A firewall may filter network and transport information, while an application firewall inspects higher-level requests.</p>
+</div>
+<footer class="lesson-navigation"><a class="lesson-nav-card prev" href="index.html"><small>← Previous</small><strong>Networking Fundamentals</strong></a><a class="lesson-nav-card next" href="ip-addresses.html"><small>Next →</small><strong>IP Addresses</strong></a></footer>
+</article>
+<footer class="lesson-footer"><span>HackTheBasics.gr</span><a href="../safety/index.html">Safety &amp; Ethics</a></footer>
+</main>
+</div>
+<button aria-label="Back to top" class="back-to-top" data-back-to-top="" type="button">↑</button>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
+<script defer="" src="../../../course-index.js"></script><script defer="" src="../../../script.js"></script>
+</body></html>

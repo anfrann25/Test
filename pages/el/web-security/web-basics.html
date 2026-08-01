@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="Το μεγαλύτερο μέρος των εφαρμογών που χρησιμοποιούμε καθημερινά είναι web applications. Facebook, Gmail, Instagram, ηλεκτρονικές τράπεζες και e-shops λειτο" name="description"/>
+<meta content="#06152e" name="theme-color"/>
+<title>Πώς Λειτουργεί το Web — HackTheBasics.gr</title>
+<link href="../../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../manifest.webmanifest" rel="manifest"/>
+<link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page" data-alt-language-url="../../en/web-security/web-basics.html" data-language="el" data-page-id="web-basics" data-root="../../..">
+<a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Αναζήτηση μαθημάτων και πρακτικών</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Αναζήτηση στην ακαδημία…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Εργαλεία" class="header-actions"><button aria-expanded="false" aria-label="Ρυθμίσεις ανάγνωσης" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EN" type="button">English</button><button aria-label="Αλλαγή θέματος" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Άνοιγμα μενού" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Μενού</b></button></nav></header>
+<div class="reader-panel" data-reader-panel="" hidden=""><strong>Ανάγνωση</strong><div><button aria-label="Μείωση κειμένου" data-font-minus="" type="button">A−</button><button data-font-reset="" type="button">A</button><button aria-label="Αύξηση κειμένου" data-font-plus="" type="button">A+</button><button aria-label="Αλλαγή πλάτους" data-width-toggle="" type="button">↔</button></div></div>
+<div class="site-layout">
+<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Κλείσιμο μενού" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Πρόγραμμα μαθημάτων" class="course-navigation" data-course-nav=""></nav></aside>
+<button aria-label="Κλείσιμο μενού" class="sidebar-backdrop" data-menu-close="" type="button"></button>
+<main class="lesson-main" id="main-content">
+<nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../../home.html">Αρχική</a><span>/</span><a href="index.html">Ασφάλεια Web</a><span>/</span><span>Πώς Λειτουργεί το Web</span></nav><a class="path-return" href="../../../pages/el/path/index.html"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-award"></use></svg><span>Διαδρομή μάθησης</span></a>
+<article class="lesson-article">
+<header class="lesson-header">
+<span class="module-label">06 · Ασφάλεια Web</span>
+<h1>Πώς Λειτουργεί το Web</h1>
+<div class="lesson-meta"><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-clock"></use></svg>2 λεπτά ανάγνωσης</span><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-device"></use></svg>Windows · Linux · Termux</span></div>
+</header>
+<div class="lesson-content"><p>Το μεγαλύτερο μέρος των εφαρμογών που χρησιμοποιούμε καθημερινά είναι web applications.</p>
+<p>Facebook, Gmail, Instagram, ηλεκτρονικές τράπεζες και e-shops λειτουργούν μέσω του Web.</p>
+<p>Για αυτόν τον λόγο, η ασφάλεια των web εφαρμογών αποτελεί έναν από τους σημαντικότερους τομείς του Cybersecurity.</p>
+<p>Σε αυτό το κεφάλαιο θα μάθεις πώς λειτουργεί το Web και πώς σκέφτεται ένας Web Pentester.</p>
+<hr/>
+<h1>Πώς σκέφτεται το Web</h1>
+<p>Ένας browser δεν επικοινωνεί απευθείας με μία βάση δεδομένων.</p>
+<p>Η επικοινωνία γίνεται πάντα μέσω ενός Web Server.</p>
+<pre><code class="language-text">Browser
+    │
+HTTP Request
+    │
+    ▼
+Web Server
+    │
+Application
+    │
+Database
+</code></pre>
+<p>Ο Browser στέλνει ένα <strong>HTTP Request</strong>.</p>
+<p>Ο Server επεξεργάζεται το Request.</p>
+<p>Ο Server επιστρέφει ένα <strong>HTTP Response</strong>.</p>
+<p>Οι περισσότερες Web Vulnerabilities βασίζονται στην κατανόηση αυτής της επικοινωνίας.</p>
+<hr/>
+<h1>Client vs Server</h1>
+<h2>Client</h2>
+<p>Ο Client είναι η συσκευή του χρήστη.</p>
+<p>Παραδείγματα:</p>
+<ul>
+<li>Chrome</li>
+<li>Firefox</li>
+<li>Edge</li>
+<li>Safari</li>
+</ul>
+<p>Ο Client στέλνει Requests και εμφανίζει το αποτέλεσμα στον χρήστη.</p>
+<hr/>
+<h2>Server</h2>
+<p>Ο Server φιλοξενεί την εφαρμογή.</p>
+<p>Παραδείγματα:</p>
+<ul>
+<li>Apache</li>
+<li>Nginx</li>
+<li>IIS</li>
+</ul>
+<p>Ο Server επεξεργάζεται τα Requests και επιστρέφει Responses.</p>
+<hr/>
+<h1>HTML</h1>
+<p>Η HTML δημιουργεί τη δομή μιας ιστοσελίδας.</p>
+<p>Παράδειγμα:</p>
+<pre><code class="language-html">&lt;h1&gt;Hello World&lt;/h1&gt;
+
+&lt;form&gt;
+
+&lt;input&gt;
+
+&lt;button&gt;Login&lt;/button&gt;
+</code></pre>
+<p>Η HTML περιγράφει τι θα εμφανιστεί στον Browser.</p>
+<hr/>
+<h1>JavaScript</h1>
+<p>Η JavaScript εκτελείται στον Browser.</p>
+<p>Χρησιμοποιείται για:</p>
+<ul>
+<li>Dynamic Content</li>
+<li>Forms</li>
+<li>Buttons</li>
+<li>API Calls</li>
+</ul>
+<p>Η JavaScript βελτιώνει την εμπειρία του χρήστη, όμως δεν πρέπει ποτέ να χρησιμοποιείται ως μηχανισμός ασφαλείας, καθώς ο κώδικας μπορεί να προβληθεί και να τροποποιηθεί από οποιονδήποτε.</p>
+<hr/>
+<h1>Τι πρέπει να θυμάσαι</h1>
+<ul>
+<li>Ο Browser στέλνει Requests.</li>
+<li>Ο Server επιστρέφει Responses.</li>
+<li>Οι περισσότερες επιθέσεις εκμεταλλεύονται την επικοινωνία μεταξύ Client και Server.</li>
+</ul>
+</div>
+<footer class="lesson-navigation"><a class="lesson-nav-card prev" href="index.html"><small>← Προηγούμενο</small><strong>Επισκόπηση Ασφάλειας Web</strong></a><a class="lesson-nav-card next" href="http.html"><small>Επόμενο →</small><strong>Βασικές Αρχές HTTP</strong></a></footer>
+</article>
+<footer class="lesson-footer"><span>HackTheBasics.gr</span><a href="../safety/index.html">Ασφάλεια &amp; Δεοντολογία</a></footer>
+</main>
+</div>
+<button aria-label="Πάνω" class="back-to-top" data-back-to-top="" type="button">↑</button>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
+<script defer="" src="../../../course-index.js"></script><script defer="" src="../../../script.js"></script>
+</body></html>

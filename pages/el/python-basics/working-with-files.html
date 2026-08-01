@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="Ένα από τα μεγαλύτερα πλεονεκτήματα της Python είναι η δυνατότητα να διαβάζει και να δημιουργεί αρχεία. Στον χώρο του Cybersecurity, τα αρχεία χρησιμοποιού" name="description"/>
+<meta content="#06152e" name="theme-color"/>
+<title>Εργασία με Αρχεία — HackTheBasics.gr</title>
+<link href="../../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../manifest.webmanifest" rel="manifest"/>
+<link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page" data-alt-language-url="../../en/python-basics/working-with-files.html" data-language="el" data-page-id="working-with-files" data-root="../../..">
+<a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Αναζήτηση μαθημάτων και πρακτικών</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Αναζήτηση στην ακαδημία…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Εργαλεία" class="header-actions"><button aria-expanded="false" aria-label="Ρυθμίσεις ανάγνωσης" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EN" type="button">English</button><button aria-label="Αλλαγή θέματος" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Άνοιγμα μενού" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Μενού</b></button></nav></header>
+<div class="reader-panel" data-reader-panel="" hidden=""><strong>Ανάγνωση</strong><div><button aria-label="Μείωση κειμένου" data-font-minus="" type="button">A−</button><button data-font-reset="" type="button">A</button><button aria-label="Αύξηση κειμένου" data-font-plus="" type="button">A+</button><button aria-label="Αλλαγή πλάτους" data-width-toggle="" type="button">↔</button></div></div>
+<div class="site-layout">
+<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Κλείσιμο μενού" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Πρόγραμμα μαθημάτων" class="course-navigation" data-course-nav=""></nav></aside>
+<button aria-label="Κλείσιμο μενού" class="sidebar-backdrop" data-menu-close="" type="button"></button>
+<main class="lesson-main" id="main-content">
+<nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../../home.html">Αρχική</a><span>/</span><a href="index.html">Βασικά Python</a><span>/</span><span>Εργασία με Αρχεία</span></nav><a class="path-return" href="../../../pages/el/path/index.html"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-award"></use></svg><span>Διαδρομή μάθησης</span></a>
+<article class="lesson-article">
+<header class="lesson-header">
+<span class="module-label">05 · Βασικά Python</span>
+<h1>Εργασία με Αρχεία</h1>
+<div class="lesson-meta"><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-clock"></use></svg>2 λεπτά ανάγνωσης</span><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-device"></use></svg>Windows · Linux · Termux</span></div>
+</header>
+<div class="lesson-content"><p>Ένα από τα μεγαλύτερα πλεονεκτήματα της Python είναι η δυνατότητα να διαβάζει και να δημιουργεί αρχεία.</p>
+<p>Στον χώρο του Cybersecurity, τα αρχεία χρησιμοποιούνται συνεχώς. Μπορεί να περιέχουν λίστες με IP Addresses, logs, passwords, αποτελέσματα από scans ή διάφορα configuration files.</p>
+<p>Σε αυτό το κεφάλαιο θα μάθουμε πώς μπορούμε να διαβάζουμε και να γράφουμε αρχεία χρησιμοποιώντας την Python.</p>
+<hr/>
+<h1>Άνοιγμα ενός αρχείου</h1>
+<p>Για να ανοίξουμε ένα αρχείο χρησιμοποιούμε την <code>open()</code>.</p>
+<p>Παράδειγμα:</p>
+<pre><code class="language-python">file = open("targets.txt", "r")
+</code></pre>
+<p>Η παράμετρος <code>"r"</code> σημαίνει <strong>Read Mode</strong>, δηλαδή ότι θέλουμε μόνο να διαβάσουμε το αρχείο.</p>
+<hr/>
+<h1>Ανάγνωση ενός αρχείου</h1>
+<p>Ας υποθέσουμε ότι έχουμε το αρχείο:</p>
+<pre><code class="language-text">targets.txt
+
+192.168.1.10
+192.168.1.20
+192.168.1.30
+</code></pre>
+<p>Μπορούμε να διαβάσουμε όλο το περιεχόμενο:</p>
+<pre><code class="language-python">file = open("targets.txt", "r")
+
+content = file.read()
+
+print(content)
+
+file.close()
+</code></pre>
+<p>Έξοδος:</p>
+<pre><code class="language-text">192.168.1.10
+192.168.1.20
+192.168.1.30
+</code></pre>
+<hr/>
+<h1>Γιατί χρησιμοποιούμε το close();</h1>
+<p>Όταν τελειώσουμε με ένα αρχείο, είναι καλή πρακτική να το κλείνουμε.</p>
+<pre><code class="language-python">file.close()
+</code></pre>
+<p>Έτσι απελευθερώνονται οι πόροι που χρησιμοποιεί το πρόγραμμα.</p>
+<hr/>
+<h1>Ο καλύτερος τρόπος (with)</h1>
+<p>Η Python προσφέρει έναν ασφαλέστερο τρόπο διαχείρισης αρχείων.</p>
+<pre><code class="language-python">with open("targets.txt", "r") as file:
+    content = file.read()
+
+print(content)
+</code></pre>
+<p>Με το <code>with</code>, το αρχείο κλείνει αυτόματα όταν ολοκληρωθεί η ανάγνωση.</p>
+<p>Αυτός είναι και ο τρόπος που χρησιμοποιείται πιο συχνά.</p>
+<hr/>
+<h1>Ανάγνωση γραμμή προς γραμμή</h1>
+<p>Πολλές φορές δεν θέλουμε να διαβάσουμε όλο το αρχείο μαζί.</p>
+<p>Θέλουμε να επεξεργαστούμε κάθε γραμμή ξεχωριστά.</p>
+<pre><code class="language-python">with open("targets.txt", "r") as file:
+
+    for line in file:
+        print(line.strip())
+</code></pre>
+<p>Η <code>strip()</code> αφαιρεί τα κενά και τον χαρακτήρα αλλαγής γραμμής (<code>\n</code>).</p>
+<p>Έξοδος:</p>
+<pre><code class="language-text">192.168.1.10
+192.168.1.20
+192.168.1.30
+</code></pre>
+<hr/>
+<h1>Δημιουργία αρχείου</h1>
+<p>Μπορούμε επίσης να δημιουργήσουμε ένα νέο αρχείο.</p>
+<pre><code class="language-python">with open("results.txt", "w") as file:
+    file.write("Scan Started")
+</code></pre>
+<p>Η παράμετρος <code>"w"</code> σημαίνει <strong>Write Mode</strong>.</p>
+<p>Αν το αρχείο δεν υπάρχει, θα δημιουργηθεί αυτόματα.</p>
+<p>Αν υπάρχει ήδη, το περιεχόμενό του θα αντικατασταθεί.</p>
+<hr/>
+<h1>Προσθήκη σε υπάρχον αρχείο</h1>
+<p>Αν δεν θέλουμε να διαγράψουμε το υπάρχον περιεχόμενο, χρησιμοποιούμε το <code>"a"</code> (<strong>Append Mode</strong>).</p>
+<pre><code class="language-python">with open("results.txt", "a") as file:
+    file.write("\n192.168.1.10 - Online")
+</code></pre>
+<p>Έτσι προσθέτουμε νέα δεδομένα στο τέλος του αρχείου.</p>
+<hr/>
+<h1>Working with Files στο Cybersecurity</h1>
+<p>Η διαχείριση αρχείων είναι απαραίτητη σχεδόν σε κάθε εργαλείο Cybersecurity.</p>
+<p>Παραδείγματα:</p>
+<ul>
+<li>Ανάγνωση λίστας IP Addresses.</li>
+<li>Αποθήκευση αποτελεσμάτων από scans.</li>
+<li>Ανάλυση αρχείων log.</li>
+<li>Διαχείριση wordlists.</li>
+<li>Επεξεργασία configuration files.</li>
+</ul>
+<hr/>
+<h1>🎯 Mini Challenge</h1>
+<p>Δημιούργησε ένα αρχείο με όνομα:</p>
+<pre><code class="language-text">targets.txt
+</code></pre>
+<p>και πρόσθεσε μέσα:</p>
+<pre><code class="language-text">192.168.1.10
+192.168.1.20
+192.168.1.30
+192.168.1.40
+</code></pre>
+<p>Στη συνέχεια δημιούργησε ένα πρόγραμμα που:</p>
+<ol>
+<li>Διαβάζει όλες τις IP Addresses.</li>
+<li>Τις εμφανίζει στην οθόνη.</li>
+<li>Δημιουργεί ένα νέο αρχείο <code>results.txt</code>.</li>
+<li>Αποθηκεύει μέσα όλες τις IP Addresses.</li>
+</ol>
+<hr/>
+<h1>Τι μάθαμε;</h1>
+<p>Σε αυτό το κεφάλαιο μάθαμε:</p>
+<ul>
+<li>Πώς ανοίγουμε αρχεία.</li>
+<li>Πώς διαβάζουμε το περιεχόμενό τους.</li>
+<li>Πώς δημιουργούμε νέα αρχεία.</li>
+<li>Πώς προσθέτουμε δεδομένα σε υπάρχοντα αρχεία.</li>
+<li>Γιατί χρησιμοποιούμε το <code>with open()</code>.</li>
+</ul>
+<hr/>
+<h2>Επόμενο κεφάλαιο</h2>
+<p>Τώρα που γνωρίζεις όλες τις βασικές έννοιες της Python, ήρθε η ώρα να τις συνδυάσουμε και να δημιουργήσουμε το πρώτο μας <strong>Mini Project</strong>.</p>
+</div>
+<footer class="lesson-navigation"><a class="lesson-nav-card prev" href="functions.html"><small>← Προηγούμενο</small><strong>Συναρτήσεις</strong></a><a class="lesson-nav-card next" href="challenges.html"><small>Επόμενο →</small><strong>Python Challenges</strong></a></footer>
+</article>
+<footer class="lesson-footer"><span>HackTheBasics.gr</span><a href="../safety/index.html">Ασφάλεια &amp; Δεοντολογία</a></footer>
+</main>
+</div>
+<button aria-label="Πάνω" class="back-to-top" data-back-to-top="" type="button">↑</button>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
+<script defer="" src="../../../course-index.js"></script><script defer="" src="../../../script.js"></script>
+</body></html>

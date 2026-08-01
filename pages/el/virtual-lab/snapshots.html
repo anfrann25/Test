@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="Τα Snapshots είναι ένα από τα πιο χρήσιμα εργαλεία στο VirtualBox — ειδικά στο Cybersecurity. --- Τι είναι Snapshot; Ένα Snapshot είναι μια “φωτογραφία” τη" name="description"/>
+<meta content="#06152e" name="theme-color"/>
+<title>Snapshots — HackTheBasics.gr</title>
+<link href="../../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../manifest.webmanifest" rel="manifest"/>
+<link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page" data-alt-language-url="../../en/virtual-lab/snapshots.html" data-language="el" data-page-id="snapshots" data-root="../../..">
+<a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Αναζήτηση μαθημάτων και πρακτικών</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Αναζήτηση στην ακαδημία…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Εργαλεία" class="header-actions"><button aria-expanded="false" aria-label="Ρυθμίσεις ανάγνωσης" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EN" type="button">English</button><button aria-label="Αλλαγή θέματος" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Άνοιγμα μενού" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Μενού</b></button></nav></header>
+<div class="reader-panel" data-reader-panel="" hidden=""><strong>Ανάγνωση</strong><div><button aria-label="Μείωση κειμένου" data-font-minus="" type="button">A−</button><button data-font-reset="" type="button">A</button><button aria-label="Αύξηση κειμένου" data-font-plus="" type="button">A+</button><button aria-label="Αλλαγή πλάτους" data-width-toggle="" type="button">↔</button></div></div>
+<div class="site-layout">
+<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Κλείσιμο μενού" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Πρόγραμμα μαθημάτων" class="course-navigation" data-course-nav=""></nav></aside>
+<button aria-label="Κλείσιμο μενού" class="sidebar-backdrop" data-menu-close="" type="button"></button>
+<main class="lesson-main" id="main-content">
+<nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../../home.html">Αρχική</a><span>/</span><a href="index.html">Εικονικό Εργαστήριο</a><span>/</span><span>Snapshots</span></nav><a class="path-return" href="../../../pages/el/path/index.html"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-award"></use></svg><span>Διαδρομή μάθησης</span></a>
+<article class="lesson-article">
+<header class="lesson-header">
+<span class="module-label">04 · Εικονικό Εργαστήριο</span>
+<h1>Snapshots</h1>
+<div class="lesson-meta"><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-clock"></use></svg>2 λεπτά ανάγνωσης</span><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-device"></use></svg>Windows · Linux · Termux</span></div>
+</header>
+<div class="lesson-content"><p>Τα <strong>Snapshots</strong> είναι ένα από τα πιο χρήσιμα εργαλεία στο VirtualBox — ειδικά στο Cybersecurity.</p>
+<hr/>
+<h2>Τι είναι Snapshot;</h2>
+<p>Ένα Snapshot είναι μια “φωτογραφία” της κατάστασης του Virtual Machine σε μια συγκεκριμένη στιγμή.</p>
+<p>Περιλαμβάνει:</p>
+<ul>
+<li>αρχεία</li>
+<li>ρυθμίσεις</li>
+<li>εγκατεστημένα εργαλεία</li>
+<li>το σύστημα όπως ακριβώς ήταν</li>
+</ul>
+<hr/>
+<h2>Γιατί είναι χρήσιμα;</h2>
+<p>Με Snapshots μπορείς να:</p>
+<ul>
+<li>επαναφέρεις το VM σε προηγούμενη κατάσταση</li>
+<li>δοκιμάζεις εργαλεία χωρίς φόβο</li>
+<li>πειραματίζεσαι με επιθέσεις και exploits</li>
+<li>αποφεύγεις να ξανακάνεις εγκαταστάσεις από την αρχή</li>
+</ul>
+<hr/>
+<h2>Πώς δημιουργείς Snapshot</h2>
+<ol>
+<li>Κλείσε το VM ή άφησέ το ανοιχτό</li>
+<li>VirtualBox → επίλεξε το VM</li>
+<li>Πάτα <strong>Snapshots</strong></li>
+<li>Πάτα <strong>Take</strong></li>
+<li>Δώσε ένα όνομα, π.χ.:<ul>
+<li><code>Clean Install</code></li>
+<li><code>Before Updates</code></li>
+<li><code>Ready for Lab</code></li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h2>Πώς επαναφέρεις Snapshot</h2>
+<ol>
+<li>Πήγαινε στο VM → Snapshots</li>
+<li>Επίλεξε το Snapshot</li>
+<li>Πάτα <strong>Restore</strong></li>
+</ol>
+<p>Το VM θα γυρίσει ακριβώς στην κατάσταση που ήταν όταν πήρες το Snapshot.</p>
+<hr/>
+<h2>Best Practices</h2>
+<ul>
+<li>Πάρε Snapshot <strong>αμέσως μετά την εγκατάσταση</strong></li>
+<li>Πάρε Snapshot <strong>πριν κάνεις μεγάλα updates</strong></li>
+<li>Πάρε Snapshot <strong>πριν δοκιμάσεις εργαλεία hacking</strong></li>
+</ul>
+<hr/>
+<h2>Τι ακολουθεί;</h2>
+<p>Το Virtual Lab σου είναι πλέον έτοιμο για τα επόμενα μαθήματα του HackTheBasics.</p>
+</div>
+<footer class="lesson-navigation"><a class="lesson-nav-card prev" href="installing-kali-linux.html"><small>← Προηγούμενο</small><strong>Εγκατάσταση Kali Linux</strong></a><a class="lesson-nav-card next" href="../python-basics/index.html"><small>Επόμενο →</small><strong>Επισκόπηση Python</strong></a></footer>
+</article>
+<footer class="lesson-footer"><span>HackTheBasics.gr</span><a href="../safety/index.html">Ασφάλεια &amp; Δεοντολογία</a></footer>
+</main>
+</div>
+<button aria-label="Πάνω" class="back-to-top" data-back-to-top="" type="button">↑</button>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
+<script defer="" src="../../../course-index.js"></script><script defer="" src="../../../script.js"></script>
+</body></html>

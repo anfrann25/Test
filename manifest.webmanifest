@@ -1,0 +1,18 @@
+{
+  "name": "HackTheBasics.gr Academy",
+  "short_name": "HackTheBasics",
+  "description": "A clear bilingual path with 149 practical cybersecurity labs across 27 categories.",
+  "start_url": "./home.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#06111f",
+  "theme_color": "#06152e",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="Το Oracle VirtualBox είναι ένα δωρεάν εργαλείο που σου επιτρέπει να δημιουργείς και να διαχειρίζεσαι Virtual Machines. Σε αυτό το κεφάλαιο θα το εγκαταστήσ" name="description"/>
+<meta content="#06152e" name="theme-color"/>
+<title>Εγκατάσταση VirtualBox — HackTheBasics.gr</title>
+<link href="../../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../manifest.webmanifest" rel="manifest"/>
+<link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page" data-alt-language-url="../../en/virtual-lab/installing-virtualbox.html" data-language="el" data-page-id="install-virtualbox" data-root="../../..">
+<a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Αναζήτηση μαθημάτων και πρακτικών</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Αναζήτηση στην ακαδημία…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Εργαλεία" class="header-actions"><button aria-expanded="false" aria-label="Ρυθμίσεις ανάγνωσης" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EN" type="button">English</button><button aria-label="Αλλαγή θέματος" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Άνοιγμα μενού" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Μενού</b></button></nav></header>
+<div class="reader-panel" data-reader-panel="" hidden=""><strong>Ανάγνωση</strong><div><button aria-label="Μείωση κειμένου" data-font-minus="" type="button">A−</button><button data-font-reset="" type="button">A</button><button aria-label="Αύξηση κειμένου" data-font-plus="" type="button">A+</button><button aria-label="Αλλαγή πλάτους" data-width-toggle="" type="button">↔</button></div></div>
+<div class="site-layout">
+<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Κλείσιμο μενού" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Πρόγραμμα μαθημάτων" class="course-navigation" data-course-nav=""></nav></aside>
+<button aria-label="Κλείσιμο μενού" class="sidebar-backdrop" data-menu-close="" type="button"></button>
+<main class="lesson-main" id="main-content">
+<nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../../home.html">Αρχική</a><span>/</span><a href="index.html">Εικονικό Εργαστήριο</a><span>/</span><span>Εγκατάσταση VirtualBox</span></nav><a class="path-return" href="../../../pages/el/path/index.html"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-award"></use></svg><span>Διαδρομή μάθησης</span></a>
+<article class="lesson-article">
+<header class="lesson-header">
+<span class="module-label">04 · Εικονικό Εργαστήριο</span>
+<h1>Εγκατάσταση VirtualBox</h1>
+<div class="lesson-meta"><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-clock"></use></svg>2 λεπτά ανάγνωσης</span><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-device"></use></svg>Windows · Linux · Termux</span></div>
+</header>
+<div class="lesson-content"><p>Το <strong>Oracle VirtualBox</strong> είναι ένα δωρεάν εργαλείο που σου επιτρέπει να δημιουργείς και να διαχειρίζεσαι Virtual Machines.</p>
+<p>Σε αυτό το κεφάλαιο θα το εγκαταστήσουμε στο σύστημά σου.</p>
+<hr/>
+<h2>Τι θα χρειαστείς</h2>
+<ul>
+<li>Έναν υπολογιστή με Windows, macOS ή Linux</li>
+<li>Σύνδεση στο Internet</li>
+<li>200–300MB διαθέσιμο χώρο</li>
+</ul>
+<hr/>
+<h2>Βήμα 1: Κατέβασμα του VirtualBox</h2>
+<p>Πήγαινε στη σελίδα: <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a></p>
+<p>Επίλεξε το installer ανάλογα με το λειτουργικό σου:</p>
+<ul>
+<li>Windows hosts</li>
+<li>macOS hosts</li>
+<li>Linux distributions</li>
+</ul>
+<hr/>
+<h2>Βήμα 2: Εγκατάσταση</h2>
+<h3>Windows</h3>
+<ol>
+<li>Άνοιξε το αρχείο <code>.exe</code></li>
+<li>Πάτα <strong>Next</strong> σε όλα τα βήματα</li>
+<li>Επίλεξε <strong>Install</strong></li>
+<li>Πάτα <strong>Finish</strong></li>
+</ol>
+<h3>macOS</h3>
+<ol>
+<li>Άνοιξε το <code>.dmg</code></li>
+<li>Κάνε διπλό κλικ στο <strong>VirtualBox.pkg</strong></li>
+<li>Ακολούθησε τα βήματα εγκατάστασης</li>
+<li>Αν εμφανιστεί μήνυμα ασφαλείας:<ul>
+<li><em>System Settings → Privacy &amp; Security → Allow</em></li>
+</ul>
+</li>
+</ol>
+<h3>Linux (Ubuntu / Debian)</h3>
+<p>Μπορείς να το εγκαταστήσεις με package manager:</p>
+<pre><code class="language-bash">sudo apt update
+sudo apt install virtualbox
+
+</code></pre>
+</div>
+<footer class="lesson-navigation"><a class="lesson-nav-card prev" href="what-is-a-virtual-machine.html"><small>← Προηγούμενο</small><strong>Τι είναι μια Εικονική Μηχανή;</strong></a><a class="lesson-nav-card next" href="installing-ubuntu.html"><small>Επόμενο →</small><strong>Εγκατάσταση Ubuntu</strong></a></footer>
+</article>
+<footer class="lesson-footer"><span>HackTheBasics.gr</span><a href="../safety/index.html">Ασφάλεια &amp; Δεοντολογία</a></footer>
+</main>
+</div>
+<button aria-label="Πάνω" class="back-to-top" data-back-to-top="" type="button">↑</button>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
+<script defer="" src="../../../course-index.js"></script><script defer="" src="../../../script.js"></script>
+</body></html>

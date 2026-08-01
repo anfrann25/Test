@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="el">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="Μέχρι τώρα μάθαμε πώς να αποθηκεύουμε δεδομένα σε μεταβλητές. Σε αυτό το κεφάλαιο θα μάθουμε πώς ένα πρόγραμμα μπορεί να παίρνει αποφάσεις και να εκτελεί τ" name="description"/>
+<meta content="#06152e" name="theme-color"/>
+<title>Συνθήκες και Επαναλήψεις — HackTheBasics.gr</title>
+<link href="../../../favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="../../../manifest.webmanifest" rel="manifest"/>
+<link href="../../../style.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page" data-alt-language-url="../../en/python-basics/conditions-and-loops.html" data-language="el" data-page-id="conditions-loops" data-root="../../..">
+<a class="skip-link" href="#main-content">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header"><a class="brand" href="../../../home.html"><img alt="" height="38" src="../../../favicon.svg" width="38"/><span>HackTheBasics<em>.gr</em></span></a><div class="top-search" data-site-search=""><label class="sr-only" for="academy-search">Αναζήτηση μαθημάτων και πρακτικών</label><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-search"></use></svg><input aria-autocomplete="list" aria-controls="academy-search-results" aria-expanded="false" autocomplete="off" data-search-input="" id="academy-search" placeholder="Αναζήτηση στην ακαδημία…" type="search"/><kbd>/</kbd><div class="site-search-results" data-search-results="" hidden="" id="academy-search-results" role="listbox"></div></div><nav aria-label="Εργαλεία" class="header-actions"><button aria-expanded="false" aria-label="Ρυθμίσεις ανάγνωσης" class="text-button" data-reader-toggle="" type="button">Aa</button><button class="language-button" data-language-switch="" data-short="EN" type="button">English</button><button aria-label="Αλλαγή θέματος" class="icon-button" data-theme-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-moon"></use></svg></button><button aria-expanded="false" aria-label="Άνοιγμα μενού" class="menu-trigger" data-menu-toggle="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-menu"></use></svg><b>Μενού</b></button></nav></header>
+<div class="reader-panel" data-reader-panel="" hidden=""><strong>Ανάγνωση</strong><div><button aria-label="Μείωση κειμένου" data-font-minus="" type="button">A−</button><button data-font-reset="" type="button">A</button><button aria-label="Αύξηση κειμένου" data-font-plus="" type="button">A+</button><button aria-label="Αλλαγή πλάτους" data-width-toggle="" type="button">↔</button></div></div>
+<div class="site-layout">
+<aside aria-hidden="true" class="sidebar"><div class="sidebar-head"><a class="brand" href="../../../home.html"><img alt="" src="../../../favicon.svg"/><span>HackTheBasics<em>.gr</em></span></a><button aria-label="Κλείσιμο μενού" class="icon-button" data-menu-close="" type="button"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-close"></use></svg></button></div><nav aria-label="Πρόγραμμα μαθημάτων" class="course-navigation" data-course-nav=""></nav></aside>
+<button aria-label="Κλείσιμο μενού" class="sidebar-backdrop" data-menu-close="" type="button"></button>
+<main class="lesson-main" id="main-content">
+<nav aria-label="Breadcrumb" class="breadcrumbs"><a href="../../../home.html">Αρχική</a><span>/</span><a href="index.html">Βασικά Python</a><span>/</span><span>Συνθήκες και Επαναλήψεις</span></nav><a class="path-return" href="../../../pages/el/path/index.html"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-award"></use></svg><span>Διαδρομή μάθησης</span></a>
+<article class="lesson-article">
+<header class="lesson-header">
+<span class="module-label">05 · Βασικά Python</span>
+<h1>Συνθήκες και Επαναλήψεις</h1>
+<div class="lesson-meta"><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-clock"></use></svg>2 λεπτά ανάγνωσης</span><span class="meta-chip"><svg aria-hidden="true" class="icon"><use href="../../../assets/icons.svg#i-device"></use></svg>Windows · Linux · Termux</span></div>
+</header>
+<div class="lesson-content"><p>Μέχρι τώρα μάθαμε πώς να αποθηκεύουμε δεδομένα σε μεταβλητές.</p>
+<p>Σε αυτό το κεφάλαιο θα μάθουμε πώς ένα πρόγραμμα μπορεί να παίρνει αποφάσεις και να εκτελεί τις ίδιες ενέργειες πολλές φορές χωρίς να γράφουμε τον ίδιο κώδικα ξανά και ξανά.</p>
+<hr/>
+<h1>Conditions (Συνθήκες)</h1>
+<p>Οι συνθήκες επιτρέπουν στο πρόγραμμα να εκτελεί διαφορετικό κώδικα ανάλογα με μια προϋπόθεση.</p>
+<p>Στην Python χρησιμοποιούμε κυρίως:</p>
+<ul>
+<li><code>if</code></li>
+<li><code>elif</code></li>
+<li><code>else</code></li>
+</ul>
+<hr/>
+<h1>Η εντολή if</h1>
+<p>Η <code>if</code> εκτελεί τον κώδικα μόνο αν η συνθήκη είναι αληθής.</p>
+<p>Παράδειγμα:</p>
+<pre><code class="language-python">is_admin = True
+
+if is_admin:
+    print("Access Granted")
+</code></pre>
+<p>Έξοδος:</p>
+<pre><code class="language-text">Access Granted
+</code></pre>
+<hr/>
+<h1>Η εντολή else</h1>
+<p>Η <code>else</code> εκτελείται όταν η συνθήκη είναι ψευδής.</p>
+<pre><code class="language-python">is_admin = False
+
+if is_admin:
+    print("Access Granted")
+else:
+    print("Access Denied")
+</code></pre>
+<p>Έξοδος:</p>
+<pre><code class="language-text">Access Denied
+</code></pre>
+<hr/>
+<h1>Η εντολή elif</h1>
+<p>Η <code>elif</code> χρησιμοποιείται όταν θέλουμε να ελέγξουμε περισσότερες από μία συνθήκες.</p>
+<pre><code class="language-python">port = 443
+
+if port == 22:
+    print("SSH")
+elif port == 80:
+    print("HTTP")
+elif port == 443:
+    print("HTTPS")
+else:
+    print("Unknown Service")
+</code></pre>
+<hr/>
+<h1>Operators</h1>
+<p>Οι πιο συνηθισμένοι τελεστές σύγκρισης είναι:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Περιγραφή</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>Ίσο με</td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>Διαφορετικό από</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Μεγαλύτερο από</td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Μικρότερο από</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Μεγαλύτερο ή ίσο</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Μικρότερο ή ίσο</td>
+</tr>
+</tbody>
+</table>
+<p>Παράδειγμα:</p>
+<pre><code class="language-python">port = 80
+
+if port == 80:
+    print("HTTP Detected")
+</code></pre>
+<hr/>
+<h1>Loops</h1>
+<p>Τα Loops χρησιμοποιούνται όταν θέλουμε να εκτελέσουμε την ίδια ενέργεια πολλές φορές.</p>
+<p>Οι δύο βασικοί τύποι είναι:</p>
+<ul>
+<li><code>for</code></li>
+<li><code>while</code></li>
+</ul>
+<hr/>
+<h1>For Loop</h1>
+<p>Η <code>for</code> χρησιμοποιείται για να διατρέξουμε μια λίστα ή μια ακολουθία δεδομένων.</p>
+<pre><code class="language-python">ports = [22, 80, 443]
+
+for port in ports:
+    print(port)
+</code></pre>
+<p>Έξοδος:</p>
+<pre><code class="language-text">22
+80
+443
+</code></pre>
+<hr/>
+<p>Μπορούμε επίσης να διατρέξουμε λίστες με IP Addresses.</p>
+<pre><code class="language-python">targets = [
+    "192.168.1.10",
+    "192.168.1.20",
+    "192.168.1.30"
+]
+
+for target in targets:
+    print("Scanning", target)
+</code></pre>
+<hr/>
+<h1>While Loop</h1>
+<p>Η <code>while</code> εκτελείται όσο μια συνθήκη παραμένει αληθής.</p>
+<pre><code class="language-python">counter = 1
+
+while counter &lt;= 5:
+    print(counter)
+    counter += 1
+</code></pre>
+<p>Έξοδος:</p>
+<pre><code class="language-text">1
+2
+3
+4
+5
+</code></pre>
+<hr/>
+<h1>Infinite Loops</h1>
+<p>Αν η συνθήκη μιας <code>while</code> δεν γίνει ποτέ False, τότε το πρόγραμμα θα εκτελείται για πάντα.</p>
+<p>Παράδειγμα:</p>
+<pre><code class="language-python">while True:
+    print("Running...")
+</code></pre>
+<p>Προσοχή! Αυτό δημιουργεί ένα <strong>Infinite Loop</strong> και το πρόγραμμα δεν θα σταματήσει μόνο του.</p>
+<hr/>
+<h1>Conditions &amp; Loops στο Cybersecurity</h1>
+<p>Οι συνθήκες και οι επαναλήψεις χρησιμοποιούνται συνεχώς σε εργαλεία Cybersecurity.</p>
+<p>Παραδείγματα:</p>
+<ul>
+<li>Έλεγχος αν ένας host είναι online.</li>
+<li>Σάρωση πολλών IP Addresses.</li>
+<li>Έλεγχος αν μια θύρα είναι ανοιχτή.</li>
+<li>Ανάγνωση πολλών αρχείων log.</li>
+<li>Αυτοματοποίηση επαναλαμβανόμενων εργασιών.</li>
+</ul>
+<hr/>
+<h1>🎯 Mini Challenge</h1>
+<p>Δημιούργησε ένα αρχείο <code>scanner.py</code>.</p>
+<ol>
+<li>Δημιούργησε μια λίστα με 5 IP Addresses.</li>
+<li>Χρησιμοποίησε ένα <code>for</code> loop για να εμφανίσεις όλες τις IP.</li>
+<li>Αν μια IP είναι <code>"192.168.1.100"</code>, εμφάνισε:</li>
+</ol>
+<pre><code class="language-text">Target Found!
+</code></pre>
+<p>Για όλες τις υπόλοιπες εμφάνισε:</p>
+<pre><code class="language-text">Scanning...
+</code></pre>
+<hr/>
+<h1>Τι μάθαμε;</h1>
+<p>Σε αυτό το κεφάλαιο μάθαμε:</p>
+<ul>
+<li>Τι είναι οι Conditions.</li>
+<li>Πώς χρησιμοποιούνται οι <code>if</code>, <code>elif</code> και <code>else</code>.</li>
+<li>Τι είναι τα Loops.</li>
+<li>Πώς λειτουργούν οι <code>for</code> και <code>while</code>.</li>
+<li>Πώς χρησιμοποιούνται στην αυτοματοποίηση εργασιών.</li>
+</ul>
+<hr/>
+<h2>Επόμενο κεφάλαιο</h2>
+<p>Τώρα που μπορούμε να γράψουμε πιο "έξυπνα" προγράμματα, θα μάθουμε πώς να οργανώνουμε τον κώδικά μας χρησιμοποιώντας <strong>Functions</strong>.</p>
+</div>
+<footer class="lesson-navigation"><a class="lesson-nav-card prev" href="variables-and-data-types.html"><small>← Προηγούμενο</small><strong>Μεταβλητές και Τύποι Δεδομένων</strong></a><a class="lesson-nav-card next" href="functions.html"><small>Επόμενο →</small><strong>Συναρτήσεις</strong></a></footer>
+</article>
+<footer class="lesson-footer"><span>HackTheBasics.gr</span><a href="../safety/index.html">Ασφάλεια &amp; Δεοντολογία</a></footer>
+</main>
+</div>
+<button aria-label="Πάνω" class="back-to-top" data-back-to-top="" type="button">↑</button>
+<div aria-live="polite" class="toast" data-toast="" role="status"></div>
+<script defer="" src="../../../course-index.js"></script><script defer="" src="../../../script.js"></script>
+</body></html>
