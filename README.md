@@ -40,3 +40,6 @@ The included workflow publishes the repository root from the `main` branch. All 
 - `docs/` — curriculum, compatibility and quality documentation
 - `local-tools/` — optional local server and academy command-line tools
 - `tools/` — supporting lab utilities
+
+## Authors
+anfrann25 & dedsec1121fk
